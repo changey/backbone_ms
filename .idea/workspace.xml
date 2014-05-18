@@ -2,205 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3f5ba438-2484-4cd8-8441-b88126c377b4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/scrape.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/node-phantom-simple/.npmignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/node-phantom-simple/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/node-phantom-simple/bridge.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/node-phantom-simple/node-phantom-simple.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/node-phantom-simple/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/node-phantom-simple/run_tests" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/node-phantom-simple/tests/files/injecttest.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/node-phantom-simple/tests/files/modifytest.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/node-phantom-simple/tests/files/uploadtest.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/node-phantom-simple/tests/files/verifyrender.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/node-phantom-simple/tests/testbadpath.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/node-phantom-simple/tests/testcommandlineoptions.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/node-phantom-simple/tests/testcreatepage.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/node-phantom-simple/tests/testinjectjs.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/node-phantom-simple/tests/testpageevaluate.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/node-phantom-simple/tests/testpageincludejs.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/node-phantom-simple/tests/testpageinjectjs.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/node-phantom-simple/tests/testpageopen.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/node-phantom-simple/tests/testpagepushnotifications.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/node-phantom-simple/tests/testpagerelease.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/node-phantom-simple/tests/testpagerender.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/node-phantom-simple/tests/testpagerenderbase64.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/node-phantom-simple/tests/testpagesendevent.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/node-phantom-simple/tests/testpagesetfn.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/node-phantom-simple/tests/testpagesetget.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/node-phantom-simple/tests/testpageuploadfile.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/.lvimrc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/.npmignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/Makefile" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/RELEASE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/examples/cucumber/features/navigation.feature" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/examples/cucumber/features/steps/navigation.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/examples/cucumber/features/steps/run.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/examples/cucumber/features/support/hooks.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/examples/cucumber/features/support/world.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/examples/cucumber/steps/navigation.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/examples/hello.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/lib/bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/lib/bootstrap/casper.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/lib/bootstrap/create-function.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/lib/bootstrap/emit.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/lib/bootstrap/http-server.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/lib/bootstrap/stdio-server.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/lib/events.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/lib/spooky.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/lib/spooky/filtered-stream.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/lib/spooky/request-stream.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/lib/stream.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/node_modules/async/.gitmodules" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/node_modules/async/.npmignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/node_modules/async/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/node_modules/async/Makefile" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/node_modules/async/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/node_modules/async/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/node_modules/async/lib/async.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/node_modules/async/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/node_modules/carrier/.npmignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/node_modules/carrier/.travis.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/node_modules/carrier/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/node_modules/carrier/README.markdown" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/node_modules/carrier/lib/carrier.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/node_modules/carrier/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/node_modules/carrier/test/extra_carriage.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/node_modules/carrier/test/test_concatenation.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/node_modules/carrier/test/test_handle_buffer.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/node_modules/carrier/test/test_line_breaks.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/node_modules/carrier/test/test_no_br.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/node_modules/carrier/test/test_one_line_ending_in_nl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/node_modules/carrier/test/test_other_breaks.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/node_modules/duplexer/.npmignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/node_modules/duplexer/.travis.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/node_modules/duplexer/LICENCE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/node_modules/duplexer/Makefile" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/node_modules/duplexer/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/node_modules/duplexer/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/node_modules/duplexer/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/node_modules/duplexer/test.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/node_modules/readable-stream/.npmignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/node_modules/readable-stream/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/node_modules/readable-stream/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/node_modules/readable-stream/duplex.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/node_modules/readable-stream/lib/_stream_duplex.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/node_modules/readable-stream/lib/_stream_passthrough.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/node_modules/readable-stream/lib/_stream_readable.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/node_modules/readable-stream/lib/_stream_transform.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/node_modules/readable-stream/lib/_stream_writable.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/node_modules/readable-stream/node_modules/core-util-is/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/node_modules/readable-stream/node_modules/core-util-is/float.patch" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/node_modules/readable-stream/node_modules/core-util-is/lib/util.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/node_modules/readable-stream/node_modules/core-util-is/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/node_modules/readable-stream/node_modules/core-util-is/util.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/node_modules/readable-stream/node_modules/inherits/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/node_modules/readable-stream/node_modules/inherits/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/node_modules/readable-stream/node_modules/inherits/inherits.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/node_modules/readable-stream/node_modules/inherits/inherits_browser.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/node_modules/readable-stream/node_modules/inherits/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/node_modules/readable-stream/node_modules/inherits/test.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/node_modules/readable-stream/node_modules/isarray/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/node_modules/readable-stream/node_modules/isarray/build/build.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/node_modules/readable-stream/node_modules/isarray/component.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/node_modules/readable-stream/node_modules/isarray/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/node_modules/readable-stream/node_modules/isarray/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/node_modules/readable-stream/node_modules/string_decoder/.npmignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/node_modules/readable-stream/node_modules/string_decoder/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/node_modules/readable-stream/node_modules/string_decoder/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/node_modules/readable-stream/node_modules/string_decoder/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/node_modules/readable-stream/node_modules/string_decoder/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/node_modules/readable-stream/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/node_modules/readable-stream/passthrough.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/node_modules/readable-stream/readable.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/node_modules/readable-stream/transform.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/node_modules/readable-stream/writable.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/node_modules/tiny-jsonrpc/Makefile" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/node_modules/tiny-jsonrpc/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/node_modules/tiny-jsonrpc/app.build.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/node_modules/tiny-jsonrpc/dist/tiny-jsonrpc.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/node_modules/tiny-jsonrpc/lib/tiny-jsonrpc.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/node_modules/tiny-jsonrpc/lib/tiny-jsonrpc/client.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/node_modules/tiny-jsonrpc/lib/tiny-jsonrpc/server.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/node_modules/tiny-jsonrpc/lib/tiny-jsonrpc/stream-client.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/node_modules/tiny-jsonrpc/lib/tiny-jsonrpc/stream-server.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/node_modules/tiny-jsonrpc/lib/tiny-jsonrpc/util.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/node_modules/tiny-jsonrpc/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/node_modules/tiny-jsonrpc/test/client.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/node_modules/tiny-jsonrpc/test/client.notify.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/node_modules/tiny-jsonrpc/test/client.request.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/node_modules/tiny-jsonrpc/test/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/node_modules/tiny-jsonrpc/test/server.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/node_modules/tiny-jsonrpc/test/server.provide.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/node_modules/tiny-jsonrpc/test/server.provides.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/node_modules/tiny-jsonrpc/test/server.respond.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/node_modules/tiny-jsonrpc/test/server.revoke.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/node_modules/tiny-jsonrpc/test/stream-client.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/node_modules/tiny-jsonrpc/test/stream-client.notify.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/node_modules/tiny-jsonrpc/test/stream-client.request.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/node_modules/tiny-jsonrpc/test/stream-server.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/node_modules/tiny-jsonrpc/test/stream-server.listen.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/node_modules/tiny-jsonrpc/test/util/sinon-1.4.2.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/node_modules/underscore/.npmignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/node_modules/underscore/CNAME" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/node_modules/underscore/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/node_modules/underscore/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/node_modules/underscore/favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/node_modules/underscore/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/node_modules/underscore/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/node_modules/underscore/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/node_modules/underscore/raw/underscore.psd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/node_modules/underscore/underscore-min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/node_modules/underscore/underscore.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/tests/fixtures/1.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/tests/fixtures/2.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/tests/fixtures/3.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/tests/fixtures/fail-road.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/tests/fixtures/frames.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/tests/fixtures/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/tests/fixtures/popup.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/tests/test/bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/tests/test/emit.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/tests/test/issue-51.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/tests/test/navigation.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/tests/test/spooky.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/tests/test/stdio.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/tests/test/then.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/tests/test/wait.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/tests/test/with.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/tests/util/hooks.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/js/libs/spooky/tests/util/spawn.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/node-phantom-simple/.npmignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/node-phantom-simple/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/node-phantom-simple/bridge.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/node-phantom-simple/node-phantom-simple.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/node-phantom-simple/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/node-phantom-simple/run_tests" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/node-phantom-simple/tests/files/injecttest.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/node-phantom-simple/tests/files/modifytest.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/node-phantom-simple/tests/files/uploadtest.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/node-phantom-simple/tests/files/verifyrender.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/node-phantom-simple/tests/testbadpath.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/node-phantom-simple/tests/testcommandlineoptions.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/node-phantom-simple/tests/testcreatepage.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/node-phantom-simple/tests/testinjectjs.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/node-phantom-simple/tests/testpageevaluate.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/node-phantom-simple/tests/testpageincludejs.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/node-phantom-simple/tests/testpageinjectjs.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/node-phantom-simple/tests/testpageopen.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/node-phantom-simple/tests/testpagepushnotifications.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/node-phantom-simple/tests/testpagerelease.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/node-phantom-simple/tests/testpagerender.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/node-phantom-simple/tests/testpagerenderbase64.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/node-phantom-simple/tests/testpagesendevent.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/node-phantom-simple/tests/testpagesetfn.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/node-phantom-simple/tests/testpagesetget.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/node-phantom-simple/tests/testpageuploadfile.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/fill.js" afterPath="$PROJECT_DIR$/build/fill.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/foo2.png" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/foo.png" afterPath="$PROJECT_DIR$/foo.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/scrape.js" afterPath="$PROJECT_DIR$/build/scrape.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/views/search.js" afterPath="$PROJECT_DIR$/js/views/search.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/server.js" afterPath="$PROJECT_DIR$/build/server.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -323,43 +129,25 @@
       <file leaf-file-name="package.json" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="4" selection-start="631" selection-end="631" vertical-scroll-proportion="-11.875" vertical-offset="60" max-vertical-offset="465">
+            <state line="19" column="22" selection-start="549" selection-end="549" vertical-scroll-proportion="-8.291667" vertical-offset="86" max-vertical-offset="480">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hello.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/hello.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="0" selection-start="113" selection-end="1361" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="945">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="search.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/views/search.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="2" selection-start="47" selection-end="47" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="server.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build/server.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="27" selection-start="303" selection-end="311" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="scrape.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="scrape.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/build/scrape.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="40" selection-start="954" selection-end="954" vertical-scroll-proportion="0.5889146" vertical-offset="0" max-vertical-offset="570">
+            <state line="4" column="25" selection-start="125" selection-end="125" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1560">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="search.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/views/search.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="20" selection-start="506" selection-end="506" vertical-scroll-proportion="0.529148" vertical-offset="49" max-vertical-offset="570">
               <folding />
             </state>
           </provider>
@@ -425,17 +213,17 @@
         <option value="$PROJECT_DIR$/templates/layout.html" />
         <option value="$PROJECT_DIR$/build/output/index.html" />
         <option value="$PROJECT_DIR$/templates/header/menu.html" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/router.js" />
         <option value="$PROJECT_DIR$/js/libs/spooky/lib/spooky.js" />
         <option value="$PROJECT_DIR$/js/hello.js" />
         <option value="$PROJECT_DIR$/js/libs/node-phantom-simple/node-phantom-simple.js" />
         <option value="$PROJECT_DIR$/js/main.js" />
-        <option value="$PROJECT_DIR$/js/views/search.js" />
         <option value="$PROJECT_DIR$/build/fill.js" />
         <option value="$PROJECT_DIR$/build/server.js" />
+        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/build/scrape.js" />
+        <option value="$PROJECT_DIR$/js/views/search.js" />
       </list>
     </option>
   </component>
@@ -451,8 +239,9 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
+    <option name="x" value="60" />
     <option name="y" value="22" />
-    <option name="width" value="757" />
+    <option name="width" value="964" />
     <option name="height" value="788" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -849,16 +638,16 @@
       <changelist id="3f5ba438-2484-4cd8-8441-b88126c377b4" name="Default" comment="" />
       <created>1400381229418</created>
       <updated>1400381229418</updated>
-      <workItem from="1400381231010" duration="12865000" />
+      <workItem from="1400381231010" duration="15545000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12865000" />
+    <option name="totallyTimeSpent" value="15545000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="757" height="788" extended-state="0" />
-    <editor active="true" />
+    <frame x="60" y="22" width="964" height="788" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -879,7 +668,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32992327" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23496504" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28199565" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1057,13 +846,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="4" selection-start="631" selection-end="631" vertical-scroll-proportion="-11.875" vertical-offset="60" max-vertical-offset="465">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/hello.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="0" selection-start="113" selection-end="1361" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="945">
@@ -1077,13 +859,6 @@
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/views/search.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="2" selection-start="47" selection-end="47" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1112,14 +887,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/build/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="27" selection-start="303" selection-end="311" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
+        <state line="23" column="54" selection-start="491" selection-end="491" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="22" selection-start="549" selection-end="549" vertical-scroll-proportion="-8.291667" vertical-offset="86" max-vertical-offset="480">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/build/scrape.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="40" selection-start="954" selection-end="954" vertical-scroll-proportion="0.5889146" vertical-offset="0" max-vertical-offset="570">
+        <state line="4" column="25" selection-start="125" selection-end="125" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1560">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/views/search.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="20" selection-start="506" selection-end="506" vertical-scroll-proportion="0.529148" vertical-offset="49" max-vertical-offset="570">
           <folding />
         </state>
       </provider>

@@ -16,17 +16,15 @@ define(function (require) {
     render: function() {
       var template =  _.template(SearchTemplate);
       this.$el.find('#contents').html(template);
-      this.autoLogin();
+      //this.autoLogin();
+      this.scrape();
     },
     
     autoLogin: function() {
-//      try {
-//        var Spooky = require('spooky');
-//      } catch (e) {
-//        var Spooky = require('../lib/spooky');
-//      }
-//      debugger
-//      var casper = require('casper').create();
+      
+    },
+    
+    scrape: function() {
       
     }
   });
