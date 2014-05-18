@@ -19,13 +19,18 @@ var spooky = new Spooky({
     throw e;
   }
 
-  spooky.start(
-    'http://en.wikipedia.org/wiki/Spooky_the_Tuff_Little_Ghost');
-  spooky.then(function () {
-    this.emit('hello', 'Hello, from ' + this.evaluate(function () {
-      return document.title;
-    }));
+  spooky.start('https://www.lifemiles.com/index.aspx');
+  //spooky.viewport(1500,1500);
+  spooky.then(function() {
+    this.capture('foo2.png');
+    this.emit('clog', 'finished');
   });
+  
+//  spooky.then(function () {
+//    this.emit('hello', 'Hello, from ' + this.evaluate(function () {
+//      return document.title;
+//    }));
+//  });
   spooky.run();
 });
 
@@ -46,8 +51,8 @@ spooky.on('error', function (e, stack) {
  });
  */
 
-spooky.on('hello', function (greeting) {
-  console.log(greeting);
+spooky.on('clog', function (message) {
+  console.log(message);
 });
 
 spooky.on('log', function (log) {

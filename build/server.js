@@ -14,6 +14,11 @@ site.get('/fill', function(req, res) {
   require('./fill.js');
 });
 
+site.get('/scrape', function(req, res) {
+  require('./scrape.js');
+});
+
+
 site.listen(1337);
 
 console.log("Server listening on http://localhost:1337");
