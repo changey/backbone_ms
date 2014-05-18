@@ -17,6 +17,10 @@ define([
       
       // Default - catch all
       '*actions': 'defaultAction'
+    },
+    
+    search: function() {
+      console.log("search")
     }
   });
 
@@ -49,13 +53,6 @@ define([
     });
     router.on('route:manager', function () {
       require(['views/manager/page'], function (ManagerPage) {
-        var managerPage = Vm.create(appView, 'ManagerPage', ManagerPage);
-        managerPage.render();
-      });
-    });
-    router.on('route:search', function () {
-      console.log("baba")
-      require(['views/search/page'], function (ManagerPage) {
         var managerPage = Vm.create(appView, 'ManagerPage', ManagerPage);
         managerPage.render();
       });
