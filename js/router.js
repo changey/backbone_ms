@@ -5,7 +5,8 @@ define(function (require) {
     , _ = require('underscore')
     , $ = require('jquery')
     , Vm = require('vm')
-    , SearchView = require('views/search');
+    , SearchView = require('views/search')
+    , HelloView = require('hello');
   
   var AppRouter = Backbone.Router.extend({
     routes: {
@@ -16,16 +17,22 @@ define(function (require) {
       'backbone': 'backbone',
       'manager': 'manager',
       'search': 'search',
+      'hello': 'hello',
       
       // Default - catch all
       '*actions': 'defaultAction'
     },
     
     search: function() {
+      
       this.searchView = new SearchView({
-        el: "#container",
+        el: "#container"
       })
-      console.log("search")
+      this.searchView.render();
+    },
+    
+    hello: function() {
+      
     }
   });
 
