@@ -1,10 +1,12 @@
 // Filename: router.js
-define([
-  'jquery',
-  'underscore',
-  'backbone',
-  'vm'
-], function ($, _, Backbone, Vm) {
+define(function (require) {
+  'user strict';
+  var Backbone = require('backbone')
+    , _ = require('underscore')
+    , $ = require('jquery')
+    , Vm = require('vm')
+    , SearchView = require('views/search');
+  
   var AppRouter = Backbone.Router.extend({
     routes: {
       // Pages
@@ -20,6 +22,9 @@ define([
     },
     
     search: function() {
+      this.searchView = new SearchView({
+        el: "#container",
+      })
       console.log("search")
     }
   });
