@@ -17,7 +17,7 @@ define(function (require) {
       'backbone': 'backbone',
       'manager': 'manager',
       'search': 'search',
-      'hello': 'hello',
+      'fill': 'fill',
       
       // Default - catch all
       '*actions': 'defaultAction'
@@ -31,9 +31,10 @@ define(function (require) {
       this.searchView.render();
     },
     
-    hello: function() {
+    fill: function() {
       
     }
+    
   });
 
   var initialize = function(options){

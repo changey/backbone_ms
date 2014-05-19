@@ -90,7 +90,6 @@ phantom.create(function(err, ph) {
           output.push(flight);
           var outputJson = JSON.stringify(output, null, ' ');
 
-          //res.send(outputJson);
           return outputJson;
         }, function(err, result) {
 
