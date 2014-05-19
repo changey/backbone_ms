@@ -1,9 +1,10 @@
 var phantom = require('node-phantom')
   , $ = require('jquery');
 
-phantom.create(function(err,ph) {
-  return ph.createPage(function(err,page) {
-    return page.open("file://localhost/Users/changey/Documents/aaproject_ms/backbone_ms/success_search.html", function(err,status) {
+exports.load = function(req, res) {
+phantom.create(function(err, ph) {
+  return ph.createPage(function(err, page) {
+    return page.open("file://localhost/Users/changey/Documents/aaproject_ms/backbone_ms/success_search.html", function(err, status) {
       console.log("opened site? ", status);
       page.includeJs('http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js', function(err) {
         //jQuery Loaded.
@@ -22,7 +23,7 @@ phantom.create(function(err,ph) {
               stops = "",
               cabin = "",
               type = "",
-              segment=[];
+              segment = [];
             var flightNumber = $('td:nth-child(2)', this).text();
             if(flightNumber !== "" && flightNumber !== "Flights") {
               if(this.className.indexOf("tbl-collapse") > -1) {
@@ -34,7 +35,7 @@ phantom.create(function(err,ph) {
                 totalDeparts = $('td:nth-child(3)', this).text();
                 totalArrives = $('td:nth-child(4)', this).text();
                 totalDuration = $('td:nth-child(5)', this).text();
-                segment=[];
+                segment = [];
                 flight = {
                   type: type,
                   summary: {
@@ -45,7 +46,8 @@ phantom.create(function(err,ph) {
                   },
                   segment: segment
                 }
-              } else if(this.className.indexOf("tbl-detail") > -1) {
+              }
+              else if(this.className.indexOf("tbl-detail") > -1) {
 
                 type = "detail";
                 departs = $('td:nth-child(3)', this).text();
@@ -88,12 +90,16 @@ phantom.create(function(err,ph) {
           output.push(flight);
           var outputJson = JSON.stringify(output, null, ' ');
 
+          //res.send(outputJson);
           return outputJson;
-        }, function(err,result) {
-          console.log(result);
+        }, function(err, result) {
+
+          res.send(result);
+          
           ph.exit();
         });
       });
     });
   });
 });
+};

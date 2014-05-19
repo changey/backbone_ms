@@ -5,7 +5,10 @@ define(function() {
       Models: {},
       Views: {},
       Collections: {},
-      Router: {}
+      Router: {},
+      constants: {
+        API_URL: '/projectAV/api'
+      }
     };
 
     window.ProjectAV = ProjectAV;
