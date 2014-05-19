@@ -1,15 +1,54 @@
-<h1>foo</h1>
-<table class="table table-striped">
-  <tr>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td></td>
-  </tr>
-</table>
+<div class="span12">
+  <h1>Flight Detail</h1>
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th>Type</th>
+      <th>Flight Number</th>
+      <th>Departs</th>
+      <th>Arrives</th>
+      <th>Duration</th>
+      <th>Stops</th>
+      <th>Cabin</th>
+    </tr>
+    </thead>
+    <tbody>
+    <% _.each(flightData, function(flight) { %>
+
+    <% if(flight.type === "direct") { %>
+    <tr>
+      <td><%= flight.type %></td>
+      <td><%= flight.flightNumber %></td>
+      <td><%= flight.departs %></td>
+      <td><%= flight.arrives %></td>
+      <td><%= flight.duration %></td>
+      <td><%= flight.stops %></td>
+      <td><%= flight.cabin %></td>
+    </tr>
+    <% } else { %>
+    <tr>
+      <td><%= flight.type %></td>
+      <td><%= flight.summary.flightNumber %></td>
+      <td><%= flight.summary.departs %></td>
+      <td><%= flight.summary.arrives %></td>
+      <td><%= flight.summary.totalDuration %></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <% _.each(flight.segment, function(segment) { %>
+    <tr class="success">
+      <td><%= segment.type %></td>
+      <td><%= segment.flightNumber %></td>
+      <td><%= segment.departs %></td>
+      <td><%= segment.arrives %></td>
+      <td></td>
+      <td><%= segment.stops %></td>
+      <td><%= segment.cabin %></td>
+    </tr>
+    <% }); %>
+    <% } %>
+
+    <% }); %>
+    </tbody>
+  </table>
+</div>

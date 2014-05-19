@@ -9,6 +9,7 @@ define(function(require) {
     url: ProjectAV.constants.API_URL + '/scrape',
 
     getFlightData: function() {
+      var that = this;
       $.ajax({
         type: "GET",
         crossDomain: true,
@@ -16,7 +17,7 @@ define(function(require) {
         //data: JSON.stringify(coordinates),
         dataType: "html"
       }).done(_.bind(function(response) {
-          this.flightData = response;
+          that.flightData = response;
         }, this));
       return Backbone.Model.prototype.fetch.call(this, {cache: false});
     }

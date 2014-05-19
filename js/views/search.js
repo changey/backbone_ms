@@ -2,8 +2,8 @@ define(function(require) {
   'user strict';
 
   var $ = require('jquery')
+    , Backbone = require('backbone')
     , ProjectAV = require('projectAV')
-    , ScrapeModel = require('models/scrape')
     , SearchTemplate = require('text!../../templates/search.tmpl');
   //debugger
   //var Spooky = require('spooky');
@@ -18,16 +18,8 @@ define(function(require) {
       
       var that = this;
       var scrape = this.scrape();
-      var scrapeModel = new ScrapeModel();
-      scrapeModel.getFlightData().then(function() {
+      this.scrape();
         
-      });
-      debugger
-//      scrape.fetch().then(function() {
-//        console.log(that.flightData);
-//        var template = _.template(SearchTemplate);
-//        this.$el.find('#contents').html(template);
-//      });
       //this.autoLogin();
 
     },
@@ -38,20 +30,23 @@ define(function(require) {
 
     scrape: function() {
 
-      return {
-        fetch: function() {
-          $.ajax({
-            type: "GET",
-            crossDomain: true,
-            url: this.scrapeURL,
-            //data: JSON.stringify(coordinates),
-            dataType: "html"
-          }).done(_.bind(function(response) {
-              this.flightData = response;
-              return Backbone.Model.prototype.fetch.call(this, {cache: false});
-            }, this));
-        }
-      }
+      $.ajax({
+        type: "GET",
+        crossDomain: true,
+        url: this.scrapeURL,
+        //data: JSON.stringify(coordinates),
+        dataType: "html",
+        success: _.bind(function(response) {
+
+          this.flightData = JSON.parse(response);
+          console.log(response)
+          var template = _.template(SearchTemplate, {
+            flightData: this.flightData
+           });
+          this.$el.find('#contents').html(template);
+          return response;
+        }, this)
+      });
     }
   });
 

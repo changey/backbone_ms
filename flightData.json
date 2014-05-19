@@ -1,0 +1,182 @@
+[
+  {
+    "type": "direct",
+    "flightNumber": "UA871",
+    "departs": "San Francisco (SFO) 13:55",
+    "arrives": "Taipei, Taiwan Taoyuan International Airport (TPE) 18:30",
+    "duration": "13:35",
+    "stops": "      0",
+    "cabin": "      0"
+  },
+  {
+    "type": "multi",
+    "summary": {
+      "flightNumber": "Multiple",
+      "departs": "San Francisco (SFO) 10:55",
+      "arrives": "Taipei, Taiwan Taoyuan International Airport (TPE) 19:00",
+      "totalDuration": "17:05"
+    },
+    "segment": [
+      {
+        "type": "detail",
+        "flightNumber": "UA893",
+        "departs": "San Francisco (SFO) 10:55",
+        "arrives": "Seoul, Incheon International Airport (ICN) 15:05",
+        "stops": "      0",
+        "cabin": "      0"
+      },
+      {
+        "type": "detail",
+        "flightNumber": "TG635",
+        "departs": "Seoul, Incheon International Airport (ICN) 17:30",
+        "arrives": "Taipei, Taiwan Taoyuan International Airport (TPE) 19:00",
+        "stops": "      0",
+        "cabin": "      0"
+      }
+    ]
+  },
+  {
+    "type": "multi",
+    "summary": {
+      "flightNumber": "Multiple",
+      "departs": "San Francisco (SFO) 13:10",
+      "arrives": "Taipei, Taiwan Taoyuan International Airport (TPE) 21:20",
+      "totalDuration": "17:10"
+    },
+    "segment": [
+      {
+        "type": "detail",
+        "flightNumber": "OZ211",
+        "departs": "San Francisco (SFO) 13:10",
+        "arrives": "Seoul, Incheon International Airport (ICN) 17:25",
+        "stops": "      0",
+        "cabin": "      0"
+      },
+      {
+        "type": "detail",
+        "flightNumber": "BR159",
+        "departs": "Seoul, Incheon International Airport (ICN) 19:45",
+        "arrives": "Taipei, Taiwan Taoyuan International Airport (TPE) 21:20",
+        "stops": "      0",
+        "cabin": "      0"
+      }
+    ]
+  },
+  {
+    "type": "multi",
+    "summary": {
+      "flightNumber": "Multiple",
+      "departs": "San Francisco (SFO) 14:10",
+      "arrives": "Taipei, Taiwan Taoyuan International Airport (TPE) 21:20",
+      "totalDuration": "16:10"
+    },
+    "segment": [
+      {
+        "type": "detail",
+        "flightNumber": "SQ15",
+        "departs": "San Francisco (SFO) 14:10",
+        "arrives": "Seoul, Incheon International Airport (ICN) 18:35",
+        "stops": "      0",
+        "cabin": "      0"
+      },
+      {
+        "type": "detail",
+        "flightNumber": "BR159",
+        "departs": "Seoul, Incheon International Airport (ICN) 19:45",
+        "arrives": "Taipei, Taiwan Taoyuan International Airport (TPE) 21:20",
+        "stops": "      0",
+        "cabin": "      0"
+      }
+    ]
+  },
+  {
+    "type": "direct",
+    "flightNumber": "BR28",
+    "departs": "Taipei, Taiwan Taoyuan International Airport (TPE) 23:30",
+    "arrives": "San Francisco (SFO) 20:10",
+    "duration": "11:40",
+    "stops": "      0",
+    "cabin": "      0"
+  },
+  {
+    "type": "multi",
+    "summary": {
+      "flightNumber": "Multiple",
+      "departs": "Taipei, Taipei Songshan Airport (TSA) 07:45",
+      "arrives": "San Francisco (SFO) 11:45",
+      "totalDuration": "16:30"
+    },
+    "segment": [
+      {
+        "type": "detail",
+        "flightNumber": "BR192",
+        "departs": "Taipei, Taipei Songshan Airport (TSA) 07:45",
+        "arrives": "Tokyo, Tokyo International Airport (HND) 11:45",
+        "stops": "      0",
+        "cabin": "      0"
+      },
+      {
+        "type": "detail",
+        "flightNumber": "UA838",
+        "departs": "Tokyo, Narita International Airport (NRT) 16:00",
+        "arrives": "San Francisco (SFO) 09:15",
+        "stops": "      0",
+        "cabin": "      0"
+      }
+    ]
+  },
+  {
+    "type": "multi",
+    "summary": {
+      "flightNumber": "Multiple",
+      "departs": "Taipei, Taiwan Taoyuan International Airport (TPE) 08:50",
+      "arrives": "San Francisco (SFO) 13:15",
+      "totalDuration": "15:25"
+    },
+    "segment": [
+      {
+        "type": "detail",
+        "flightNumber": "BR198",
+        "departs": "Taipei, Taiwan Taoyuan International Airport (TPE) 08:50",
+        "arrives": "Tokyo, Narita International Airport (NRT) 13:15",
+        "stops": "      0",
+        "cabin": "      0"
+      },
+      {
+        "type": "detail",
+        "flightNumber": "UA838",
+        "departs": "Tokyo, Narita International Airport (NRT) 16:00",
+        "arrives": "San Francisco (SFO) 09:15",
+        "stops": "      0",
+        "cabin": "      0"
+      }
+    ]
+  },
+  {
+    "type": "multi",
+    "summary": {
+      "flightNumber": "Multiple",
+      "departs": "Taipei, Taiwan Taoyuan International Airport (TPE) 19:20",
+      "arrives": "San Francisco (SFO) 20:50",
+      "totalDuration": "16:30"
+    },
+    "segment": [
+      {
+        "type": "detail",
+        "flightNumber": "BR2",
+        "departs": "Taipei, Taiwan Taoyuan International Airport (TPE) 19:20",
+        "arrives": "Los Angeles (LAX) 16:45",
+        "stops": "      0",
+        "cabin": "      0"
+      },
+      {
+        "type": "detail",
+        "flightNumber": "UA841",
+        "departs": "Los Angeles (LAX) 19:30",
+        "arrives": "San Francisco (SFO) 20:50",
+        "stops": "      0",
+        "cabin": "      0"
+      }
+    ]
+  }
+] 
