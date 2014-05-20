@@ -4,7 +4,7 @@ var phantom = require('node-phantom')
 exports.load = function(req, res) {
 phantom.create(function(err, ph) {
   return ph.createPage(function(err, page) {
-    return page.open("file://localhost/Users/changey/Documents/aaproject_ms/backbone_ms/success_search.html", function(err, status) {
+    return page.open("file:///Users/echang/Documents/aaproject_ms/backbone_ms/success_search.html", function(err, status) {
       console.log("opened site? ", status);
       page.includeJs('http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js', function(err) {
         //jQuery Loaded.

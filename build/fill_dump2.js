@@ -3,11 +3,10 @@ try {
 } catch(e) {
   var Spooky = require('../lib/spooky');
 }
-var Casper = require('casperjs');
 
 exports.search = function(req, res) {
-  var js;
-  var casper = new Spooky({
+  
+  var spooky = new Spooky({
     child: {
       transport: 'http'
     },
@@ -22,26 +21,17 @@ exports.search = function(req, res) {
       throw e;
     }
 
-    spooky.start('https://www.lifemiles.com/index.aspx');
-    //spooky.viewport(1500,1500);
+    var js;
+    spooky.start('https://www.google.com');
     spooky.then(function() {
-      //res.send(js.all[0].outerHTML);
       js = this.evaluate(function() {
         return document;
       });
-//      this.echo(js.all[0].outerHTML);
+      
     });
-    res.send(spooky.evaluate(function() {
-      return "dada";
-    }));
-
-    var msg;
-    spooky.then(function() {
-      this.echo("dada");
-     // res.send("baba");
-    });
+    res.write(js);
     
-    res.send("foo");
+    res.write("foo");
     spooky.then(function() {
       console.log("lala")
     });
