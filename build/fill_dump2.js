@@ -4,8 +4,10 @@ try {
   var Spooky = require('../lib/spooky');
 }
 
+var scrape = require('./scrape.js');
+
 exports.search = function(req, res) {
-  
+  var js;
   var spooky = new Spooky({
     child: {
       transport: 'http'
@@ -20,22 +22,30 @@ exports.search = function(req, res) {
       e.details = err;
       throw e;
     }
-
-    var js;
+    res.send(req.params[0]);
     spooky.start('https://www.google.com');
+    //spooky.viewport(1500,1500);
     spooky.then(function() {
-      js = this.evaluate(function() {
-        return document;
-      });
+      this.emit('page.loaded',this.getHTML('html', true));
       
+      //res.send(js.all[0].outerHTML);
+//      this.echo(js.all[0].outerHTML);
     });
-    res.write(js);
-    
-    res.write("foo");
+    spooky.then(function() {
+      return "foo";
+    });
+
+    var msg;
+    spooky.then(function() {
+      this.echo("dada");
+      // res.send("baba");
+    });
+
+    //res.send("foo");
     spooky.then(function() {
       console.log("lala")
     });
-    
+
     spooky.then(function() {
       this.emit('clog', 'finished');
     });
@@ -49,6 +59,12 @@ exports.search = function(req, res) {
     if(stack) {
       console.log(stack);
     }
+  });
+
+  spooky.on('page.loaded', function (html) {
+    console.log('###############EMIT');
+    scrape.foo("foo", res);
+    //res.send(html);
   });
 
   /*

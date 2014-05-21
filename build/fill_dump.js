@@ -3,11 +3,10 @@ try {
 } catch(e) {
   var Spooky = require('../lib/spooky');
 }
-var Casper = require('casperjs');
 
 exports.search = function(req, res) {
   var js;
-  var casper = new Spooky({
+  var spooky = new Spooky({
     child: {
       transport: 'http'
     },
@@ -31,9 +30,11 @@ exports.search = function(req, res) {
       });
 //      this.echo(js.all[0].outerHTML);
     });
-    res.send(spooky.evaluate(function() {
-      return "dada";
-    }));
+    spooky.then(function() {
+      return "foo";
+    }, function(err, result) {
+      res.send("dada")
+    });
 
     var msg;
     spooky.then(function() {

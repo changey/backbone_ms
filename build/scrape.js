@@ -1,6 +1,10 @@
 var phantom = require('node-phantom')
   , $ = require('jquery');
 
+exports.foo = function(req, res) {
+  res.send("dada");
+};
+
 exports.load = function(req, res) {
 phantom.create(function(err, ph) {
   return ph.createPage(function(err, page) {
