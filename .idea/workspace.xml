@@ -3,9 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="3f5ba438-2484-4cd8-8441-b88126c377b4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/foo.png" afterPath="$PROJECT_DIR$/foo.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/fill_dump.js" afterPath="$PROJECT_DIR$/build/fill_dump.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/fill_dump2.js" afterPath="$PROJECT_DIR$/build/fill_dump2.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/scrape.js" afterPath="$PROJECT_DIR$/build/scrape.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/server.js" afterPath="$PROJECT_DIR$/build/server.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="view-the-world.iws" />
@@ -69,27 +69,9 @@
     <favorites_list name="view-the-world" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.43957028">
+    <splitter split-orientation="horizontal" split-proportion="0.5217391">
       <split-first>
         <leaf>
-          <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/build/output/js/main.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="53" column="151585" selection-start="153674" selection-end="153674" vertical-scroll-proportion="0.0" vertical-offset="795" max-vertical-offset="885">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="bootstrap.css" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/css/bootstrap.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="2953" column="16" selection-start="52274" selection-end="52274" vertical-scroll-proportion="0.0" vertical-offset="44143" max-vertical-offset="88485">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="styles.css" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/build/output/css/styles.css">
               <provider selected="true" editor-type-id="text-editor">
@@ -144,19 +126,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="server.js" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="server.js" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/build/server.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="3" column="13" selection-start="106" selection-end="129" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="fill_dump2.js" pinned="false" current="true" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/build/fill_dump2.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="65" column="25" selection-start="1320" selection-end="1320" vertical-scroll-proportion="0.6632124" vertical-offset="591" max-vertical-offset="1395">
+                <state line="24" column="35" selection-start="646" selection-end="646" vertical-scroll-proportion="0.5734407" vertical-offset="75" max-vertical-offset="735">
                   <folding />
                 </state>
               </provider>
@@ -188,15 +161,20 @@
             <entry file="file://$PROJECT_DIR$/build/fill_dump.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state line="27" column="11" selection-start="0" selection-end="1633" vertical-scroll-proportion="0.0" vertical-offset="416" max-vertical-offset="1320">
-                  <folding />
+                  <folding>
+                    <marker date="1400649658000" expanded="true" signature="133:1632" placeholder="{...}" />
+                    <marker date="1400649658000" expanded="true" signature="301:1100" placeholder="{...}" />
+                    <marker date="1400649658000" expanded="true" signature="724:751" placeholder="{...}" />
+                    <marker date="1400649658000" expanded="true" signature="775:805" placeholder="{...}" />
+                  </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="scrape.js" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="scrape.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/build/scrape.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="4" column="10" selection-start="111" selection-end="111" vertical-scroll-proportion="0.103626944" vertical-offset="0" max-vertical-offset="1695">
+                <state line="94" column="7" selection-start="3412" selection-end="3412" vertical-scroll-proportion="0.0" vertical-offset="1198" max-vertical-offset="1695">
                   <folding />
                 </state>
               </provider>
@@ -205,7 +183,16 @@
           <file leaf-file-name="fill.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/build/fill.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="19" column="4" selection-start="388" selection-end="388" vertical-scroll-proportion="0.0" vertical-offset="555" max-vertical-offset="1650">
+                <state line="74" column="0" selection-start="2053" selection-end="2053" vertical-scroll-proportion="0.0" vertical-offset="733" max-vertical-offset="1650">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="fill_dump2.js" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/build/fill_dump2.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="14" column="0" selection-start="244" selection-end="244" vertical-scroll-proportion="0.40442654" vertical-offset="9" max-vertical-offset="1275">
                   <folding />
                 </state>
               </provider>
@@ -252,9 +239,9 @@
         <option value="$PROJECT_DIR$/build/fill.js" />
         <option value="$PROJECT_DIR$/build/output/js/main.js" />
         <option value="$PROJECT_DIR$/build/fill_dump.js" />
-        <option value="$PROJECT_DIR$/build/server.js" />
         <option value="$PROJECT_DIR$/build/scrape.js" />
         <option value="$PROJECT_DIR$/build/fill_dump2.js" />
+        <option value="$PROJECT_DIR$/build/server.js" />
       </list>
     </option>
   </component>
@@ -270,10 +257,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-30" />
-    <option name="y" value="55" />
-    <option name="width" value="1372" />
-    <option name="height" value="712" />
+    <option name="x" value="186" />
+    <option name="y" value="75" />
+    <option name="width" value="1313" />
+    <option name="height" value="630" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -619,15 +606,15 @@
       <updated>1400381229418</updated>
       <workItem from="1400381231010" duration="32469000" />
       <workItem from="1400514810357" duration="3939000" />
-      <workItem from="1400646863939" duration="5437000" />
+      <workItem from="1400646863939" duration="13414000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41845000" />
+    <option name="totallyTimeSpent" value="49822000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-30" y="55" width="1372" height="712" extended-state="0" />
+    <frame x="186" y="75" width="1313" height="630" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -648,7 +635,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32992327" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16015038" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16758458" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -739,7 +726,12 @@
     <entry file="file://$PROJECT_DIR$/build/fill_dump.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="12" selection-start="185" selection-end="185" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="1155">
-          <folding />
+          <folding>
+            <marker date="1400649658000" expanded="true" signature="133:1632" placeholder="{...}" />
+            <marker date="1400649658000" expanded="true" signature="301:1100" placeholder="{...}" />
+            <marker date="1400649658000" expanded="true" signature="724:751" placeholder="{...}" />
+            <marker date="1400649658000" expanded="true" signature="775:805" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -874,20 +866,6 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="585" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2953" column="16" selection-start="52274" selection-end="52274" vertical-scroll-proportion="0.0" vertical-offset="44143" max-vertical-offset="88485">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/output/css/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="185" column="17" selection-start="3161" selection-end="3161" vertical-scroll-proportion="0.0" vertical-offset="2689" max-vertical-offset="74505">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="9" selection-start="134" selection-end="134" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="405">
@@ -922,13 +900,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build/output/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="151585" selection-start="153674" selection-end="153674" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="885">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/spooky/lib/spooky.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="34" selection-start="21" selection-end="34" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="4650">
@@ -946,14 +917,12 @@
     <entry file="file://$PROJECT_DIR$/build/fill_dump.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="27" column="11" selection-start="0" selection-end="1633" vertical-scroll-proportion="0.0" vertical-offset="416" max-vertical-offset="1320">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/fill.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="4" selection-start="388" selection-end="388" vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="1650">
-          <folding />
+          <folding>
+            <marker date="1400649658000" expanded="true" signature="133:1632" placeholder="{...}" />
+            <marker date="1400649658000" expanded="true" signature="301:1100" placeholder="{...}" />
+            <marker date="1400649658000" expanded="true" signature="724:751" placeholder="{...}" />
+            <marker date="1400649658000" expanded="true" signature="775:805" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -978,23 +947,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build/server.js">
+    <entry file="file://$PROJECT_DIR$/build/fill.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="13" selection-start="106" selection-end="129" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
+        <state line="19" column="4" selection-start="388" selection-end="388" vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="1650">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/build/scrape.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="10" selection-start="111" selection-end="111" vertical-scroll-proportion="0.103626944" vertical-offset="0" max-vertical-offset="1695">
+        <state line="94" column="7" selection-start="3412" selection-end="3412" vertical-scroll-proportion="0.0" vertical-offset="1198" max-vertical-offset="1695">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/output/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="151585" selection-start="153674" selection-end="153674" vertical-scroll-proportion="0.81891346" vertical-offset="388" max-vertical-offset="885">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2953" column="16" selection-start="52274" selection-end="52274" vertical-scroll-proportion="0.305835" vertical-offset="44143" max-vertical-offset="88485">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/output/css/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="185" column="17" selection-start="3161" selection-end="3161" vertical-scroll-proportion="0.0" vertical-offset="2689" max-vertical-offset="74505">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/build/fill_dump2.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="25" selection-start="1320" selection-end="1320" vertical-scroll-proportion="0.6632124" vertical-offset="591" max-vertical-offset="1395">
+        <state line="14" column="0" selection-start="244" selection-end="244" vertical-scroll-proportion="0.40442654" vertical-offset="9" max-vertical-offset="1275">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="35" selection-start="646" selection-end="646" vertical-scroll-proportion="0.5734407" vertical-offset="75" max-vertical-offset="735">
           <folding />
         </state>
       </provider>
