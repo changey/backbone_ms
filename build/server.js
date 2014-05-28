@@ -14,9 +14,10 @@ site.get("/", function(req, res) {
 
 var data = "file://localhost/Users/changey/Documents/aaproject_ms/backbone_ms/success_search.html";
 
-site.get('/scrape', function(req, res) {
-  req.data = data;
-  scrape.load(req, res);
+site.post('/scrape', function(req, res) {
+  //req.data = data;
+  scrape.foo(req, res);
+  //scrape.load(req, res);
 });
 
 site.get('/fill', function(req, res, next) {

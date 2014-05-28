@@ -2,6 +2,8 @@ var phantom = require('node-phantom')
   , $ = require('jquery');
 
 exports.foo = function(req, res) {
+  console.log("---foo---");
+  console.log(req.body);
   res.send("dada");
 };
 

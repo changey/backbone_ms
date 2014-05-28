@@ -13,13 +13,14 @@ define(function(require) {
       var base_url = location.protocol + '//' + location.hostname + (location.port ? ':' + location.port : '');
       this.scrapeURL = base_url + "/scrape";
       this.autoLoginURL = base_url + "/fill";
+      this.data = 'file:///Users/echang/Documents/aaproject_ms/backbone_ms/success_search.html';
     },
 
     render: function() {
       
       var that = this;
-      var scrape = this.scrape();
-      //this.scrape();
+      //var scrape = this.scrape();
+      //this.scrape(this.data);
         
       this.autoLogin();
 
@@ -27,6 +28,7 @@ define(function(require) {
 
     autoLogin: function() {
 
+      var that = this;
       $.ajax({
         type: "GET",
         crossDomain: true,
@@ -35,8 +37,8 @@ define(function(require) {
         dataType: "html",
         success: _.bind(function(response) {
 
-          console.log("success")
-          console.log(response)
+          this.scrapeHTML = response;
+          this.scrape(this.scrapeHTML);
 //          this.flightData = JSON.parse(response);
 //          var template = _.template(SearchTemplate, {
 //            flightData: this.flightData
@@ -47,23 +49,24 @@ define(function(require) {
       });
     },
 
-    scrape: function() {
+    scrape: function(data) {
 
       $.ajax({
-        type: "GET",
+        type: "POST",
         crossDomain: true,
         url: this.scrapeURL,
-        //data: JSON.stringify(coordinates),
+        data: data,
         dataType: "html",
         success: _.bind(function(response) {
 
-          this.flightData = JSON.parse(response);
-          console.log(response)
-          var template = _.template(SearchTemplate, {
-            flightData: this.flightData
-           });
-          this.$el.find('#contents').html(template);
-          return response;
+            console.log(response)
+//          this.flightData = JSON.parse(response);
+//          console.log(response)
+//          var template = _.template(SearchTemplate, {
+//            flightData: this.flightData
+//           });
+//          this.$el.find('#contents').html(template);
+//          return response;
         }, this)
       });
     }

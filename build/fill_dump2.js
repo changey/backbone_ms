@@ -14,7 +14,7 @@ exports.gettop = function(req, res, next){
 //  };
 };
 
-exports.search = function(req, res, next) {
+exports.search = function(req, res) {
 
   var spooky = new Spooky({
     child: {
