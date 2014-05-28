@@ -6,15 +6,14 @@ try {
 
 //var scrape = require('./scrape.js');
 
-exports.gettop = function(req, res, next){
-  req.link = "dada";
-//  return function(req, res) {
-//    console.log(n);
-//    res.send(200);
-//  };
+exports.gettop = function(n){
+  return function(req, res) {
+    console.log(n);
+    res.send(200);
+  };
 };
 
-exports.search = function(req, res, next) {
+exports.search = function(req, res) {
 
   var spooky = new Spooky({
     child: {
@@ -24,7 +23,7 @@ exports.search = function(req, res, next) {
       logLevel: 'debug',
       verbose: true
     }
-  }, function(err, next) {
+  }, function(err) {
     if(err) {
       e = new Error('Failed to initialize SpookyJS');
       e.details = err;
@@ -56,8 +55,7 @@ exports.search = function(req, res, next) {
   spooky.on('page.loaded', function (html) {
     console.log('###############EMIT');
     //scrape.foo("foo", res);
-    req.link = "dada";
-    //return next();
+    res.send("dada");
     //res.send(html);
   });
 

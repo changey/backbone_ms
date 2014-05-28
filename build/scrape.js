@@ -97,7 +97,8 @@ phantom.create(function(err, ph) {
           return outputJson;
         }, function(err, result) {
 
-          res.send(result);
+          //res.send(result);
+          req.link = "caca";
           
           ph.exit();
         });
