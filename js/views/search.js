@@ -12,20 +12,39 @@ define(function(require) {
     initialize: function() {
       var base_url = location.protocol + '//' + location.hostname + (location.port ? ':' + location.port : '');
       this.scrapeURL = base_url + "/scrape";
+      this.autoLoginURL = base_url + "/fill";
     },
 
     render: function() {
       
       var that = this;
       var scrape = this.scrape();
-      this.scrape();
+      //this.scrape();
         
-      //this.autoLogin();
+      this.autoLogin();
 
     },
 
     autoLogin: function() {
 
+      $.ajax({
+        type: "GET",
+        crossDomain: true,
+        url: this.autoLoginURL,
+        //data: JSON.stringify(coordinates),
+        dataType: "html",
+        success: _.bind(function(response) {
+
+          console.log("success")
+          console.log(response)
+//          this.flightData = JSON.parse(response);
+//          var template = _.template(SearchTemplate, {
+//            flightData: this.flightData
+//          });
+//          this.$el.find('#contents').html(template);
+//          return response;
+        }, this)
+      });
     },
 
     scrape: function() {

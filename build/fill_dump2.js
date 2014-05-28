@@ -31,7 +31,8 @@ exports.search = function(req, res, next) {
       throw e;
     }
     
-    spooky.start('https://www.google.com');
+    //spooky.start('https://www.google.com');
+    spooky.start('file:///Users/echang/Documents/aaproject_ms/backbone_ms/success_search.html');
     //spooky.viewport(1500,1500);
     spooky.then(function() {
       this.emit('page.loaded',this.getHTML('html', true));
@@ -56,9 +57,9 @@ exports.search = function(req, res, next) {
   spooky.on('page.loaded', function (html) {
     console.log('###############EMIT');
     //scrape.foo("foo", res);
-    req.link = "dada";
+    //req.link = "dada";
     //return next();
-    //res.send(html);
+    res.send(html);
   });
 
   /*

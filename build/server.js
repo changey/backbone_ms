@@ -21,17 +21,16 @@ site.get('/scrape', function(req, res) {
 
 site.get('/fill', function(req, res, next) {
   
-  //fill.search(res, res);
-  req.data = data;
-  scrape.load(req, res);
+  fill.search(res, res);
+  //req.data = data;
+  //scrape.load(req, res);
 //  var link = fill.search(req, res);
 //  req.link = link;
-//});
-  return next();
-  //res.send("foo");
-}, function(req, res) {
-  res.send(req.link);
 });
+//  return next();
+//}, function(req, res) {
+//  res.send(req.link);
+//});
 
 site.get('/foo', function(req, res, next) {
   req.link = "link2"
