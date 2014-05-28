@@ -5,6 +5,7 @@ var scrape = require('./scrape.js');
 var fill = require('./fill_dump2.js');
 
 site.use(express.static(__dirname + '/..'));
+site.use(express.bodyParser());
 
 //site.use(express.favicon("./favicon.ico"));
 
