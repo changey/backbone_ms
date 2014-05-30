@@ -17,8 +17,9 @@ var data = "file://localhost/Users/changey/Documents/aaproject_ms/backbone_ms/su
 
 site.post('/scrape', function(req, res) {
   //req.data = data;
-  scrape.foo(req, res);
+  //scrape.foo(req, res);
   //scrape.load(req, res);
+  scrape.bar(req, res);
 });
 
 site.get('/fill', function(req, res, next) {

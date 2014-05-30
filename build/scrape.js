@@ -1,16 +1,50 @@
 var phantom = require('node-phantom')
   , $ = require('jquery');
 
+exports.bar = function(req, res) {
+  var fs = require('fs');
+  fs.writeFile("tmp/test", "Hey there!", function(err) {
+    if(err) {
+      console.log(err);
+    } else {
+      console.log("The file was saved!");
+    }
+  });
+},
+
 exports.foo = function(req, res) {
-  console.log("---foo---");
-  console.log(req.body);
-  res.send("dada");
-};
+  phantom.create(function(err, ph) {
+    return ph.createPage(function(err, page) {
+      //var page = require('webpage').create();
+      return page.set('content', '<html><head></head><body><p>Hello</p></body></html>', function (err, status) {
+        //console.log("opened site? ", status);
+        page.includeJs('http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js', function(err) {
+          return page.evaluate(function() {
+          //jQuery Loaded.
+          //Wait for a bit for AJAX content to load on the page. Here, we are waiting 5 seconds.
+          
+            //var outputJson = JSON.stringify(output, null, ' ');
+
+            return $('p').text();
+          }, function(err, result) {
+
+            res.send(result);
+            //req.link = "caca";
+
+            ph.exit();
+          });
+        });
+      });
+    });
+  });
+}
 
 exports.load = function(req, res) {
 phantom.create(function(err, ph) {
   return ph.createPage(function(err, page) {
-    return page.open(req.data, function(err, status) {
+    console.log(req.body)
+    //return page.open(req.body, function(err, status) {
+    return page.set(req.body, function (err, status) {
       console.log("opened site? ", status);
       page.includeJs('http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js', function(err) {
         //jQuery Loaded.
@@ -99,8 +133,8 @@ phantom.create(function(err, ph) {
           return outputJson;
         }, function(err, result) {
 
-          //res.send(result);
-          req.link = "caca";
+          res.send(result);
+          //req.link = "caca";
           
           ph.exit();
         });

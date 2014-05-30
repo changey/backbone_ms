@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3f5ba438-2484-4cd8-8441-b88126c377b4" name="Default" comment="" />
+    <list default="true" id="3f5ba438-2484-4cd8-8441-b88126c377b4" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/fill_dump2.js" afterPath="$PROJECT_DIR$/build/fill_dump2.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/scrape.js" afterPath="$PROJECT_DIR$/build/scrape.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/views/search.js" afterPath="$PROJECT_DIR$/js/views/search.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/server.js" afterPath="$PROJECT_DIR$/build/server.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="view-the-world.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -63,7 +69,7 @@
     <favorites_list name="view-the-world" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.49957448">
+    <splitter split-orientation="horizontal" split-proportion="0.5346821">
       <split-first>
         <leaf>
           <file leaf-file-name="fill.js" pinned="false" current="false" current-in-tab="false">
@@ -78,17 +84,10 @@
           <file leaf-file-name="search.js" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/js/views/search.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="37" column="44" selection-start="1081" selection-end="1081" vertical-scroll-proportion="0.21696573" vertical-offset="422" max-vertical-offset="1215">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="header.css" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/css/header.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="2" column="1" selection-start="38" selection-end="38" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="120">
-                  <folding />
+                <state line="10" column="9" selection-start="276" selection-end="276" vertical-scroll-proportion="0.3417367" vertical-offset="28" max-vertical-offset="1110">
+                  <folding>
+                    <element signature="e#784#923#0" expanded="false" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -106,19 +105,19 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="server.js" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="server.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/build/server.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="7" column="0" selection-start="215" selection-end="246" vertical-scroll-proportion="0.16431925" vertical-offset="0" max-vertical-offset="780">
+                <state line="21" column="23" selection-start="624" selection-end="624" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="795">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="scrape.js" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="scrape.js" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/build/scrape.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="19" column="29" selection-start="679" selection-end="679" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1740">
+                <state line="5" column="16" selection-start="143" selection-end="143" vertical-scroll-proportion="0.21008404" vertical-offset="0" max-vertical-offset="2250">
                   <folding />
                 </state>
               </provider>
@@ -127,7 +126,7 @@
           <file leaf-file-name="fill.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/build/fill.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="74" column="0" selection-start="2053" selection-end="2053" vertical-scroll-proportion="0.0" vertical-offset="943" max-vertical-offset="1650">
+                <state line="74" column="0" selection-start="2053" selection-end="2053" vertical-scroll-proportion="0.0" vertical-offset="928" max-vertical-offset="1650">
                   <folding />
                 </state>
               </provider>
@@ -136,7 +135,7 @@
           <file leaf-file-name="fill_dump2.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/build/fill_dump2.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="16" column="34" selection-start="321" selection-end="321" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="1320">
+                <state line="36" column="20" selection-start="879" selection-end="879" vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="1335">
                   <folding />
                 </state>
               </provider>
@@ -182,10 +181,10 @@
         <option value="$PROJECT_DIR$/build/fill.js" />
         <option value="$PROJECT_DIR$/build/output/js/main.js" />
         <option value="$PROJECT_DIR$/build/fill_dump.js" />
-        <option value="$PROJECT_DIR$/build/fill_dump2.js" />
-        <option value="$PROJECT_DIR$/build/scrape.js" />
         <option value="$PROJECT_DIR$/js/views/search.js" />
+        <option value="$PROJECT_DIR$/build/fill_dump2.js" />
         <option value="$PROJECT_DIR$/build/server.js" />
+        <option value="$PROJECT_DIR$/build/scrape.js" />
       </list>
     </option>
   </component>
@@ -201,10 +200,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1912" />
-    <option name="y" value="68" />
-    <option name="width" value="1729" />
-    <option name="height" value="772" />
+    <option name="x" value="50" />
+    <option name="y" value="187" />
+    <option name="width" value="1297" />
+    <option name="height" value="645" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -234,7 +233,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -263,59 +261,14 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="node_modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="view-the-world" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backbone_ms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="view-the-world" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backbone_ms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="view-the-world" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backbone_ms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="build" />
+              <option name="myItemId" value="tmp" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -330,7 +283,7 @@
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../work/retail-2.0" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../aawork/lightmile-client" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -362,6 +315,9 @@
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
@@ -406,6 +362,9 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
@@ -462,6 +421,10 @@
       <option name="screenWidth" value="0" />
       <option name="url" value="http://" />
       <option name="usbDebugPort" value="7936" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
       <method />
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
@@ -584,22 +547,23 @@
       <workItem from="1400514810357" duration="3939000" />
       <workItem from="1400646863939" duration="16426000" />
       <workItem from="1401291195878" duration="6638000" />
+      <workItem from="1401334478770" duration="5435000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59472000" />
+    <option name="totallyTimeSpent" value="64907000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1912" y="68" width="1729" height="772" extended-state="0" />
-    <editor active="true" />
+    <frame x="50" y="187" width="1297" height="645" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28088236" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28028932" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -613,7 +577,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32992327" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12625964" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17290837" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -644,13 +608,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/build/output/css/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="185" column="17" selection-start="3161" selection-end="3161" vertical-scroll-proportion="0.0" vertical-offset="2689" max-vertical-offset="74505">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="9" selection-start="134" selection-end="134" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="405">
@@ -714,9 +671,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/router.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="12" selection-start="673" selection-end="673" vertical-scroll-proportion="0.0" vertical-offset="266" max-vertical-offset="1260">
-          <folding />
-        </state>
+        <state line="27" column="12" selection-start="673" selection-end="673" vertical-scroll-proportion="0.0" vertical-offset="266" max-vertical-offset="1260" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/flightData.json">
@@ -874,16 +829,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/hello.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="23" selection-start="788" selection-end="788" vertical-scroll-proportion="0.0" vertical-offset="328" max-vertical-offset="945">
-          <folding />
-        </state>
+        <state line="28" column="23" selection-start="788" selection-end="788" vertical-scroll-proportion="0.0" vertical-offset="328" max-vertical-offset="945" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/projectAV.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="32" selection-start="188" selection-end="188" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
-          <folding />
-        </state>
+        <state line="9" column="32" selection-start="188" selection-end="188" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/build/fill_dump.js">
@@ -923,14 +874,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/router.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="24" selection-start="1260" selection-end="1261" vertical-scroll-proportion="0.6197183" vertical-offset="339" max-vertical-offset="1260">
-          <folding />
-        </state>
+        <state line="49" column="24" selection-start="1260" selection-end="1261" vertical-scroll-proportion="0.6197183" vertical-offset="339" max-vertical-offset="1260" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/build/fill_dump2.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="34" selection-start="321" selection-end="321" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="1320">
+        <state line="36" column="20" selection-start="879" selection-end="879" vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="1335">
           <folding />
         </state>
       </provider>
@@ -942,24 +891,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build/scrape.js">
+    <entry file="file://$PROJECT_DIR$/build/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="29" selection-start="679" selection-end="679" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1740">
+        <state line="21" column="23" selection-start="624" selection-end="624" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="795">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build/server.js">
+    <entry file="file://$PROJECT_DIR$/tmp/test">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="215" selection-end="246" vertical-scroll-proportion="0.16431925" vertical-offset="0" max-vertical-offset="780">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="370">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/scrape.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="16" selection-start="143" selection-end="143" vertical-scroll-proportion="0.21008404" vertical-offset="0" max-vertical-offset="2250">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/views/search.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="44" selection-start="1081" selection-end="1081" vertical-scroll-proportion="0.21696573" vertical-offset="422" max-vertical-offset="1215">
-          <folding />
+        <state line="10" column="9" selection-start="276" selection-end="276" vertical-scroll-proportion="0.3417367" vertical-offset="28" max-vertical-offset="1110">
+          <folding>
+            <element signature="e#784#923#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

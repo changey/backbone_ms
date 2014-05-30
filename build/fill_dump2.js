@@ -32,7 +32,8 @@ exports.search = function(req, res) {
     }
     
     //spooky.start('https://www.google.com');
-    spooky.start('file:///Users/echang/Documents/aaproject_ms/backbone_ms/success_search.html');
+    //spooky.start('file:///Users/echang/Documents/aaproject_ms/backbone_ms/success_search.html');
+    spooky.start('file://localhost/Users/changey/Documents/aaproject_ms/backbone_ms/success_search.html');
     //spooky.viewport(1500,1500);
     spooky.then(function() {
       this.emit('page.loaded',this.getHTML('html', true));
