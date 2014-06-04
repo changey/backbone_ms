@@ -15,6 +15,11 @@ site.get("/", function(req, res) {
 
 var data = "file://localhost/Users/changey/Documents/aaproject_ms/backbone_ms/success_search.html";
 
+site.get('/:id(\\d+)/', function (req, res){
+  res.send("papa")
+  // req.params.id is now defined here for you
+});
+
 site.post('/scrape', function(req, res) {
   //req.data = data;
   //scrape.foo(req, res);
