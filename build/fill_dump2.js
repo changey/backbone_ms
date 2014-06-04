@@ -5,7 +5,18 @@ try {
 }
 
 //var scrape = require('./scrape.js');
+var fs = require('fs');
 
+exports.bar = function(req, res) {
+  fs.writeFile("public/pages/test.html", "Hey there!", function(err) {
+    if(err) {
+      console.log(err);
+    } else {
+      console.log("The file was saved!");
+    }
+  });
+},
+  
 exports.gettop = function(req, res, next){
   req.link = "dada";
 //  return function(req, res) {
@@ -32,8 +43,8 @@ exports.search = function(req, res) {
     }
     
     //spooky.start('https://www.google.com');
-    //spooky.start('file:///Users/echang/Documents/aaproject_ms/backbone_ms/success_search.html');
-    spooky.start('file://localhost/Users/changey/Documents/aaproject_ms/backbone_ms/success_search.html');
+    spooky.start('file:///Users/echang/Documents/aaproject_ms/backbone_ms/success_search.html');
+    //spooky.start('file://localhost/Users/changey/Documents/aaproject_ms/backbone_ms/success_search.html');
     //spooky.viewport(1500,1500);
     spooky.then(function() {
       this.emit('page.loaded',this.getHTML('html', true));
@@ -60,7 +71,14 @@ exports.search = function(req, res) {
     //scrape.foo("foo", res);
     //req.link = "dada";
     //return next();
-    res.send(html);
+    fs.writeFile("public/pages/test.html", html, function(err) {
+      if(err) {
+        console.log(err);
+      } else {
+        console.log("The file was saved!");
+      }
+    });
+    //res.send(html);
   });
 
   /*

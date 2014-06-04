@@ -1,17 +1,6 @@
 var phantom = require('node-phantom')
   , $ = require('jquery');
 
-exports.bar = function(req, res) {
-  var fs = require('fs');
-  fs.writeFile("tmp/test", "Hey there!", function(err) {
-    if(err) {
-      console.log(err);
-    } else {
-      console.log("The file was saved!");
-    }
-  });
-},
-
 exports.foo = function(req, res) {
   phantom.create(function(err, ph) {
     return ph.createPage(function(err, page) {
