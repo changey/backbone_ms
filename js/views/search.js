@@ -22,6 +22,7 @@ define(function(require) {
       var that = this;
       //var scrape = this.scrape();
       //this.scrape(this.data);
+      //this.scrape();
         
       this.autoLogin();
 
@@ -53,21 +54,21 @@ define(function(require) {
     scrape: function(data) {
 
       $.ajax({
-        type: "POST",
+        type: "GET",
         crossDomain: true,
         url: this.scrapeURL,
         data: data,
         dataType: "html",
         success: _.bind(function(response) {
 
-            console.log(response)
-//          this.flightData = JSON.parse(response);
-//          console.log(response)
-//          var template = _.template(SearchTemplate, {
-//            flightData: this.flightData
-//           });
-//          this.$el.find('#contents').html(template);
-//          return response;
+//            console.log(response)
+          this.flightData = JSON.parse(response);
+          console.log(response)
+          var template = _.template(SearchTemplate, {
+            flightData: this.flightData
+           });
+          this.$el.find('#contents').html(template);
+          return response;
         }, this)
       });
     }

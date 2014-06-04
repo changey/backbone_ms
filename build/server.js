@@ -7,8 +7,6 @@ var fill = require('./fill_dump2.js');
 site.use(express.static(__dirname + '/..'));
 site.use(express.bodyParser());
 
-site.use(express.static(__dirname + '/public'));
-
 //site.use(express.favicon("./favicon.ico"));
 
 site.get("/", function(req, res) {
@@ -22,14 +20,7 @@ site.get('/pages/:id', function (req, res){
   // req.params.id is now defined here for you
 });
 
-site.post('/scrape', function(req, res) {
-  //req.data = data;
-  //scrape.foo(req, res);
-  scrape.load(req, res);
-  //scrape.bar(req, res);
-});
-
-site.get('/foo', function(req, res) {
+site.get('/scrape', function(req, res) {
   //req.data = data;
   //scrape.foo(req, res);
   scrape.load(req, res);
