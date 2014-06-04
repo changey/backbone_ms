@@ -1,11 +1,13 @@
 var fs = require("fs");
 var express = require("express");
-var site = express.createServer();
+var site = express();
 var scrape = require('./scrape.js');
 var fill = require('./fill_dump2.js');
 
 site.use(express.static(__dirname + '/..'));
 site.use(express.bodyParser());
+
+site.use(express.static(__dirname + '/public'));
 
 //site.use(express.favicon("./favicon.ico"));
 
@@ -15,7 +17,7 @@ site.get("/", function(req, res) {
 
 var data = "file://localhost/Users/changey/Documents/aaproject_ms/backbone_ms/success_search.html";
 
-site.get('/:id(\\d+)/', function (req, res){
+site.get('/pages/:id', function (req, res){
   res.send("papa")
   // req.params.id is now defined here for you
 });
@@ -23,8 +25,15 @@ site.get('/:id(\\d+)/', function (req, res){
 site.post('/scrape', function(req, res) {
   //req.data = data;
   //scrape.foo(req, res);
-  //scrape.load(req, res);
-  scrape.bar(req, res);
+  scrape.load(req, res);
+  //scrape.bar(req, res);
+});
+
+site.get('/foo', function(req, res) {
+  //req.data = data;
+  //scrape.foo(req, res);
+  scrape.load(req, res);
+  //scrape.bar(req, res);
 });
 
 site.get('/fill', function(req, res, next) {
