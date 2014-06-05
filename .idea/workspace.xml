@@ -54,9 +54,12 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/qs/test/mocha.opts" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/qs/test/parse.js" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/qs/test/stringify.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/phantomjs/README.md" afterPath="$PROJECT_DIR$/node_modules/phantomjs/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/phantomjs/install.js" afterPath="$PROJECT_DIR$/node_modules/phantomjs/install.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/casperjs/node_modules/phantomjs/package.json" afterPath="$PROJECT_DIR$/node_modules/casperjs/node_modules/phantomjs/package.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/phantomjs/package.json" afterPath="$PROJECT_DIR$/node_modules/phantomjs/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/phantomjs/node_modules/adm-zip/package.json" afterPath="$PROJECT_DIR$/node_modules/phantomjs/node_modules/adm-zip/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/phantomjs/node_modules/which/package.json" afterPath="$PROJECT_DIR$/node_modules/phantomjs/node_modules/which/package.json" />
     </list>
     <ignored path="view-the-world.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -119,7 +122,7 @@
     <favorites_list name="view-the-world" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.45049182">
+    <splitter split-orientation="horizontal" split-proportion="0.40652618">
       <split-first>
         <leaf>
           <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
@@ -386,19 +389,19 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="package.json" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="package.json" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/node_modules/casperjs/node_modules/phantomjs/package.json">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="42" column="18" selection-start="930" selection-end="930" vertical-scroll-proportion="-6.5416665" vertical-offset="473" max-vertical-offset="1020">
+                <state line="60" column="16" selection-start="5186" selection-end="5245" vertical-scroll-proportion="0.7806216" vertical-offset="473" max-vertical-offset="1020">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="package.json" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="package.json" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/node_modules/phantomjs/package.json">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="57" column="28" selection-start="5079" selection-end="5079" vertical-scroll-proportion="0.74223036" vertical-offset="449" max-vertical-offset="1020">
+                <state line="45" column="22" selection-start="1000" selection-end="1000" vertical-scroll-proportion="-7.3" vertical-offset="310" max-vertical-offset="1035">
                   <folding />
                 </state>
               </provider>
@@ -458,8 +461,8 @@
         <option value="$PROJECT_DIR$/build/fill_dump2.js" />
         <option value="$PROJECT_DIR$/public/pages/test.html" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/node_modules/casperjs/node_modules/phantomjs/package.json" />
         <option value="$PROJECT_DIR$/node_modules/phantomjs/package.json" />
+        <option value="$PROJECT_DIR$/node_modules/casperjs/node_modules/phantomjs/package.json" />
       </list>
     </option>
   </component>
@@ -959,12 +962,12 @@
       <workItem from="1400646863939" duration="16426000" />
       <workItem from="1401291195878" duration="6638000" />
       <workItem from="1401334478770" duration="6913000" />
-      <workItem from="1401907694627" duration="7625000" />
+      <workItem from="1401907694627" duration="7820000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74010000" />
+    <option name="totallyTimeSpent" value="74205000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-2017" y="119" width="1900" height="908" extended-state="0" />
@@ -989,7 +992,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32992327" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.11679225" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20828848" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1486,16 +1489,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/casperjs/node_modules/phantomjs/package.json">
+    <entry file="file://$PROJECT_DIR$/node_modules/phantomjs/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="18" selection-start="930" selection-end="930" vertical-scroll-proportion="-6.5416665" vertical-offset="473" max-vertical-offset="1020">
+        <state line="45" column="22" selection-start="1000" selection-end="1000" vertical-scroll-proportion="-7.3" vertical-offset="310" max-vertical-offset="1035">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/phantomjs/package.json">
+    <entry file="file://$PROJECT_DIR$/node_modules/casperjs/node_modules/phantomjs/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="28" selection-start="5079" selection-end="5079" vertical-scroll-proportion="0.74223036" vertical-offset="449" max-vertical-offset="1020">
+        <state line="60" column="16" selection-start="5186" selection-end="5245" vertical-scroll-proportion="0.7806216" vertical-offset="473" max-vertical-offset="1020">
           <folding />
         </state>
       </provider>
