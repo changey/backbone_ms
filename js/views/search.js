@@ -4,7 +4,8 @@ define(function(require) {
   var $ = require('jquery')
     , Backbone = require('backbone')
     , ProjectAV = require('projectAV')
-    , SearchTemplate = require('text!../../templates/search.tmpl');
+    , SearchTemplate = require('text!../../templates/search.tmpl')
+    , InputTemplate = require('text!../../templates/input.tmpl');
   //debugger
   //var Spooky = require('spooky');
 
@@ -20,12 +21,20 @@ define(function(require) {
     render: function() {
       
       var that = this;
-      //var scrape = this.scrape();
-      //this.scrape(this.data);
-      //this.scrape();
-        
-      this.autoLogin();
 
+//      var template = _.template(SearchTemplate, {
+//        flightData: this.flightData
+//      });
+        
+      this.getInputData();
+
+    },
+    
+    getInputData: function() {
+      
+      
+      
+      this.autoLogin();
     },
 
     autoLogin: function() {
@@ -38,15 +47,11 @@ define(function(require) {
         //data: JSON.stringify(coordinates),
         dataType: "html",
         success: _.bind(function(response) {
+          console.log(response)
 
-          this.scrapeHTML = response;
-          this.scrape(this.scrapeHTML);
-//          this.flightData = JSON.parse(response);
-//          var template = _.template(SearchTemplate, {
-//            flightData: this.flightData
-//          });
-//          this.$el.find('#contents').html(template);
-//          return response;
+//          this.scrapeHTML = response;
+//          this.scrape(this.scrapeHTML);
+
         }, this)
       });
     },
