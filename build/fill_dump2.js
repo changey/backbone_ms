@@ -27,6 +27,9 @@ exports.gettop = function(req, res, next){
 
 exports.search = function(req, res) {
 
+  var x = 'spooky';
+  var y = 'kooky';
+  
   var spooky = new Spooky({
     child: {
       transport: 'http'
@@ -43,8 +46,8 @@ exports.search = function(req, res) {
     }
     
     //spooky.start('https://www.google.com');
-    spooky.start('file:///Users/echang/Documents/aaproject_ms/backbone_ms/success_search.html');
-    //spooky.start('file://localhost/Users/changey/Documents/aaproject_ms/backbone_ms/success_search.html');
+    //spooky.start('file:///Users/echang/Documents/aaproject_ms/backbone_ms/success_search.html');
+    spooky.start('file://localhost/Users/changey/Documents/aaproject_ms/backbone_ms/success_search.html');
     //spooky.viewport(1500,1500);
     spooky.then(function() {
       this.emit('page.loaded',this.getHTML('html', true));
@@ -68,6 +71,7 @@ exports.search = function(req, res) {
 
   spooky.on('page.loaded', function (html) {
     console.log('###############EMIT');
+    res.send(req.body);
     //scrape.foo("foo", res);
     //req.link = "dada";
     //return next();

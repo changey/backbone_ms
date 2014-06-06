@@ -28,8 +28,16 @@ site.get('/scrape', function(req, res) {
 });
 
 site.get('/fill', function(req, res, next) {
-  
-  fill.search(res, res);
+
+  //req.query.departure;
+  var params = {
+    departure: req.query.departure,
+    arrival: req.query.arrival,
+    depTime: req.query.depTime,
+    arrTime: req.query.arrTime
+  };
+  req.body = params;
+  fill.search(req, res);
   //req.data = data;
   //scrape.load(req, res);
 //  var link = fill.search(req, res);

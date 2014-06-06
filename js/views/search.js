@@ -11,8 +11,8 @@ define(function(require) {
   ProjectAV.Views.Search = Backbone.View.extend({
     initialize: function() {
       var base_url = location.protocol + '//' + location.hostname + (location.port ? ':' + location.port : '');
-      this.scrapeURL = base_url + "/scrape";
       this.autoLoginURL = base_url + "/fill";
+      this.scrapeURL = base_url + "/scrape";
       //this.data = 'file:///Users/echang/Documents/aaproject_ms/backbone_ms/success_search.html';
       this.data='file://localhost/Users/changey/Documents/aaproject_ms/backbone_ms/success_search.html';
     },
