@@ -27,8 +27,13 @@ exports.gettop = function(req, res, next){
 
 exports.search = function(req, res) {
 
-  var x = 'spooky';
-  var y = 'kooky';
+  var departure = req.body.departure;
+  var arrival = req.body.arrival;
+  var depTime = req.body.depTime;
+  var arrTime = req.body.arrTime;
+  var depCode = req.body.depCode;
+  var arrCode = req.body.arrCode;
+  
   
   var spooky = new Spooky({
     child: {
@@ -38,7 +43,7 @@ exports.search = function(req, res) {
       logLevel: 'debug',
       verbose: true
     }
-  }, function(err, next) {
+  }, function(err) {
     if(err) {
       e = new Error('Failed to initialize SpookyJS');
       e.details = err;
@@ -49,6 +54,25 @@ exports.search = function(req, res) {
     //spooky.start('file:///Users/echang/Documents/aaproject_ms/backbone_ms/success_search.html');
     spooky.start('file://localhost/Users/changey/Documents/aaproject_ms/backbone_ms/success_search.html');
     //spooky.viewport(1500,1500);
+
+    spooky.then([{
+      departure: departure,
+      arrival: arrival,
+      depTime: depTime,
+      arrTime: arrTime,
+      depCode: depCode,
+      arrCode: arrCode
+    }, function() {
+
+      this.emit('clog', departure);
+      this.emit('clog', arrival);
+      this.evaluate(function() {
+        
+      //  $("#cmbOrigen option:selected")[0].text = 'San Francisco (SFO), United States';
+      });
+    }]);
+    
+    
     spooky.then(function() {
       this.emit('page.loaded',this.getHTML('html', true));
       

@@ -2,7 +2,7 @@ var fs = require("fs");
 var express = require("express");
 var site = express();
 var scrape = require('./scrape.js');
-var fill = require('./fill_dump2.js');
+var fill = require('./fill.js');
 
 site.use(express.static(__dirname + '/..'));
 site.use(express.bodyParser());
@@ -27,16 +27,16 @@ site.get('/scrape', function(req, res) {
   //scrape.bar(req, res);
 });
 
-site.get('/fill', function(req, res, next) {
+site.post('/fill', function(req, res) {
 
   //req.query.departure;
-  var params = {
-    departure: req.query.departure,
-    arrival: req.query.arrival,
-    depTime: req.query.depTime,
-    arrTime: req.query.arrTime
-  };
-  req.body = params;
+//  var params = {
+//    departure: req.query.departure,
+//    arrival: req.query.arrival,
+//    depTime: req.query.depTime,
+//    arrTime: req.query.arrTime
+//  };
+//  req.body = params;
   fill.search(req, res);
   //req.data = data;
   //scrape.load(req, res);

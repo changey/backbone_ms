@@ -12,6 +12,10 @@ define(function(require) {
   //var Spooky = require('spooky');
 
   ProjectAV.Views.Search = Backbone.View.extend({
+    events: {
+      'click #searchSubmit': 'submit'
+    },
+    
     initialize: function() {
       var base_url = location.protocol + '//' + location.hostname + (location.port ? ':' + location.port : '');
       this.autoLoginURL = base_url + "/fill";
@@ -28,27 +32,56 @@ define(function(require) {
 
       });
       this.$el.find('#contents').html(template);
-      $(".date").datepicker();
-        
-      this.getInputData();
+      
+      var availableAirports;
+      
+      $.getJSON( "../../airports.json", function( data ) {
+        availableAirports = data;
 
+        $( ".depArrInput" ).autocomplete({
+          source: availableAirports
+        });
+      });
+
+      $.getJSON( "../../airportsMap.json", function( data ) {
+        that.airportsMap = data;
+      });
+
+      $(".date").datepicker();
+      
+//      this.scrape();
+      
     },
     
-    getInputData: function() {
+    submit: function() {
+
+      var departure = $('#departure').val();
+      var arrival = $('#arrival').val()
       
+      var inputData = {
+        departure: departure,
+        arrival: arrival,
+        depTime: $('#depTimeInput').val(),
+        arrTime: $('#arrTimeInput').val(),
+        depCode: this.getAirportCode(departure),
+        arrCode: this.getAirportCode(arrival)
+      }
       
-      
-      this.autoLogin();
+      this.autoLogin(inputData);
+    },
+    
+    getAirportCode: function(airportFullName) {
+      return this.airportsMap[airportFullName];
     },
 
-    autoLogin: function() {
+    autoLogin: function(inputData) {
 
       var that = this;
       $.ajax({
-        type: "GET",
+        type: "POST",
         crossDomain: true,
         url: this.autoLoginURL,
-        //data: JSON.stringify(coordinates),
+        data: inputData,
         dataType: "html",
         success: _.bind(function(response) {
           console.log(response)
@@ -70,7 +103,6 @@ define(function(require) {
         dataType: "html",
         success: _.bind(function(response) {
 
-//            console.log(response)
           this.flightData = JSON.parse(response);
           console.log(response)
           var template = _.template(SearchTemplate, {
