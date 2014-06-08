@@ -1,6 +1,8 @@
 define(function(require) {
   'user strict';
 
+  require('jquery.ui');
+  
   var $ = require('jquery')
     , Backbone = require('backbone')
     , ProjectAV = require('projectAV')
@@ -22,9 +24,11 @@ define(function(require) {
       
       var that = this;
 
-//      var template = _.template(SearchTemplate, {
-//        flightData: this.flightData
-//      });
+      var template = _.template(InputTemplate, {
+
+      });
+      this.$el.find('#contents').html(template);
+      $(".date").datepicker();
         
       this.getInputData();
 

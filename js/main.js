@@ -4,6 +4,7 @@ require.config({
   paths: {
     // Major libraries
     jquery: 'libs/jquery/jquery-min',
+    'jquery.ui': 'libs/jquery.ui/jquery.ui-min',
     underscore: 'libs/underscore/underscore-min', // https://github.com/amdjs
     lodash: 'libs/lodash/lodash', // alternative to underscore
     backbone: 'libs/backbone/backbone-min', // https://github.com/amdjs

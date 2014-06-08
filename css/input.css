@@ -1,0 +1,22 @@
+#searchSubmit {
+ margin-top: 95px;
+ margin-left: 15px;
+}
+
+.departreturn {
+  width: 100%;
+  height: 70px;
+}
+
+.inputContainer {
+  float: left;
+  padding: 7px 14px;
+}
+
+#depTimeContainer {
+  clear: left;
+}
+
+#ui-datepicker-div {
+  top: 115px;
+}
