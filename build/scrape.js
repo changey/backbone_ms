@@ -18,7 +18,6 @@ exports.foo = function(req, res) {
           }, function(err, result) {
 
             res.send(result);
-            //req.link = "caca";
 
             ph.exit();
           });
@@ -32,7 +31,7 @@ exports.load = function(req, res) {
 phantom.create(function(err, ph) {
   return ph.createPage(function(err, page) {
     console.log(req.body)
-    return page.open("public/pages/success_search.html", function(err, status) {
+    return page.open("public/pages/test.html", function(err, status) {
     //return page.set("public/pages/success_search.html", function (err, status) {
       console.log("opened site? ", status);
       page.includeJs('http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js', function(err) {

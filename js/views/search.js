@@ -83,11 +83,12 @@ define(function(require) {
         url: this.autoLoginURL,
         data: inputData,
         dataType: "html",
+        timeout: 1000000,
         success: _.bind(function(response) {
           console.log(response)
 
           this.scrapeHTML = response;
-          this.scrape(this.scrapeHTML);
+          this.scrape("foo");
 
         }, this)
       });

@@ -4,6 +4,8 @@ try {
   var Spooky = require('../lib/spooky');
 }
 
+var fs = require('fs');
+
 exports.search = function(req, res) {
 
   var departure = req.body.departure;
@@ -32,7 +34,7 @@ exports.search = function(req, res) {
     //spooky.viewport(1500,1500);
     spooky.then(function() {
       this.fill('#status-bar', {
-        'txtUser': 'alexdiaz03@outlook.com',
+        'txtUser': 'geraldmelodia@outlook.com',
         'username-pass': 'projectms',
         'txtPassword': 'projectms'
       }, false);
@@ -78,7 +80,7 @@ exports.search = function(req, res) {
         $('#fechaSalida').val(depTime);
         $('#fechaRegreso').val(arrTime);
         
-        //sample date: 9/18-9/25
+        //sample date: 9/18-9/26
 
         submitForm();
       }, {
@@ -97,13 +99,19 @@ exports.search = function(req, res) {
     });
 
     spooky.waitForSelector('#aspnetForm', function() {
-      this.emit('page.loaded',this.getHTML('html', true));
+      
       this.echo(this.getCurrentUrl());
       this.capture('success.png');
+//      this.evaluate(function() {
+//        submitForm();
+//      });
+      this.emit('page.loaded',this.getHTML('html', true));
+//      this.capture('success2.png');
     }, function() {
       this.echo("Timeout reached");
       this.echo(this.getCurrentUrl());
       this.capture('fail.png');
+      this.emit('page.loaded',this.getHTML('html', true));
       // do something
     }, 150000);
 

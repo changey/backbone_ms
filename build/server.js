@@ -29,24 +29,9 @@ site.get('/scrape', function(req, res) {
 
 site.post('/fill', function(req, res) {
 
-  //req.query.departure;
-//  var params = {
-//    departure: req.query.departure,
-//    arrival: req.query.arrival,
-//    depTime: req.query.depTime,
-//    arrTime: req.query.arrTime
-//  };
-//  req.body = params;
   fill.search(req, res);
-  //req.data = data;
-  //scrape.load(req, res);
-//  var link = fill.search(req, res);
-//  req.link = link;
+  
 });
-//  return next();
-//}, function(req, res) {
-//  res.send(req.link);
-//});
 
 site.get('/foo', function(req, res, next) {
   req.link = "link2"
