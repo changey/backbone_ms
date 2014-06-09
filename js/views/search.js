@@ -86,8 +86,8 @@ define(function(require) {
         success: _.bind(function(response) {
           console.log(response)
 
-//          this.scrapeHTML = response;
-//          this.scrape(this.scrapeHTML);
+          this.scrapeHTML = response;
+          this.scrape(this.scrapeHTML);
 
         }, this)
       });

@@ -49,8 +49,8 @@ exports.search = function(req, res) {
     });
 
     spooky.thenOpen('https://www.lifemiles.com/eng/use/red/dynredpar.aspx');
-
-    spooky.thenEvaluate([{
+    
+    spooky.then([{
       departure: departure,
       arrival: arrival,
       depTime: depTime,
@@ -59,7 +59,15 @@ exports.search = function(req, res) {
       arrCode: arrCode
     }, function() {
 
-      this.evaluate(function() {
+      this.emit('clog', 'reach login');
+      this.evaluate(function(
+        departure,
+        arrival,
+        depTime,
+        arrTime,
+        depCode,
+        arrCode
+        ) {
         $("#cmbOrigen option:selected")[0].text = departure;
         $("#cmbOrigen option:selected")[0].value = depCode;
         $('#textOrigen').val(departure);
@@ -70,37 +78,53 @@ exports.search = function(req, res) {
         $('#fechaSalida').val(depTime);
         $('#fechaRegreso').val(arrTime);
         
-//        $("#cmbOrigen option:selected")[0].text = 'San Francisco (SFO), United States';
-//        $("#cmbOrigen option:selected")[0].value = "SFO";
-//        $('#textOrigen').val('San Francisco (SFO), United States');
-//        $('#textDestino').val('Taipei, Taiwan Taoyuan International Airport (TPE), Taiwan');
-//
-//        $("#cmbDestino option:selected")[0].text = 'Taipei, Taiwan Taoyuan International Airport (TPE), Taiwan';
-//        $("#cmbDestino option:selected")[0].value = "TPE";
-//        $('#fechaSalida').val('09/18/2014');
-//        $('#fechaRegreso').val('09/25/2014');
+        //sample date: 9/18-9/25
 
-        //submitForm();
+        submitForm();
+      }, {
+        departure: departure,
+        arrival: arrival,
+        depTime: depTime,
+        arrTime: arrTime,
+        depCode: depCode,
+        arrCode: arrCode
       });
 
-      this.capture('filled.png');
     }]);
 
-//    spooky.waitForSelector('#aspnetForm', function() {
-//      this.echo(this.getCurrentUrl());
-//      this.capture('success.png');
-//    }, function() {
-//      this.echo("Timeout reached");
-//      this.echo(this.getCurrentUrl());
-//      this.capture('fail.png');
-//      // do something
-//    }, 150000);
+    spooky.then(function clickButton() {
+      this.capture('filled.png');
+    });
+
+    spooky.waitForSelector('#aspnetForm', function() {
+      this.emit('page.loaded',this.getHTML('html', true));
+      this.echo(this.getCurrentUrl());
+      this.capture('success.png');
+    }, function() {
+      this.echo("Timeout reached");
+      this.echo(this.getCurrentUrl());
+      this.capture('fail.png');
+      // do something
+    }, 150000);
 
     spooky.then(function() {
       this.emit('clog', 'finished');
     });
 
     spooky.run();
+  });
+
+  spooky.on('page.loaded', function (html) {
+    console.log('###############EMIT');
+    res.send(html);
+
+    fs.writeFile("public/pages/test.html", html, function(err) {
+      if(err) {
+        console.log(err);
+      } else {
+        console.log("The file was saved!");
+      }
+    });
   });
 
   spooky.on('error', function(e, stack) {
