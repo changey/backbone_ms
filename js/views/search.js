@@ -49,7 +49,7 @@ define(function(require) {
 
       $(".date").datepicker();
       
-//      this.scrape();
+      this.scrape();
       
     },
     
@@ -88,7 +88,9 @@ define(function(require) {
           console.log(response)
 
           this.scrapeHTML = response;
-          this.scrape("foo");
+          setTimeout(function(){
+            this.scrape("foo");
+          }, 3000);
 
         }, this)
       });

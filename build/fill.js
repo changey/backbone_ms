@@ -34,7 +34,7 @@ exports.search = function(req, res) {
     //spooky.viewport(1500,1500);
     spooky.then(function() {
       this.fill('#status-bar', {
-        'txtUser': 'geraldmelodia@outlook.com',
+        'txtUser': 'ramonrobles31@outlook.com',
         'username-pass': 'projectms',
         'txtPassword': 'projectms'
       }, false);
@@ -102,9 +102,9 @@ exports.search = function(req, res) {
       
       this.echo(this.getCurrentUrl());
       this.capture('success.png');
-//      this.evaluate(function() {
-//        submitForm();
-//      });
+      this.evaluate(function() {
+        submitForm();
+      });
       this.emit('page.loaded',this.getHTML('html', true));
 //      this.capture('success2.png');
     }, function() {
