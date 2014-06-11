@@ -1,33 +1,6 @@
 var phantom = require('node-phantom')
   , $ = require('jquery');
 
-//TODO: consider removing this
-exports.foo = function(req, res) {
-  phantom.create(function(err, ph) {
-    return ph.createPage(function(err, page) {
-      //var page = require('webpage').create();
-      return page.set('content', '<html><head></head><body><p>Hello</p></body></html>', function (err, status) {
-        //console.log("opened site? ", status);
-        page.includeJs('http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js', function(err) {
-          return page.evaluate(function() {
-          //jQuery Loaded.
-          //Wait for a bit for AJAX content to load on the page. Here, we are waiting 5 seconds.
-          
-            //var outputJson = JSON.stringify(output, null, ' ');
-
-            return $('p').text();
-          }, function(err, result) {
-
-            res.send(result);
-
-            ph.exit();
-          });
-        });
-      });
-    });
-  });
-}
-
 exports.load = function(req, res) {
 phantom.create(function(err, ph) {
   return ph.createPage(function(err, page) {

@@ -8,7 +8,7 @@
     "type": "git",
     "url": "git://github.com/changey/backboneboilerplate.git"
   },
-  "main": "build/server",
+  "main": "build/server.js",
   "engines": {
     "node": "~0.6.11"
   },
