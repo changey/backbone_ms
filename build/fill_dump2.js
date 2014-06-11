@@ -51,8 +51,8 @@ exports.search = function(req, res) {
     }
     
     //spooky.start('https://www.google.com');
-    //spooky.start('file:///Users/echang/Documents/aaproject_ms/backbone_ms/success_search.html');
-    spooky.start('file://localhost/Users/changey/Documents/aaproject_ms/backbone_ms/success_search.html');
+    spooky.start('file:///Users/echang/Documents/aaproject_ms/backbone_ms/success_search.html');
+    //spooky.start('file://localhost/Users/changey/Documents/aaproject_ms/backbone_ms/success_search.html');
     //spooky.viewport(1500,1500);
 
     spooky.then([{
@@ -66,17 +66,23 @@ exports.search = function(req, res) {
 
       this.emit('clog', departure);
       this.emit('clog', arrival);
-      this.evaluate(function() {
-        
-      //  $("#cmbOrigen option:selected")[0].text = 'San Francisco (SFO), United States';
-      });
+
     }]);
-    
-    
-    spooky.then(function() {
+
+    spooky.waitForSelector('#aspnetForm', function() {
+
+      this.echo(this.getCurrentUrl());
+      this.capture('success_dump.png');
+
       this.emit('page.loaded',this.getHTML('html', true));
-      
-    });
+
+    }, function() {
+      this.echo("Timeout reached");
+      this.echo(this.getCurrentUrl());
+      this.capture('fail_dump.png');
+      this.emit('page.loaded',this.getHTML('html', true));
+      // do something
+    }, 1000);
 
     spooky.then(function() {
       this.emit('clog', 'finished');

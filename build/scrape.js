@@ -1,6 +1,7 @@
 var phantom = require('node-phantom')
   , $ = require('jquery');
 
+//TODO: consider removing this
 exports.foo = function(req, res) {
   phantom.create(function(err, ph) {
     return ph.createPage(function(err, page) {

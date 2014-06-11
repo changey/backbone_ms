@@ -77,12 +77,12 @@ define(function(require) {
 
       $(".date").datepicker();
 
-      var $loading = this.$el.find('#loading');
+//      var $loading = this.$el.find('#loading');
 //      this.spinner.spin($loading[0]);
 //      $loading.fadeIn(800);
-//      setTimeout(function(){
+//      setTimeout(_.bind(function(){
 //        this.spinner.stop();
-//      }, 3000);
+//      }, this), 1000);
       
       //this.scrape();
       
@@ -123,9 +123,10 @@ define(function(require) {
           console.log(response)
 
           this.scrapeHTML = response;
+          var that = this;
           setTimeout(function(){
             console.log('triggered scrape')
-            this.scrape();
+            that.scrape();
           }, 3000);
 
         }, this)
