@@ -137,9 +137,9 @@
 			
 			//Función para cargar el ColorBox
 			function cargarBox(){
-			    var ftnumCliente = '13443670811';
-			    var aplica = 'N';
-				var term = 'Y';
+			    var ftnumCliente = '';
+			    var aplica = '';
+				var term = '';
 			    
 			    if(ftnumCliente != "" && aplica == "S"){
 			        if(term == "N"){
@@ -237,15 +237,15 @@
 		}
 	</script></head>
 	
-	<body><div id="cboxOverlay" style="display: none; "></div><div id="colorbox" class="" style="padding-bottom: 50px; padding-right: 50px; display: none; "><div id="cboxWrapper"><div><div id="cboxTopLeft" style="float: left; "></div><div id="cboxTopCenter" style="float: left; "></div><div id="cboxTopRight" style="float: left; "></div></div><div><div id="cboxMiddleLeft" style="float: left; "></div><div id="cboxContent" style="float: left; "><div id="cboxClose" class=""></div><div id="cboxLoadedContent" style="width: 0px; height: 0px; " class=""></div><div id="cboxLoadingOverlay" class=""></div><div id="cboxLoadingGraphic" class=""></div><div id="cboxTitle" class=""></div><div id="cboxCurrent" class=""></div><div id="cboxNext" class=""></div><div id="cboxPrevious" class=""></div><div id="cboxSlideshow" class=""></div></div><div id="cboxMiddleRight" style="float: left; "></div></div><div><div id="cboxBottomLeft" style="float: left; "></div><div id="cboxBottomCenter" style="float: left; "></div><div id="cboxBottomRight" style="float: left; "></div></div></div><div style="position:absolute; width:9999px; visibility:hidden; display:none"></div></div>
+	<body><div id="cboxOverlay" style="opacity: 0.7; cursor: auto; "></div><div id="colorbox" class="" style="padding-bottom: 50px; padding-right: 50px; width: 700px; height: 260px; top: 0px; left: 0px; display: block; "><div id="cboxWrapper" style="width: 750px; height: 310px; "><div><div id="cboxTopLeft" style="float: left; "></div><div id="cboxTopCenter" style="float: left; width: 700px; "></div><div id="cboxTopRight" style="float: left; "></div></div><div><div id="cboxMiddleLeft" style="float: left; height: 260px; "></div><div id="cboxContent" style="float: left; width: 700px; height: 260px; "><div id="cboxLoadedContent" style="width: 700px; overflow-x: auto; overflow-y: auto; height: 250px; "> <iframe frameborder="0" src="https://www.lifemiles.com/eng/inc/login.html?reqID=" name="1402467360150"></iframe></div><div id="cboxClose" class=""> </div><div id="cboxLoadingOverlay" class="" style="height: 260px; display: none; "></div><div id="cboxLoadingGraphic" class="" style="height: 260px; display: none; "></div><div id="cboxTitle" class="" style="display: block; "></div><div id="cboxCurrent" class="" style="display: none; "></div><div id="cboxNext" class="" style="display: none; "></div><div id="cboxPrevious" class="" style="display: none; "></div><div id="cboxSlideshow" class="" style="display: none; "></div></div><div id="cboxMiddleRight" style="float: left; height: 260px; "></div></div><div><div id="cboxBottomLeft" style="float: left; "></div><div id="cboxBottomCenter" style="float: left; width: 700px; "></div><div id="cboxBottomRight" style="float: left; "></div></div></div><div style="position: absolute; width: 9999px; visibility: hidden; display: none; "></div></div>
 		<div id="ajaxLogResp"></div>
 		<div id="top-bar">
 			<div id="logo-container"><a id="logo" href="javascript:sessionOff();"><img id="ctl00_header1_lmlogo" src="../../../images/gen/loo/loo-hp-lm-logo-white.png" style="height:79px;width:201px;border-width:0px;"></a></div>
 			<!--<form id="formcat" method="post">-->
 			<div id="secondary-menu">
 				<ul>
-					<li class="no-image"><a id="/cus/hlp/hlpcenter.aspx" href="https://www.lifemiles.com/eng/cus/hlp/hlpcenter.aspx">Help</a></li>
-					<li><a id="/cus/hlp/hlpcenter.aspx#contac" href="https://www.lifemiles.com/eng/cus/hlp/hlpcenter.aspx#contac">Contact us</a></li>
+					<li class="no-image"><a id="/cus/hlp/hlpcenter.aspx" onclick="javascript:redireccion(this);">Help</a></li>
+					<li><a id="/cus/hlp/hlpcenter.aspx#contac" onclick="javascript:redireccion(this);">Contact us</a></li>
 					<li><a href="#">Country: <span id="ctl00_header1_lblregion">International</span></a> </li>
 					<li><a href="javascript:changeLanguaje();">Español</a></li>
 				</ul>
@@ -253,7 +253,7 @@
 			<div class="top-bar">
 				<p id="codError" style="display:none"><span class="reloj-load">&nbsp;</span><span id="spError"></span><br></p>
 				<div class="login-main">
-					<div id="ctl00_header1_BarraLogin" style="display:none">
+					<div id="ctl00_header1_BarraLogin" style="display:block">
 						<div id="status-bar">
 							<div class="text-login">Login</div>
 							<input type="text" name="txtUser" id="txtUser" class="txt-search e-mail" value="LifeMiles number or username" style="width:190px; margin-right:14px;">
@@ -261,22 +261,22 @@
 							<input type="password" name="txtPassword" id="txtPassword" class="txt-search" style="display: none; ">
 							<input type="submit" class="btn-login" value="" id="botonlogin" onclick="LogIn();" name="botonlogin">
 							<div class="clear"></div>
-							<div class="forgot-pass"><a id="/cus/cnt/cntgetpas.aspx" href="https://www.lifemiles.com/eng/cus/cnt/cntgetpas.aspx"><div class="member-text">Forgot your password?</div></a></div>
-							<div class="member"><a id="/mya/myp/mypfasenr.aspx" href="https://www.lifemiles.com/eng/mya/myp/mypfasenr.aspx"><div class="member-text">Not a member yet?</div></a></div>
+							<div class="forgot-pass"><a id="/cus/cnt/cntgetpas.aspx" onclick="javascript:redireccion(this);"><div class="member-text">Forgot your password?</div></a></div>
+							<div class="member"><a id="/mya/myp/mypfasenr.aspx" onclick="javascript:redireccion(this);"><div class="member-text">Not a member yet?</div></a></div>
 						</div>
 					</div>
 				</div>
-				<div id="ctl00_header1_BarraDatos" style="display:block">
+				<div id="ctl00_header1_BarraDatos" style="display:none">
 					<div id="status-bar">
 						<div id="bar-datos">
-							<a class="hi-name">Hello, <span class="logarrow"><span id="ctl00_header1_lblName">JEFF</span></span></a>
+							<a class="hi-name">Hello, <span class="logarrow"><span id="ctl00_header1_lblName"></span></span></a>
 							<div class="clear"></div>
 							<ul>
 								<li class="bar-exit"><a id="spLogOff" class="tb-link" href="javascript:;">Exit</a></li>
 								<span id="ajaxResponseLogOff"></span>
-								<li><a id="/myb/cen/cenasc.aspx#" href="https://www.lifemiles.com/eng/myb/cen/cenasc.aspx#"><span id="ctl00_header1_lblCenit"></span></a></li>
-								<li><a id="/myb/eli/elimai.aspx#" href="https://www.lifemiles.com/eng/myb/eli/elimai.aspx#">Status: <span id="ctl00_header1_lblstatus">LifeMiles</span></a></li>
-								<li><a id="/myb/est/estmai.aspx#" href="https://www.lifemiles.com/eng/myb/est/estmai.aspx#">LifeMiles: <span id="ctl00_header1_lblmiles">0</span></a></li>
+								<li><a id="/myb/cen/cenasc.aspx#" onclick="javascript:redireccion(this);"><span id="ctl00_header1_lblCenit"></span></a></li>
+								<li><a id="/myb/eli/elimai.aspx#" onclick="javascript:redireccion(this);">Status: <span id="ctl00_header1_lblstatus"></span></a></li>
+								<li><a id="/myb/est/estmai.aspx#" onclick="javascript:redireccion(this);">LifeMiles: <span id="ctl00_header1_lblmiles"></span></a></li>
 							</ul>
 						</div>
 					</div>               
@@ -292,7 +292,7 @@
 						<div class="menu-line-div line-dv-3"></div>
 						<div class="menu-line-div line-dv-4"></div>
 						<div class="menu" id="me-1">
-							<a id="/lan/all/alldislif.aspx" class="disLM" href="https://www.lifemiles.com/eng/lan/all/alldislif.aspx">Discover LifeMiles</a>
+							<a id="/lan/all/alldislif.aspx" class="disLM" onclick="javascript:redireccion(this);">Discover LifeMiles</a>
 							<div class="sm-line-div line-dv-2"></div>
 							<div class="sm-line-div line-dv-3"></div>
 							<div class="sm-line-div line-dv-4"></div>
@@ -304,26 +304,26 @@
 								<div class="menu-hover-right"></div>
 								<div class="nlm-item-l nlm-item-border nlm-big-itm">
 									<div class="nlm-itm-ico enroll"></div>
-									<div class="nlm-itm-txt"><a id="/mya/myp/mypfasenr.aspx" href="https://www.lifemiles.com/eng/mya/myp/mypfasenr.aspx"><div class="nln-oneline">Enroll</div></a></div>
+									<div class="nlm-itm-txt"><a id="/mya/myp/mypfasenr.aspx" onclick="javascript:redireccion(this);"><div class="nln-oneline">Enroll</div></a></div>
 									<div class="clear"></div>
 								</div>
 								
 								<div class="nlm-item-c nlm-item-border nlm-big-itm">
 									<div class="nlm-itm-ico eliteprogram"></div>
-									<div class="nlm-itm-txt"><a id="/abo/wnb/wnbelitab.aspx" href="https://www.lifemiles.com/eng/abo/wnb/wnbelitab.aspx"><div class="nln-twoline">Elite<br> Program</div></a></div>
+									<div class="nlm-itm-txt"><a id="/abo/wnb/wnbelitab.aspx" onclick="javascript:redireccion(this);"><div class="nln-twoline">Elite<br> Program</div></a></div>
 								</div>
                                 <div class="nlm-item-c nlm-item-border nlm-big-itm">
 									<div class="nlm-itm-ico cenit"></div>
-									<div class="nlm-itm-txt"><a id="/abo/wnb/wnbcenit.aspx" href="https://www.lifemiles.com/eng/abo/wnb/wnbcenit.aspx"><div class="nln-oneline">Cenit</div></a></div>
+									<div class="nlm-itm-txt"><a id="/abo/wnb/wnbcenit.aspx" onclick="javascript:redireccion(this);"><div class="nln-oneline">Cenit</div></a></div>
 								</div>
 								<div class="nlm-item-c nlm-item-border nlm-big-itm">
 									<div class="nlm-itm-ico star"></div>
-									<div class="nlm-itm-txt"><a id="/use/par/parairstar.aspx" href="https://www.lifemiles.com/eng/use/par/parairstar.aspx"><div class="nln-twoline">Star <br> Alliance</div></a></div>
+									<div class="nlm-itm-txt"><a id="/use/par/parairstar.aspx" onclick="javascript:redireccion(this);"><div class="nln-twoline">Star <br> Alliance</div></a></div>
 								</div>
 								<div class="nlm-right-list nlm-big-bll">
 									<ul class="nlm-list" style="list-style:disc; padding:0 0 0 20px; text-align:left;">
-										<li><a id="/cus/faq/cusfaq.aspx" href="https://www.lifemiles.com/eng/cus/faq/cusfaq.aspx">Frequently Asked Questions</a></li>
-										<li><a id="/abo/wnb/wnbtercond.aspx" href="https://www.lifemiles.com/eng/abo/wnb/wnbtercond.aspx">Terms &amp; Conditions</a></li>
+										<li><a id="/cus/faq/cusfaq.aspx" onclick="javascript:redireccion(this);">Frequently Asked Questions</a></li>
+										<li><a id="/abo/wnb/wnbtercond.aspx" onclick="javascript:redireccion(this);">Terms &amp; Conditions</a></li>
 									</ul>
 								</div>
 							</div>
@@ -333,30 +333,30 @@
 							<div class="menu-item-shadow-rt mis-rt2"></div>
 							<div class="sm-line-div line-dv-3"></div>
 							<div class="sm-line-div line-dv-4"></div>
-							<a id="/lan/all/allyoulif.aspx" class="disLM" href="https://www.lifemiles.com/eng/lan/all/allyoulif.aspx">Your LifeMiles</a>
+							<a id="/lan/all/allyoulif.aspx" class="disLM" onclick="javascript:redireccion(this);">Your LifeMiles</a>
 							<div class="menu-hover-noshadow no-shadow2"></div>
 							<div class="display-top-bg"></div>
 							<div class="display">
 								<div class="nlm-item-c nlm-item-border nlm-big-itm">
 									<div class="nlm-itm-ico earn-enjoy"></div>
-									<div class="nlm-itm-txt"><a id="/myb/est/estmai.aspx" href="https://www.lifemiles.com/eng/myb/est/estmai.aspx"><div class="nln-twoline">Earn &amp; Enjoy<br> Activity</div></a></div>
+									<div class="nlm-itm-txt"><a id="/myb/est/estmai.aspx" onclick="javascript:redireccion(this);"><div class="nln-twoline">Earn &amp; Enjoy<br> Activity</div></a></div>
 								</div>
 								<div class="nlm-item-c nlm-item-border nlm-big-itm">
 									<div class="nlm-itm-ico information"></div>
-									<div class="nlm-itm-txt"><a id="/mya/myp/mypaccinf.aspx" href="https://www.lifemiles.com/eng/mya/myp/mypaccinf.aspx"><div class="nln-twoline">Information <br> &amp; Preferences</div></a></div>
+									<div class="nlm-itm-txt"><a id="/mya/myp/mypaccinf.aspx" onclick="javascript:redireccion(this);"><div class="nln-twoline">Information <br> &amp; Preferences</div></a></div>
 								</div>
 								<div class="nlm-item-c nlm-item-border nlm-big-itm">
 									<div class="nlm-itm-ico elitestatus"></div>
-									<div class="nlm-itm-txt"><a id="/myb/eli/elimai.aspx" href="https://www.lifemiles.com/eng/myb/eli/elimai.aspx"><div class="nln-oneline">Elite Status</div></a></div>
+									<div class="nlm-itm-txt"><a id="/myb/eli/elimai.aspx" onclick="javascript:redireccion(this);"><div class="nln-oneline">Elite Status</div></a></div>
 								</div>
 								<div class="nlm-item-c nlm-item-border nlm-big-itm">
 									<div class="nlm-itm-ico lifecards"></div>
-									<div class="nlm-itm-txt"><a id="/use/ret/rettar.aspx" href="https://www.lifemiles.com/eng/use/ret/rettar.aspx"><div class="nln-twoline">Your LifeMiles <br>Card </div></a></div>
+									<div class="nlm-itm-txt"><a id="/use/ret/rettar.aspx" onclick="javascript:redireccion(this);"><div class="nln-twoline">Your LifeMiles <br>Card </div></a></div>
 								</div>
 								<div class="nlm-right-list nlm-big-bll">
 									<ul class="nlm-list" style="list-style:disc; padding:0 0 0 20px; text-align:left; width:250px;">
-										<li><a id="/cus/hlp/hlpsolcon.aspx" href="https://www.lifemiles.com/eng/cus/hlp/hlpsolcon.aspx"> Add LM Number to a Reservation</a></li>
-										<li><a id="/cus/cnt/cntonlrec.aspx" href="https://www.lifemiles.com/eng/cus/cnt/cntonlrec.aspx">Print Receipts</a></li>
+										<li><a id="/cus/hlp/hlpsolcon.aspx" onclick="javascript:redireccion(this);"> Add LM Number to a Reservation</a></li>
+										<li><a id="/cus/cnt/cntonlrec.aspx" onclick="javascript:redireccion(this);">Print Receipts</a></li>
 									</ul>
 								</div>
 							</div>
@@ -366,50 +366,50 @@
 							<div class="menu-item-shadow-rt mis-rt3"></div>
 							<div class="sm-line-div line-dv-1"></div>
 							<div class="sm-line-div line-dv-4"></div>
-							<a id="/ear/par/parearmile.aspx" class="disLM" href="https://www.lifemiles.com/eng/ear/par/parearmile.aspx">Earn</a>
+							<a id="/ear/par/parearmile.aspx" class="disLM" onclick="javascript:redireccion(this);">Earn</a>
 							<div class="menu-hover-noshadow no-shadow3"></div>
 							<div class="display-top-bg"></div>
 							<div class="display">
 								<div class="nlm-item-c" style="width:150px;">
 									<div class="nlm-txtred" style="margin-bottom:15px;">Travel</div>
 									<div class="nlm-itm-ico airtickets"></div>
-									<div class="nlm-itm-txt"><a id="/use/par/parairparall.aspx" href="https://www.lifemiles.com/eng/use/par/parairparall.aspx"><div class="nln-oneline">Air Tickets</div></a></div>
+									<div class="nlm-itm-txt"><a id="/use/par/parairparall.aspx" onclick="javascript:redireccion(this);"><div class="nln-oneline">Air Tickets</div></a></div>
 								</div>
 								<div class="nlm-item-c nlm-item-border" style="width:120px;">
 									<div class="nlm-txtred">&nbsp;</div>
 									<div class="nlm-itm-ico-small hotels"></div>
-									<div class="nlm-itm-txt-small"><a id="/ear/par/parpardet.aspx?cat=hot" href="https://www.lifemiles.com/eng/ear/par/parpardet.aspx?cat=hot"><div class="nln-oneline-small">Hotels</div></a></div>
+									<div class="nlm-itm-txt-small"><a id="/ear/par/parpardet.aspx?cat=hot" onclick="javascript:redireccion(this);"><div class="nln-oneline-small">Hotels</div></a></div>
 									<div class="clear"></div>
 									<div class="nlm-itm-ico-small carrental"></div>
-									<div class="nlm-itm-txt-small"><a id="/ear/par/parpardet.aspx?cat=aut" href="https://www.lifemiles.com/eng/ear/par/parpardet.aspx?cat=aut"><div class="nln-oneline-small">Car Rentals</div></a></div>
+									<div class="nlm-itm-txt-small"><a id="/ear/par/parpardet.aspx?cat=aut" onclick="javascript:redireccion(this);"><div class="nln-oneline-small">Car Rentals</div></a></div>
 								</div>
 								<div class="nlm-item-c nlm-item-border" style="width:170px;">
 									<div class="nlm-txtred">Financial</div>
 									<div class="nlm-itm-ico-small creditcards"></div>
-									<div class="nlm-itm-txt-small"><a id="/use/cob/cobcobrand.aspx" href="https://www.lifemiles.com/eng/use/cob/cobcobrand.aspx"><div class="nln-oneline-small">Credit Cards</div></a></div>
+									<div class="nlm-itm-txt-small"><a id="/use/cob/cobcobrand.aspx" onclick="javascript:redireccion(this);"><div class="nln-oneline-small">Credit Cards</div></a></div>
 									<div class="clear"></div>
 									<div class="nlm-itm-ico-small other"></div>
-									<div class="nlm-itm-txt-small"><a id="/ear/par/parconvmil.aspx" href="https://www.lifemiles.com/eng/ear/par/parconvmil.aspx"><div class="nln-oneline-small">Other</div></a></div>
+									<div class="nlm-itm-txt-small"><a id="/ear/par/parconvmil.aspx" onclick="javascript:redireccion(this);"><div class="nln-oneline-small">Other</div></a></div>
 								</div>
 								<div class="nlm-item-c nlm-item-border" style="width:170px;">
 									<div class="nlm-txtred">Shop</div>
 									<div class="nlm-itm-ico-small uare"></div>
-									<div class="nlm-itm-txt-small"><a id="/ear/par/parearmile.aspx" href="https://www.lifemiles.com/eng/ear/par/parearmile.aspx"><div class="nln-oneline-small">Where you are</div></a></div>
+									<div class="nlm-itm-txt-small"><a id="/ear/par/parearmile.aspx" onclick="javascript:redireccion(this);"><div class="nln-oneline-small">Where you are</div></a></div>
 									<div class="clear"></div>
 									<div class="nlm-itm-ico-small estore"></div>
 									<div class="nlm-itm-txt-small"><a href="http://shop.lifemiles.com"><div class="nln-oneline-small">e-Store</div></a></div>
 								</div>
 								<div class="nlm-right-list nlm-big-bll">
 									<ul class="nlm-list" style="list-style:disc; padding:0 0 0 20px; margin-top:-10px; text-align:left;">
-										<li><a id="/ear/tra/traneepur.aspx" href="https://www.lifemiles.com/eng/ear/tra/traneepur.aspx">Buy LifeMiles</a></li>
-										<li><a id="/ear/ret/retsol.aspx" href="https://www.lifemiles.com/eng/ear/ret/retsol.aspx">Miles Credit Request</a></li>
-										<li><a id="/tra/pro/prospeoff.aspx#earn" href="https://www.lifemiles.com/eng/tra/pro/prospeoff.aspx#earn">Special Offers</a></li>
+										<li><a id="/ear/tra/traneepur.aspx" onclick="javascript:redireccion(this);">Buy LifeMiles</a></li>
+										<li><a id="/ear/ret/retsol.aspx" onclick="javascript:redireccion(this);">Miles Credit Request</a></li>
+										<li><a id="/tra/pro/prospeoff.aspx#earn" onclick="javascript:redireccion(this);">Special Offers</a></li>
 									</ul>
 								</div>
 							</div>
 						</div>
 						<div class="menu" id="me-4">
-							<a id="/use/par/parusemil.aspx" class="disLM" href="https://www.lifemiles.com/eng/use/par/parusemil.aspx">Enjoy</a>
+							<a id="/use/par/parusemil.aspx" class="disLM" onclick="javascript:redireccion(this);">Enjoy</a>
 							<div class="sm-line-div line-dv-1"></div>
 							<div class="sm-line-div line-dv-2"></div>
 							<div class="menu-item-shadow-lt mis-lt4"></div>
@@ -420,52 +420,52 @@
 								<div class="nlm-item-c" style="width:115px;">
 									<div class="nlm-txtred">Travel</div>
 									<div class="nlm-itm-ico-small airtickets-small"></div>
-									<div class="nlm-itm-txt-small"><a id="/use/red/dynredpar.aspx" href="https://www.lifemiles.com/eng/use/red/dynredpar.aspx"><div class="nln-oneline-small">Air Tickets</div></a></div>
+									<div class="nlm-itm-txt-small"><a id="/use/red/dynredpar.aspx" onclick="javascript:redireccion(this);"><div class="nln-oneline-small">Air Tickets</div></a></div>
 									<div class="clear"></div>
 									<div class="nlm-itm-ico-small baggage"></div>
-									<div class="nlm-itm-txt-small"><a id="/use/trb/trbmai.aspx" href="https://www.lifemiles.com/eng/use/trb/trbmai.aspx"><div class="nln-oneline-small">Baggage</div></a></div>
+									<div class="nlm-itm-txt-small"><a id="/use/trb/trbmai.aspx" onclick="javascript:redireccion(this);"><div class="nln-oneline-small">Baggage</div></a></div>
 								</div>
 								<div class="nlm-item-c" style="  width:115px;">
 									<div class="nlm-txtred" style="height:16px;"></div>
 									<div class="nlm-itm-ico-small upgrades"></div>
-									<div class="nlm-itm-txt-small"><a id="/use/trb/trbupgbus.aspx" href="https://www.lifemiles.com/eng/use/trb/trbupgbus.aspx"><div class="nln-oneline-small">Upgrades</div></a></div>
+									<div class="nlm-itm-txt-small"><a id="/use/trb/trbupgbus.aspx" onclick="javascript:redireccion(this);"><div class="nln-oneline-small">Upgrades</div></a></div>
 									<div class="clear"></div>
 									<!--<div class="nlm-itm-ico-small"><img src=../../../images/gen/ico/nlm/small/ico-lmhp-mm-vip.png /></div>
 									<div class="nlm-itm-txt-small"><a id="/use/cat/catredpro.aspx?catsho=VIP"  onclick="javascript:redireccion(this);"><div class="nln-oneline-small">VIP Lounges</div></a></div>-->
-									<div class="nlm-itm-txt-small"><a id="/use/cat/catredpro.aspx?catsho=AUT" href="https://www.lifemiles.com/eng/use/cat/catredpro.aspx?catsho=AUT"><div class="nlm-itm-ico-small carrental"></div><div class="nln-oneline-small">Car Rental</div></a></div>
+									<div class="nlm-itm-txt-small"><a id="/use/cat/catredpro.aspx?catsho=AUT" onclick="javascript:redireccion(this);"><div class="nlm-itm-ico-small carrental"></div><div class="nln-oneline-small">Car Rental</div></a></div>
 								</div>
 								<div class="nlm-item-c nlm-item-border" style=" width:115px;">
 									<div class="nlm-txtred" style="height:16px;"></div>
 									<div class="nlm-itm-ico-small hotels"></div>
-									<div class="nlm-itm-txt-small"><a id="/use/cat/cathotels.aspx" href="https://www.lifemiles.com/eng/use/cat/cathotels.aspx"><div class="nln-oneline-small">Hotels</div></a></div>
+									<div class="nlm-itm-txt-small"><a id="/use/cat/cathotels.aspx" onclick="javascript:redireccion(this);"><div class="nln-oneline-small">Hotels</div></a></div>
 									<div class="clear"></div>
-                                    <div class="nlm-itm-txt-small"><a id="/use/cat/catredhot.aspx?catsho=TOU" href="https://www.lifemiles.com/eng/use/cat/catredhot.aspx?catsho=TOU"><div class="nlm-itm-ico-small tours"></div><div class="nln-oneline-small">Tours</div></a></div>
+                                    <div class="nlm-itm-txt-small"><a id="/use/cat/catredhot.aspx?catsho=TOU" onclick="javascript:redireccion(this);"><div class="nlm-itm-ico-small tours"></div><div class="nln-oneline-small">Tours</div></a></div>
 								</div>
 								<div class="nlm-item-c nlm-item-border" style="width:320px;">
 									<div class="nlm-txtred">Others</div>
-									<div class="nlm-itm-txt-small"><a id="/use/cat/catredpro.aspx?catsho=SHO" href="https://www.lifemiles.com/eng/use/cat/catredpro.aspx?catsho=SHO">
+									<div class="nlm-itm-txt-small"><a id="/use/cat/catredpro.aspx?catsho=SHO" onclick="javascript:redireccion(this);">
 									<div class="nlm-itm-ico-small catalog"></div>
 									<div class="nlm-itm-txt-small" style="width:114px;">LifeMiles Catalog</div></a></div>
 									<div class="nlm-itm-ico-small mmore"></div>
-									<div class="nlm-itm-txt-small" style="width:124px;"><a id="/use/cat/catredhot.aspx" href="https://www.lifemiles.com/eng/use/cat/catredhot.aspx"><div class="nln-twoline-small" style="width:150px; margin-top:-4px;">Much More <br>
+									<div class="nlm-itm-txt-small" style="width:124px;"><a id="/use/cat/catredhot.aspx" onclick="javascript:redireccion(this);"><div class="nln-twoline-small" style="width:150px; margin-top:-4px;">Much More <br>
 									<div style="font-size:10px;">(Partners vary by country)</div></div></a></div>
 									<div class="clear"></div>
 									<div class="nlm-itm-ico-small musicstore"></div>
-									<div class="nlm-itm-txt-small" style="width:124px;"><a id="/use/par/parchkmus.aspx?soc=unive" href="https://www.lifemiles.com/eng/use/par/parchkmus.aspx?soc=unive"><div class="nln-twoline-small" style="width:150px;">Music Store<br>
+									<div class="nlm-itm-txt-small" style="width:124px;"><a id="/use/par/parchkmus.aspx?soc=unive" onclick="javascript:redireccion(this);"><div class="nln-twoline-small" style="width:150px;">Music Store<br>
 									</div></a></div>                      
 									<div class="clear"></div>
 								</div>
 								<div class="nlm-item-c" style="width:140px; float:left; text-align:left;">
 									<ul style="list-style:disc; padding:16px 0 0 20px; margin:0; text-align:left;">
-										<li style="padding:0 0 4px;"><a id="/ear/tra/traneetra.aspx" href="https://www.lifemiles.com/eng/ear/tra/traneetra.aspx">Transfer LifeMiles</a></li>
-										<li style="padding:0 0 4px;"><a id="/use/don/dondonmil.aspx" href="https://www.lifemiles.com/eng/use/don/dondonmil.aspx">Donate LifeMiles</a></li>
-										<li style="padding:0 0 4px;"><a id="/tra/pro/prospeoff.aspx#enjoy" href="https://www.lifemiles.com/eng/tra/pro/prospeoff.aspx#enjoy">Special Offers</a></li>
+										<li style="padding:0 0 4px;"><a id="/ear/tra/traneetra.aspx" onclick="javascript:redireccion(this);">Transfer LifeMiles</a></li>
+										<li style="padding:0 0 4px;"><a id="/use/don/dondonmil.aspx" onclick="javascript:redireccion(this);">Donate LifeMiles</a></li>
+										<li style="padding:0 0 4px;"><a id="/tra/pro/prospeoff.aspx#enjoy" onclick="javascript:redireccion(this);">Special Offers</a></li>
 									</ul>
 								</div>
 							</div>
 						</div>
 						<div class="menu" id="me-5">
-							<a id="/lan/all/alltootip.aspx" class="disLM" href="https://www.lifemiles.com/eng/lan/all/alltootip.aspx">Tools &amp; Tips</a>
+							<a id="/lan/all/alltootip.aspx" class="disLM" onclick="javascript:redireccion(this);">Tools &amp; Tips</a>
 							<div class="sm-line-div line-dv-1"></div>
 							<div class="sm-line-div line-dv-2"></div>
 							<div class="sm-line-div line-dv-3"></div>
@@ -475,7 +475,7 @@
 							<div class="display">
 								<div class="nlm-item-l nlm-item-border nlm-big-itm">
 									<div class="nlm-itm-ico tipsicon"></div>
-									<div class="nlm-itm-txt"><a id="/too/tip/tipeartip.aspx" href="https://www.lifemiles.com/eng/too/tip/tipeartip.aspx"><div class="nln-oneline">Tips</div></a></div>
+									<div class="nlm-itm-txt"><a id="/too/tip/tipeartip.aspx" onclick="javascript:redireccion(this);"><div class="nln-oneline">Tips</div></a></div>
 									<div class="clear"></div>
 								</div>
 								<div class="nlm-item-l nlm-item-border nlm-big-itm">
@@ -485,17 +485,17 @@
 								</div>
 								<div class="nlm-item-l nlm-item-border nlm-big-itm">
 									<div class="nlm-itm-ico comparison"></div>
-									<div class="nlm-itm-txt"><a id="/abo/wnb/wnbprocom.aspx" href="https://www.lifemiles.com/eng/abo/wnb/wnbprocom.aspx"><div class="nln-twoline">Program <br>Comparison</div></a></div>
+									<div class="nlm-itm-txt"><a id="/abo/wnb/wnbprocom.aspx" onclick="javascript:redireccion(this);"><div class="nln-twoline">Program <br>Comparison</div></a></div>
 									<div class="clear"></div>
 								</div>
 								<div class="nlm-item-l nlm-item-border nlm-big-itm">
 									<div class="nlm-itm-ico howto"></div>
-									<div class="nlm-itm-txt"><a id="/too/tip/tiphowenjoy.aspx" href="https://www.lifemiles.com/eng/too/tip/tiphowenjoy.aspx"><div class="nln-twoline">How to <br>Enjoy</div></a></div>
+									<div class="nlm-itm-txt"><a id="/too/tip/tiphowenjoy.aspx" onclick="javascript:redireccion(this);"><div class="nln-twoline">How to <br>Enjoy</div></a></div>
 									<div class="clear"></div>
 								</div>
 								<ul style="list-style:disc; padding:20px 0 0 35px; margin:0; float:left; text-align:left;">
-									<li style="padding:0 0 4px;"><a id="/use/mca/mcamaians.aspx" href="https://www.lifemiles.com/eng/use/mca/mcamaians.aspx">Mileage Calculator</a></li>
-									<li style="padding:0 0 5px;"><a id="/use/shc/shccontent.aspx" href="https://www.lifemiles.com/eng/use/shc/shccontent.aspx">Redemption Cart</a></li>
+									<li style="padding:0 0 4px;"><a id="/use/mca/mcamaians.aspx" onclick="javascript:redireccion(this);">Mileage Calculator</a></li>
+									<li style="padding:0 0 5px;"><a id="/use/shc/shccontent.aspx" onclick="javascript:redireccion(this);">Redemption Cart</a></li>
 								</ul>
 							</div>
 						</div>
@@ -510,807 +510,2449 @@
 <!--</form> -->
 <div class="limpiar"></div>
 <!--Termina header -->
-
-    <!--[if IE 6]>
+<link href="../../../styles/gen/styles-general.css" rel="stylesheet" type="text/css">
+  <!--[if IE 6]>  
       <link href="../../../styles/gen/styles-ie60.css" rel="stylesheet" type="text/css" media="screen" />
-    <![endif]-->
+  <![endif]-->
 <title>
-	LifeMiles
+	Air Tickets
 </title>
 <div id="col-container">
-    <!--inicio contenedor -->
-    <div id="width-wide-content">        
+    <!--inicio columna izquierda -->
+    <div id="left-col">
         
+<script type="text/javascript">
+$(document).ready(function(){
+            $("#infoLeftShoping").hide();
+            $("#seeShopCart").click(function(){
+		        
+		        $("#infoLeftShoping").slideToggle("slow");
+		        return false;              
+            });
+            $("#seeShopCartimg").click(function(){
+		        
+		        $("#infoLeftShoping").slideToggle("slow");
+		        return false;              
+            });
+});
+</script>
+<span class="left-menu-title">Most Visited</span>
+<ul>
+    <li><a href="../../lan/all/allyoulif.aspx">Your LifeMiles</a></li>
+    <li><a href="../../tra/pro/prospeoff.aspx">Special offers</a></li>
+    <li><a href="../../abo/wnb/wnbelitab.aspx">Elite program</a></li>
+    <li><a href="../../ear/par/parearmile.aspx">Earn LifeMiles</a></li>
+    <li><a href="../../use/par/parusemil.aspx">Enjoy LifeMiles</a></li>
+    <li><a href="../../ear/tra/traneetra.aspx">Need more LifeMiles</a></li>
+    <li><a href="../../cus/cnt/cntretmil.aspx">Request your non credited LifeMiles</a></li>
+    <li><a href="#" class="bgshoppingcart" id="seeShopCart">Redemption Cart <span id="ctl00_leftMenu1_cantShop" style="padding-left:45px;"></span></a><a href="#" class="imgshoppingshow2" id="seeShopCartimg">&nbsp;</a></li>
+</ul>
+<!--<div class="left-shopping-title-container">
+    <span class="left-shopping-image"></span><span class="left-shopping-number">2</span>
+    <span class="left-shopping-title">Redemption Cart</span>
+</div>-->
+<div id="infoLeftShoping" style="display: none; ">
 
-<!--[if IE 6]>
-<link href="../../../styles/gen/styles-ie60-dynamic.css" rel="stylesheet" type="text/css" media="screen" />
-<![endif]-->
+<div id="ctl00_leftMenu1_encLeftShop" class="left-shopping-title-container"></div>
+<ul>
 
-<link rel="stylesheet" href="../../../scripts/gen/scripts-styles/tooltip/sexy-tooltips/coda.css" type="text/css" media="all">
-<link href="../../../styles/gen/styles-dynamic-flights.css" rel="stylesheet" type="text/css" media="screen">
+<div id="ctl00_leftMenu1_contLeftShop"></div>
 
+    
+    
+</ul>
+</div>
+    </div>
+    <!--fin columna izquierda -->
+    <!--inicio contenedor -->
+    <div id="width-short-content">
+        <div id="content">        
+            
+
+<link type="text/css" href="../../../styles/gen/scripts-styles/calendar/jquery.ui.datepicker.css" rel="stylesheet">
+<link type="text/css" href="../../../styles/gen/scripts-styles/calendar/jquery.ui.theme.css" rel="stylesheet">
+
+
+<link type="text/css" href="../../../styles/gen/scripts-styles/forms/validationEngine.jquery.css" rel="stylesheet">
 
 <script type="text/javascript" src="../../../scripts/gen/error_eng.js"></script>
 <script type="text/javascript" src="../../../scripts/gen/dynamic/DynRedScripts.js"></script>
 
 <script type="text/javascript" src="../../../scripts/gen/dynamic/jquery-impromptu.2.7.min.js"></script>
-<script type="text/javascript" src="../../../scripts/gen/dynamic/fieldsValidations.js"></script>
 
-<script type="text/javascript" src="../../../scripts/gen/scripts-styles/tooltip/sexy-tooltips.v1.1.jquery.js"></script>
+<script type="text/javascript" src="../../../scripts/gen/scripts-styles/forms/jquery.validationEngine-eng.js"></script>
+<script type="text/javascript" src="../../../scripts/gen/scripts-styles/forms/jquery.validationEngine.js"></script>
+ 
+<script type="text/javascript" src="../../../scripts/gen/scripts-styles/calendar/jquery.ui.core.js"></script>
+<script type="text/javascript" src="../../../scripts/gen/scripts-styles/calendar/jquery.ui.widget.js"></script>
+<script type="text/javascript" src="../../../scripts/gen/scripts-styles/calendar/jquery.ui.datepicker.js"></script>
+<script type="text/javascript" src="../../../scripts/gen/scripts-styles/calendar/fn.datepicker.js"></script>
+
+
 
 <script type="text/javascript" src="../../../scripts/gen/gen_validate.js"></script>
+<script type="text/javascript" src="../../../scripts/gen/gen_cap.js"></script>
+
+
+<script type="text/javascript" src="../../../scripts/gen/scripts-styles/select/jquery.ie-select-width.js"></script>
+
+
+
+<style type="text/css">
+
+.output
+{
+	font-size: 8pt;
+	color: #505050;
+	padding-left: 3px;
+	padding-top: 3px;
+	border: 1px solid #000000;
+	width: auto !important;
+	background: #fff;
+	height: 100px;
+    overflow-x:hidden;
+    overflow-y:auto;
+    z-index:90;	
+   
+
+}
+.shadow
+{
+	width: auto !important;
+	position:relative;
+	top: 2px;
+	left: 2px;
+	background: #555;
+	z-index:90;
+	
+}
+.shadow div{
+	position:relative;
+	top: -2px;
+	left: -2px;
+	z-index:90;
+	
+}
+
+
+
+</style>
+
 
 <script type="text/javascript" language="javascript">
 
-    var vTasaCambio = parseFloat(1);
-    var vDecimalLocal = parseInt(0);
-    var vPermiteUSD = "Y";
-    //comentariamos vPermiteLocal por el momento y permitimos la multimoneda 
-    var vPermiteLocal ="N"; // vPermiteLocal = "Y";
-    var SI = "Y";
-    var NO = "N";
-    var lbUSD = "USD";
-    var lbLocal = "USD";
-    
+//variables q usamos para autocomplete
+    var airport = new Array();
+    var selecciona=true; //era false
+    var destinationc = new Array();
+    var suggestions = new Array();
+    var item;
+    var textfield;
+    var varitem;
+    var words = new Array();
+    var newArr=new Array();
+    var controlado=false;
+    var arrtempo;
+    var real;
+    var multiOn = false;
+    var Multiany_id = "OFF";
+	var wasother="ON";
+    var wasmulty="OFF";
+    var estacion="";
 
+// variables de autocomplete
+    var prueba = 1;
+    
+    var resetPartner = true;
+    var txtOrigen = "Origin";
+    var txtDestino = "Destination";
+
+    var opOrigen = "<option value=-1>"+txtOrigen+"</option>";
+    var opDestino = "<option value=-1>"+txtDestino+"</option>";
+	
+	//Variable para opciones de cmbSocae
+	var optionsSocAe = '';
+    var redir;
+     
     $(document).ready(function(){
-    
-//******* Para validar que estas dejando el flujo de DYN y borrar sesiones **********
+        //DBMMStar
+        FillSocAe();    
+        $(".dinTut").colorbox({innerWidth:950, innerHeight:650, iframe:true, scrollbar:false, overlayClose:true, href:"../../too/tut/nointro.aspx"});
 
-$('a[onclick],button[onclick]').each(function(){
+        $('select[id*=cmbSocAe]').ieSelectWidth(
+        {
+            width : 124,
+            containerClassName : 'select-container',
+            overlayClassName : 'select-overlay'
+        });
 
-var pr= (String($(this).attr('onclick')));
-
-if(pr.indexOf('redireccion(this);')!=-1){
-
-$(this).attr('href',path()+'eng'+$(this).attr('id'));
-
-$(this).removeAttr('onclick');
-
-}
-
-});
-
-$('a[onclick]').each(function(){
-
-var pr= (String($(this).attr('onclick')));
-
-if(pr.indexOf('sessionOff();')!=-1){
-
-$(this).attr('href','javascript:sessionOff();');
-
-$(this).removeAttr('onclick');
-
-}
-
-});
-
-$("#ColorboxAdabdon").colorbox({
-						innerWidth:530, 
-						innerHeight:130, 
-						inline:true,
-						href:"#ColorBoxDyn"						
-		  });
-EliminaSesionesDyn('javascript:submitForm();','btnRedir','lblmsgerr',textColorBxAbandonDyn);
-
-$('#btnRedir').click(function(){
-              $('#ajaxResponse').html('').load('../../../lib/ajax/getAbandonDyn.aspx?href='+$(this).attr("rel"));
-              });
-//******** Fin validar que estas dejando el flujo de DYN y borrar sesiones **********
-
-    cleanMasterPagePrefix();
-    
-    <!-- script collapsar filas -->           
-    $(".tbl-detail").hide();
-            
-            $(".tbl-collapse").click(function(){
-				$(this).nextUntil(".tbl-collapse", "tr.tbl-detail").toggle();
-    $(this).find(".arrow").toggleClass("up");
-            }); 
-        
-    $("#tblODs :radio:checked:").click();
-
-	aplicarMultimoneda("Y");
-   
-    $('[id^="link"]').each(function(){
-        var info = $(this).attr('info');
-        $(this).tooltip(info, {width:250, style: 'alert', sticky: 0, hook: 1});
-    });
-      
-    $('[id^="link"]').mouseout(function(){
-       $(".sexy-tooltip").css("display","none");        
-      }); 
+        //var ftnumSession;
+	    //ftnumSession = parseFloat('');
+        //if (isNaN(ftnumSession))
+        //{
+        //    validaLogInEng($('#Colorbox'),"true",'');      
+        //}
+               
+        cleanMasterPagePrefix(); 
+ 
+        //************ agregado 250711 **************
          
-    });
-  
+         if ($('#cmbOrigen1').attr('value') != "-1") //si origen1 de multiciudad tiene valor
+         {
+            $('#itiTypeMulti').attr('checked','true'); //se checkea el multicity
+            changeParameters()
+         }
+         else // si origen de multiciudad no tiene valor
+         {
+            if ($('#fechaRegreso').attr('value') != "") //si fecha regreso tiene valor
+            {
+				$('#itiTypeRoundTrip').attr('checked','true'); // se chekea el roundtrip
+                changeParameters()
+            } 
+           else // si combodestino no tiene valor
+            {
+                if ($('#fechaSalida').attr('value') == "") // si fecha salida tampoco tiene valor
+				{
+					$('#itiTypeRoundTrip').attr('checked','true'); // se chekea el roundtrip (lo que sería la acción por default)
+					changeParameters()
+				}
+				else // si solo el destino no tiene valor, pero el origen si!
+				{
+					$('#itiTypeOneWay').attr('checked','true'); //se checkea el OneWay
+					changeParameters()
+				}
+            }
+        }
+        
+        //************ fin agregado 250711 **************
+
+        var btn ='../../../images/gen/btn/btn-calendar.gif';
+
+        iniDatePicker('#fechaSalida',btn,"button",true,0);
+        iniDatePicker('#fechaRegreso',btn,"button",true,0);
+
+        for(var i=1;i<=8;i++){    
+        iniDatePicker('#fechaSalida'+ i,btn,"button",true,0);
+        }           
+
+         $("#requirementsform").validationEngine(); 				
+
+        clearByPromotionChk();
+        
+       ShowHideButtons();
+        
+        $('#cmbSocAe').change(function(){
+            combosmultiANY();
+            LoadODs();
+            if ($("#cmbSocAe option:selected").val() == "2K" || $("#cmbSocAe option:selected").val() == "IB"){
+                
+                if ($('#itiTypeMulti').attr('checked') || $('#itiTypeOneWay').attr('checked') ){
+    	            $('#itiTypeRoundTrip').attr('checked','true'); 
+                    changeParameters()
+    	      }   
+            
+            }
+        });
+        
+        $('#cmbOrigen').change(function(){
+			//DBMMStar
+            PartnerDet();
+        });
+        
+        $('#cmbDestino').change(function(){
+			//DBMMStar
+            PartnerDet();
+        });
+
+    }); //FinDocumentReady
     
-     function cleanMasterPagePrefix(){	
+    //DBMMStar
+    function FillSocAe(){
+        $('#cmbSocAe option').empty();
+        $.ajax({
+            url: "dynredparsocae.aspx?accion=SocAe",
+            success: function(Resp){
+                                        Resp=Resp.replace('---*Selecciona*Select|','---*Búsqueda Inteligente-múltiples aerolíneas*Smart Search (multiple airlines)|');
+										optionsSocAe = Resp;													
+                                        var arr = Resp.split("|");
+                                        var i = 0;
+                                        for(i = 0; i < arr.length-1; i++){
+                                            var socios = arr[i].split("*");
+                                            //$('#cmbSocAe').append( "<option value=" + socios[0] + ">" + socios[1] + "</option>");
+                                            if (i >= 3){
+                                                $('#cmbSocAe').append("<option disabled>―――――――――――――――――――</option>");
+                                                document.getElementById("cmbSocAe").options[i+1]=new Option(socios[2],socios[0]); //2 en inglés
+                                            }else{
+                                                document.getElementById("cmbSocAe").options[i]=new Option(socios[2],socios[0]); //2 en inglés
+                                            }
+                                        }
+                                        //$("#cmbSocAe option[value='SQ']").remove();
+                                        $("#cmbSocAe option[0]").attr('selected','selected');                                        
+                                        LoadODs();
+                                    }                                    
+         });         
+    }
+   
+function ShowHideButtons (){
+        var vSocio = $("#cmbSocAe option:selected").val();
+		detCabin(vSocio);
+		
+        if (vSocio == 'AV' || vSocio == 'TA' || vSocio == 'LR'){
+              $("#radPrice").attr('style','display:block');//.show();
+    	      //Flujo por itin temporalmente deshabilitado
+              //$("#radDate").attr('style','display:block');//.show();
+              $("#addflights").attr('style','display:block');
+
+    	      multiOn = true;
+    	      Multiany_id="OFF";
+            }
+            else{
+			  //Multiany_id="ON";
+              $("#radPrice").attr('style','display:none');//.hide();
+    	      //Flujo por itin temporalmente deshabilitado
+              //$("#radDate").attr('style','display:none');//.hide();
+              $("#addflights").attr('style','display:none');
+    	      $("#labelMulti").attr('style','display:none');//.hide();
+    	      multiOn = false;
+            }
+            
+            if (vSocio == '2K'){
+				Multiany_id="OFF";
+                $("#labelOW").show();		
+				$("#cabId").attr('style','display:none');//.hide();
+				
+				document.getElementById("CmbPaxNum").options.length = 0;
+				for (i=1; i<7; i++){
+                    document.getElementById("CmbPaxNum").options[i-1]=new Option(i,i);
+                }
+
+                $('#horaSalida').hide();
+                $('#horaRegreso').hide();             
+            }else{
+                if (vSocio == 'IB')
+                {
+                    Multiany_id="OFF";
+			    	$("#labelMulti").attr('style','display:none');
+			    	$("#labelOW").attr('style','display:none');
+			    	
+			    	$("#cabId").attr('style','display:block');//.show();
+				
+			    	document.getElementById("CmbPaxNum").options.length = 0;
+			    	for (i=1; i<9; i++){
+                        document.getElementById("CmbPaxNum").options[i-1]=new Option(i,i);
+                    }
+			    	
+			    	$('#horaSalida').show();
+                    $('#horaRegreso').show();
+                }
+                else
+                {				
+                    $("#labelMulti").show();//attr('style','display:none');//.hide();
+                    $("#labelOW").show();
+                    
+                    $("#cabId").attr('style','display:block');//.show();
+                    
+                    document.getElementById("CmbPaxNum").options.length = 0;
+                    for (i=1; i<9; i++){
+                        document.getElementById("CmbPaxNum").options[i-1]=new Option(i,i);
+                    }
+
+                    $('#horaSalida').show();
+                    $('#horaRegreso').show();
+                }
+            }
+    }
+	
+	function detCabin(vSocio)
+	{
+		if (vSocio == 'AV' || vSocio == 'TA' || vSocio == 'LR' || vSocio == 'IB' || vSocio == 'AM'){
+			document.getElementById("cmbCabin").options.length = 0;
+			document.getElementById("cmbCabin").options[0]=new Option("Economy Class","Y");
+			if (vSocio != 'AM'){
+				document.getElementById("cmbCabin").options[1]=new Option("Business Class","C");
+            }
+		}
+		else{
+			document.getElementById("cmbCabin").options.length = 0;
+			document.getElementById("cmbCabin").options[0]=new Option("Economy Class","Y");
+			document.getElementById("cmbCabin").options[1]=new Option("Business Class","C");
+			document.getElementById("cmbCabin").options[2]=new Option("First Class","F");
+		}
+	}	
+		  
+    function LoadODs(Ori,Dest,TOri,TDest){
+
+        var vSocio = $("#cmbSocAe option:selected").val();
+
+          ShowHideButtons();
+
+        //if (vSocio != '---' || vSocio != 'All'){
+            
+            $.ajax({
+            url: "dynredparsocae.aspx?accion=fill&socio="+vSocio+"&bus=N",
+            success: function(Resp){ 
+                                    fillSelect(Resp);
+                                    
+                                    for (var x = 0; x < airport.length - 1; x++){
+                                        if (airport[x] == Ori){
+                                            TOri = destinationc[x-1];    
+                                        }
+                                        if (airport[x] == Dest){
+                                            TDest = destinationc[x-1];    
+                                        }
+                                    }
+                                    
+                                    Ori = typeof Ori != "undefined" ? $('#cmbOrigen').append("<option value="+ Ori + " selected='" + "selected" + "' >" + TOri + "</option>"): $("#cmbOrigen option[0]").attr('selected','selected');
+                                    Dest = typeof Dest != "undefined" ? $('#cmbDestino').append("<option value="+ Dest + " selected='" + "selected" + "' >" + TDest + "</option>"): $("#cmbDestino option[0]").attr('selected','selected');                                    
+									var ciudadOri= $("#cmbOrigen option:selected").text();
+                                    var ciudadDest= $("#cmbDestino option:selected").text();
+                                    $("#textOrigen").attr('value',ciudadOri);
+                                    $("#textDestino").attr('value',ciudadDest);
+                                    }
+            });
+        //}else{
+            //clearODs();
+        //}
+        $("#hidCSocio").val(vSocio);
+    }
+    
+   function PartnerDet(){
+        var vSocio = $("#cmbSocAe option:selected").val();
+        if (resetPartner){                    
+            var Ori = $("#cmbOrigen option:selected").val();
+            var Dest = $("#cmbDestino option:selected").val();
+            var TOri = $("#cmbOrigen option:selected").text();
+            var TDest = $("#cmbDestino option:selected").text();
+            if (Ori != "-1" & Dest != "-1" & vSocio == "---"){
+                $.ajax({
+                        url: "dynredparsocae.aspx?accion=det&ori="+ Ori +"&dest="+ Dest + "&SocAe=" + $("#cmbSocAe option:selected").val(),
+                        success: function(Resp)
+                                 { 
+                                    //$("#cmbSocAe option[value='" +Resp+ "']").attr('selected',true);
+                                    //ShowHideButtons();
+                                    $("#hidCSocio").attr('value',Resp);
+                                    resetPartner = true;
+                                 }
+                        });
+            }
+        }
+    }
+
+    function fillSelect(Value){
+        arrtempo=Value;
+        //limpiando
+        $('#cmbOrigen option').remove(); 
+        $('#cmbDestino option').remove();
+            
+        //variables autocomplete
+        document.getElementById("hidlength").value="";
+        document.getElementById("shadow").style.visibility="hidden";
+        controlado=true;
+        document.getElementById("hidinput").value=""; 
+
+        destinationc=[];
+        suggestions=[];
+        airport=[];
+        words=[];
+        newArr=[];
+
+
+        var y=0;
+        var n=0;
+
+		var opciones = "";
+        var arr = Value.split("|");
+        var opcion;
+        var opcion2;
+        //llenando el combobox
+
+        i=1;
+        for(i = 1; i < arr.length - 1; i++){
+            opcion = arr[i].split("*");
+
+            airport[i]=opcion[0];//opcion[0];
+            
+            //opcion[1]; Cambiar en caso de inglés: opcion[2]
+            destinationc[i] = typeof opcion[2] != "undefined" ? opcion[2] : airport[i];
+
+        }
+        //clonando el combobox
+        $('#cmbOrigen option').remove(); 
+        $('#cmbDestino option').remove();
+		
+		j=1; 
+		for(j=1;j<9;j++){
+            $('#cmbOrigen'+j+' option').remove();
+            $('#cmbDestino'+j+' option').remove();
+        } 
+		
+		//DBMMStar
+		$('#cmbOrigen').append( '<option selected="selected" value=-1>'+txtOrigen+'</option>');
+        $('#cmbDestino').append('<option selected="selected" value=-1>'+txtDestino+'</option>');
+		
+		j=1;
+		//DBMM
+        for(j=1;j<9;j++){
+            $('#cmbOrigen option').clone().appendTo("#cmbOrigen"+j);
+            $('#cmbDestino option').clone().appendTo("#cmbDestino"+j);
+        }
+
+            y=0;
+             
+            var cantbox;
+            cantbox=document.getElementsByName('text'); 
+            
+            
+            if(arr.length > 2){
+                 suggestions=destinationc.slice(1);
+            airport=airport.slice(1);
+       
+            document.getElementById("textOrigen").value=txtOrigen;
+            document.getElementById("textOrigen").disabled=false;
+            document.getElementById("textDestino").value=txtDestino;
+            document.getElementById("textDestino").disabled=false;
+            
+			j=1;
+			//OJODBMM
+			if(multiOn == true){
+                for(j=1;j<9;j++){
+                    document.getElementById("textOrigen"+j).value=txtOrigen;
+                    document.getElementById("textOrigen"+j).disabled=false;
+                
+                    document.getElementById("textDestino"+j).value=txtDestino;
+                    document.getElementById("textDestino"+j).disabled=false;                
+                } 
+              }            
+//            suggestions.sort ( compareStringLengths );
+//            document.getElementById("hidlength").value=suggestions[0];             
+            }
+        else {
+            suggestions=[];
+            newArr=[];
+            airport=[];
+        
+            document.getElementById("textOrigen").value=txtOrigen;
+            document.getElementById("textOrigen").disabled=true;
+            document.getElementById("textDestino").value=txtDestino;
+            document.getElementById("textDestino").disabled=true;        
+			
+            j=1;
+            for(j=1;j<9;j++){
+                document.getElementById("textOrigen"+j).value=txtOrigen;
+                document.getElementById("textOrigen"+j).disabled=true;
+            
+                document.getElementById("textDestino"+j).value=txtDestino;
+                document.getElementById("textDestino"+j).disabled=true;            
+            } 
+          }
+    }
+      
+    	
+	function detOptions(optionsSocAe, optVal, showHid){
+		
+		var selectedSoc = $("#cmbSocAe option:selected").val();		
+		document.getElementById('cmbSocAe').options.length = 0;
+		$('#cmbSocAe option').empty();
+		var arr = optionsSocAe.split("|");
+		var i = 0;
+		for(i = 0; i < arr.length-1; i++){
+			var socios = arr[i].split("*");
+			if(!(showHid=='H' && socios[0] == optVal)){
+				if (i >= 3){
+					$('#cmbSocAe').append("<option disabled>―――――――――――――――――――</option>");
+					document.getElementById("cmbSocAe").options[i+1]=new Option(socios[2],socios[0]); //2 en inglés
+				}else{
+					document.getElementById("cmbSocAe").options[i]=new Option(socios[2],socios[0]); //2 en inglés
+				}
+			}else{
+				var removedOption = i;
+			}
+		}
+		if (showHid == 'H'){
+			document.getElementById('cmbSocAe').remove(removedOption);
+		}
+		$("#cmbSocAe option[value='" + selectedSoc + "']").attr("selected","selected");
+	}
+	
+            
+    function chkODs(obj){
+    var indice = obj.id.substr(obj.id.length - 1,1);
+    }
+    function promoClick(){
+    $('.promo-search-button').click();
+    }
+    
+    
+    function promoBox(){
+        $(".promo-search-button").colorbox({width:"450px",height:"170px" , inline:true, href:"#promo-code-search", scrolling: false,onComplete: function(){
+        $('.promo-search-button').attr('checked','true');
+        $('#promoCode').focus();
+        }}); 
+    }
+    
+    function Origen()
+        {
+        if (($('#cmbOrigen').attr('selectedIndex')== $('#cmbDestino').attr('selectedIndex'))&&($('#cmbOrigen').attr('selectedIndex')!=0))
+        {
+            $('#cmbOrigen').attr('selectedIndex',0);
+            $.validationEngine.buildPrompt('#cmbOrigen',err259);
+			$.validationEngine.buildPrompt('#textOrigen',err259);
+        }
+        else
+        {
+            $.validationEngine.closePrompt('#cmbOrigen');
+			$.validationEngine.closePrompt('#textOrigen');
+        }
+        for(var i=1;i<8;i++)
+        {
+        if (($('#cmbOrigen' + i).attr('selectedIndex')== $('#cmbDestino' + i).attr('selectedIndex'))&&($('#cmbOrigen' + i).attr('selectedIndex')!=0))
+        {
+            $('#cmbOrigen' + i).attr('selectedIndex',0);
+            $.validationEngine.buildPrompt('#cmbOrigen'+i,err259);
+			$.validationEngine.buildPrompt('#textOrigen'+i,err259);
+            break;
+        }
+        else
+        {
+            $.validationEngine.closePrompt('#cmbOrigen'+i);
+			$.validationEngine.closePrompt('#textOrigen'+i);
+        }
+        }
+    }
+
+    function Destino()
+    {
+        if (($('#cmbOrigen').attr('selectedIndex')== $('#cmbDestino').attr('selectedIndex'))&&($('#cmbOrigen').attr('selectedIndex')!=0)){
+            $('#cmbDestino').attr('selectedIndex',0);
+            $.validationEngine.buildPrompt('#cmbDestino',err259);
+			$.validationEngine.buildPrompt('#textDestino',err259);
+        }
+        else{
+            $.validationEngine.closePrompt('#cmbDestino');
+			$.validationEngine.closePrompt('#textDestino');
+        }
+        for(var i=1;i<8;i++)
+        {
+        if (($('#cmbOrigen' + i).attr('selectedIndex')== $('#cmbDestino' + i).attr('selectedIndex'))&&($('#cmbOrigen' + i).attr('selectedIndex')!=0))
+        {
+            $('#cmbDestino' + i).attr('selectedIndex',0);
+            $.validationEngine.buildPrompt('#cmbDestino'+i,err259);
+			$.validationEngine.buildPrompt('#textDestino'+i,err259);
+            break;
+        }
+        else
+        {
+            $.validationEngine.closePrompt('#cmbDestino'+i);
+			$.validationEngine.closePrompt('#textDestino'+i);
+        }
+        }
+        }
+
+        
+        function alertBox(errTxt, divOp){
+            divOp = typeof divOp != "undefined" ? divOp : 1 ;
+                if(divOp == 1){
+                $.colorbox({width:"400px",height:"150px" , inline:true, href:"#errDiv", scrolling: false});
+                $('#txtError').text(errTxt);
+            }
+
+            if(divOp == 2){
+                $.colorbox({width:"450px",height:"170px" , inline:true, href:"#submitDiv", scrolling: false, escKey:true});
+                $('#msgBox').text(errTxt);
+            }
+            
+            if (divOp == 3){
+                $.colorbox({width:"500px",height:"170px" , inline:true, href:"#errDiv", scrolling: false});
+                $('#txtError').text(errTxt);
+            } 
+            
+            if (divOp == 4){
+                $.colorbox({width:"550px",height:"260px" , inline:true, href:"#captchaDiv", scrolling: false});
+                $('#txtError').text(errTxt);
+                RefreshImage('par');
+            } 
+        }
+    
+   var lang='eng';
+   
+   function cleanMasterPagePrefix(){	
         var prefixId = "ctl00_cphContent_";
         var prefixName = "ctl00$cphContent$";
         $('[id^="'+prefixId+'"]').each(function(){
             var stringId = $(this).attr('id'); 
             $(this).attr('id',stringId.replace("ctl00_cphContent_",""));
-        })      
+        })             
         $('[name^="'+prefixName+'"]').each(function(){
             var stringId = $(this).attr('name'); 
             $(this).attr('name',stringId.replace("ctl00$cphContent$",""));
         })	
     }
-           
-    function submitForm(){
     
+ function submitForm(){
+        redir = "";
         var ftnumSession;
-	    ftnumSession = parseFloat('13443670811');
-        if (isNaN(ftnumSession))
-        {
-			$('#hidRedir').attr('value','Y');
-            validaLogInEng($('#Colorbox'),"true",'');      
+	    ftnumSession = parseFloat('');
+            
+        if (isNaN(ftnumSession) && $("#hidCSocio").val() != 'AV' && $("#hidCSocio").val() != 'TA' && $("#hidCSocio").val() != '2K' && $("#hidCSocio").val() != 'AM' && $("#hidCSocio").val() != "IB"){ 
+            $('#hidRedir').attr('value','Y');
+            validaLogInEng($('#Colorbox'),"true",'');
         }
         else
         {
-            //$("#divSubmitOn").attr('style','display:none');
-            //$("#divSubmitOff").attr('style','display:');   
-            document.getElementById("reqinf_form").submit();
-        }           
-
+            chkCntCap('par','eng',redir);
+        }
     }
     
+/*------------*/
     function aceptar()
     {  
-        if ($('#hidRedir').val()== 'Y'){	
-        document.getElementById("reqinf_form").submit();
+        if ($('#hidRedir').val()== 'Y'){
+            cargarBoxAjax();
+            //chkCntCap();
+            //document.getElementById('requirementsform').submit();
+            //$("#divSubmitOn").attr('style','display:none');
+            //$("#divSubmitOff").attr('style','display:');
         }else{
-            window.location.href =window.location.href.toLowerCase().replace('http', 'http');				
-		}	
+            window.location.href =window.location.href.toLowerCase().replace('http', 'http');
+        }
     }
  
     function aceptarLogin()
     {  
-        if ($('#hidRedir').val()== 'Y'){	
-        document.getElementById("reqinf_form").submit();
+        if ($('#hidRedir').val()== 'Y'){
+            //chkCntCap();
+            //document.getElementById('requirementsform').submit();
+            //$("#divSubmitOn").attr('style','display:none');
+            //$("#divSubmitOff").attr('style','display:');
         }else{
-            window.location.href =window.location.href.toLowerCase().replace('http', 'http');        
-        }		
+            //window.location.href =window.location.href.toLowerCase().replace('http', 'http');        
+        }
     }
         
     function cerrarIng()
     {
-        $('#hidRedir').attr('value','N');	
+        $('#hidRedir').attr('value','N');    
         $.fn.colorbox.close();
     }
-    
-    function alertBox(errTxt, errTxt2, errTxt3, divOp){
-	if(divOp == 1){
-        $.colorbox({width:"350px",height:"150px"  , inline:true, href:"#errDiv", scrolling: false, escKey:true});
-        $('#txtError').text(errTxt);
-    }     
-     if(divOp == 2){
-        $.colorbox({width:"450px",height:"170px" , inline:true, href:"#submitDiv", scrolling: false, escKey:true});
-        $('#msgBox').text(errTxt);
-     }
-     if(divOp == 3){
-        if (errTxt2 == "")
-        {
-            $.colorbox({width:"450px",height:"180px" , inline:true, href:"#alertDiv", scrolling: false, escKey:true});
-            $('#li2').hide();
-        }else{
-            $.colorbox({width:"475px",height:"235px" , inline:true, href:"#alertDiv", scrolling: false, escKey:true});
-            $('#li2').show();
-            $('#li2').text(errTxt2);
+     
+	function goForm(){
+        var contador = 0;
+        var Soc = $("#hidCSocio").val();
+        var existe = true;
+        if ($('#itiTypeMulti').attr('checked')){
+            for(var i=1;i<=8;i++){
+                contador += 1;
+                if (document.getElementById('multi'+i).style.display !='none'){
+                    var Ori = $("#cmbOrigen"+i + " option:selected").val();
+                    var Dest = $("#cmbDestino"+ i + " option:selected").val();
+                    $.ajax({
+                        url: "dynredparsocae.aspx?accion=exists&ori="+ Ori +"&dest="+ Dest + "&SocAe=" + Soc,
+                        success: (function(Resp){ 
+                            if (Resp == "S" && existe == true){
+                                existe= true;
+                            }
+                            else{
+                                existe = false;
+                            }
+                        }) 
+                    });
+                }				
+            }
+            if (contador == 8){
+                if (existe){
+                    submitForm();
+                    //document.getElementById('requirementsform').submit();
+                    //$("#divSubmitOn").attr('style','display:none');
+                    //$("#divSubmitOff").attr('style','display:');
+                }
+                else{
+                   alertBox("The itinerary you are searching for is not available at this moment. If you chose a specific airline for your search, please try with another one or don’t select any to broaden your flight options.", 3);
+                }
+            }
         }
-        $('#li1').text(errTxt);
-        $('#text').text(errTxt3);
-     } 
-    }
-    
-    function updResume(rowId){
-        var od  = rowId.substring(rowId.indexOf("F") + 1,rowId.indexOf("_"));
-        var tds = $('#'+ rowId + ' td');
-        var info;
-        for(var i = 0; i < tds.length - 1 ; i++){
-            switch (i){
-                case 1:
-                    info = $(tds[i]).text();
-                    $('#flightOD'+ od).text(info);
-                break
-                case 2:
-                    info = $(tds[i]).text();                 
-                    $('#DepartOD'+ od).text(info.substring(info.length-5,info.length));
-                break
-                case 3:
-                    info = $(tds[i]).text();
-                    $('#arriveOD'+ od).text(info.substring(info.length-5,info.length));
-                break
-                case 6:
-                    info = $(tds[i]).text();
-                    $('#cabinOD'+ od).text(info);
-                break
+        
+        else{
+            //Si se determina que es Iberia y OW, convierte el socio a Star Alliance
+            if ( (Soc == 'IB') &&  $('#itiTypeOneWay').attr('checked') ){
+                Soc = 'SS';
+                $("#hidCSocio").attr('value',Soc);
             }
-            }      
-	}
-
-//---------------------------------------------------------------------------------------------------------    
-	function movePayment(opcion){
-	
-        var vCash = parseFloat(0);
-		moveMiles(opcion,"miles2");
-		
-		////Si el movimiento no era válido los volvemos a poner como estaba antes
-		if (! validateMilesMovement("miles2","hidRealMiles")) {
-			 moveMiles(opcion=="+" ? "-" : "+", "miles2");
-		}
-		
-		updMoney("cash","miles2","hidRealMiles","hidPromoCash");
-		vCash = parseFloat(document.getElementById("cash").value.replace(/\$|\,/g,''));
-		document.getElementById("cashLocal").value = formatNumber(vTasaCambio*vCash,vDecimalLocal);
-		
-	}
-
-    function calculateMoney (ctrl){	
-        var index=ctrl.selectedIndex;
-        document.getElementById("comboCash").selectedIndex=index;
-        document.getElementById("comboSlider").selectedIndex=index;
-	}
-    
-    function validarForm(){
-        var ctrls = document.getElementsByTagName("input");
-        for (var ctrl=0;ctrl<ctrls.length;ctrl++)
-        {
-        if(ctrls[ctrl].getAttribute("type")=="radio")
-            if (!validarRadioButton(ctrls[ctrl].name)){
-                alertBox(err266,"","",1);
-                return false;                    
+			//Si se determina que es Aeromexico y cabina diferente de economica, convierte el socio a Star Alliance
+            if ( (Soc == 'AM') &&  document.getElementById("cmbCabin").value != "Y" ){
+                Soc = 'SS';
+                $("#hidCSocio").attr('value',Soc);
             }
-        }        
-        //document.getElementById("botones").style.display="none";
-		
-		 //Evalua paradas mayor a 2
+
+            var Ori = $("#cmbOrigen option:selected").val();
+            var Dest = $("#cmbDestino option:selected").val();
+            $.ajax({
+                url: "dynredparsocae.aspx?accion=exists&ori="+ Ori +"&dest="+ Dest + "&SocAe=" + Soc,
+                success: (function(Resp){ 
+                            if (Resp == "S" && existe == true){
+                                submitForm();
+                                //document.getElementById('requirementsform').submit();
+                                //$("#divSubmitOn").attr('style','display:none');
+                                //$("#divSubmitOff").attr('style','display:');
+                            }
+                            else{
+                                alertBox("The itinerary you are searching for is not available at this moment. If you chose a specific airline for your search, please try with another one or don’t select any to broaden your flight options.", 3);
+                            }
+                        })
+                    });
+        }
+
+    } 
+       function clearValidate(){
+        $.validationEngine.closePrompt(".formError",true);
+    } 
     
-        var tds ;
-        var tdsVuelo ;
-        var ori="";
-        var dest="";
-        var oldOri="";
-        var oldDest="";
-        var multiAirports = false;
-	    var ban ;
-	    var cont;
-	    var msg1 = "";
-	    var msg2 = "";
-	    var idtr = "";
-	    var contDiff = 0;
-	    var cityDiff = "";
-	    
-	     for (var i=0; i<8; i++){
-	        cont = $("[id^='F"+i+"_']").size();
-	            for(var j=1; j<=cont; j++){
-	                tds = $('#F'+i+'_'+j+' td');
-                    idtr = "F"+i+"_"+j;
-	                //var ff = $(tds[0]).text();
-	                //alert(ff);
-	              if($(tds[0]).children('span').children('input').attr('checked')){
-					 ban = $(tds[1]).text();
-					 //alert(ban);
-					 if($('tr[id^='+idtr+']').size() >= 4){
-					    
-					    msg1 = "Note that your itinerary has two or more connecting flights.";
-					    var indic = 0;         
-					    for (var n=0; n< $('tr[id="' + idtr + '"][class*="tbl-detail"]').length; n++)
-					    {
-					        //tdsVuelo = $('#F'+i+'_'+j+'_'+n+' td');
-					        tdsVuelo = $('tr[id="' + idtr + '"][class*="tbl-detail"] td');
-					        ori = $(tdsVuelo[2+indic]).text();
-					        ori = ori.substring(0,ori.length-6);
-					        dest = $(tdsVuelo[3+indic]).text();
-					        dest = dest.substring(0,dest.length-6);
-					        
-					        if (ori != oldDest & oldDest !="" & ori !="")
-					        {
-					            cityDiff = oldDest;
-					            multiAirports = true;
-					            //break;
-					            contDiff += 1;
-					        }
-					        
-                            oldOri = ori;
-                            oldDest = dest;
-                            indic += 8;
-					    }
-					    ori="";
-					    dest="";
-					    
-						
-					}
-				}
-			}           
-	     }
-		
-        if (multiAirports){
-			if (contDiff == 1){
-				msg2 = "The itinerary you have chosen has a change of airport on one of its connecting cities. " +
-                       "If you would like to continue with this itinerary, click continue. "+
-                       "If you would like to review or change your itinerary, press review.";
-			}else{
-				msg2 = "The itinerary you have chosen has a change of airport on one of its connecting cities. " +
-				       "If you would like to continue with this itinerary, click continue. "+
-				       "If you would like to review or change your itinerary, press review.";
-			}
-				
-		}
-		
-		
-		if (msg1 != ""){
-		    if (!alertBox(msg1,msg2,"If you agree press continue.",3)){
-			    return false;
-		    }
-		    else{
-		        aceptar();
-		    }
-		}
-		
+    function clear(){
+       $(".form-rows").children('div').children('p').children('span').children('input,select').val('')
+    }      
+
+    function alertValidation(){    
+        var destination = $(".formError:not('.greenPopup'):first").offset().top;
+		$(".formError:not('.greenPopup')").each(function(){
+			testDestination = $(this).offset().top;
+			if(destination>testDestination) destination = $(this).offset().top;
+		})
+		$("html:not(:animated),body:not(:animated)").animate({ scrollTop: destination}, 1100);
+    }  
 
 
-        return true;
+
+//-----------------------------------------------------------------------------------------------------------
+    function clearByPromotionChk(){
+        $('#typByPrice').attr('checked','true');
     }
     	
+	function doSubmitPromo(goSubmit,container,form){
+		if (goSubmit){
+			an = container.children('#promoCode');
+			if(form.promoCode == ""){
+				an.css("border","solid #ff0000 1px");
+				an.focus();
+				return false;
+			}
+			window.location.href = 'loggprom.aspx?cp=' +  form.promoCode;
+			return true;
+		}
+	}
+	
+	function searchPromo(){
+		var msg =   "Please enter your promotional code to search: &nbsp;&nbsp;&nbsp;";
+		msg = msg + "<input type='text' style='border:solid #999999 1px' id='promoCode'name='promoCode' value='' maxlength='6' size='6' ";
+		msg = msg + "onblur='upper(this)' ";
+		msg = msg + "onkeypress='return alpha(event,letters+numbers)'/>";
+		$.prompt(msg,{callback:clearByPromotionChk,submit:doSubmitPromo, buttons: { Search:true,Cancel:false } });
+		$('#promoCode').focus();
+	}
+	
+    function searchPromoCode(){
+        if($('#promoCode').val()){
+            window.location = 'loggprom.aspx?cp=' +  $('#promoCode').val();
+        }
+    }
+    
+    function addRetdays(overwrite){
+		overwrite = typeof formato != "undefined" ? formato : true;
+		if ( $('#itiTypeRoundTrip').attr('checked')){
+			if ($('#fechaRegreso').val()!="" && !overwrite)
+				return;
+			var daysToAdd=7;
+			var sal=$('#fechaSalida').val();
+			var regreso = new Date(sal.split('/')[2],
+								  sal.split('/')[0]-1,
+								  sal.split('/')[1]
+								 )
+			regreso.setDate(regreso.getDate()+daysToAdd);
+			$('#fechaRegreso').val(dateFormat(regreso,'mm/dd/yyyy'));
+		}
+	}
+		
+	function chkRemoveDate(e,input){
+		if (e.keyCode==8 || e.keyCode==46) {
+			input.value='';
+		}
+	}
+	      
+      //esto es para que la función dateFormat del archivo DynRedScripts.js funcione bien
+	var arrMonthNames = new Array('January','February','March','April','May','June','July','August','September','October','November','December');
+	var arrDayNames = new Array('Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday');  
+   
+    function validaForm(){
+		var existeOrigen = false;
+	    var existeDestino = false;
+
+		if($('#itiTypeMulti').attr('checked')){
+			//validar que los campos de las multiciudades y fechas hayan sido llenados
+			var odsValidos = 0;
+			var curMaxDate=new Date();
+			i=1;
+			for(var i=1;i<=8;i++){
+				if (($('#cmbOrigen' + i).attr('selectedIndex')==0) && 
+				   ($('#cmbDestino' + i).attr('selectedIndex')==0) && 
+				   ($.trim($('#fechaSalida' + i).val())=='')){
+					//en este caso no validamos nada porque no se ha introducido ningun valor
+					continue;
+				}
+				
+				//Para verificar que las cajas de texto no vengan vacías ni traigan destinos inválidos 
+				for (var x = 0; x <= destinationc.length - 1; x++){  
+                    if ($('#textOrigen' + i).attr('value') == destinationc[x]){
+                        existeOrigen = true;
+                        $("#cmbOrigen"+i+" option[contains='" +destinationc[x]+ "']").attr('selected','selected');
+                           
+                    }
+                    if ($('#textDestino' + i).attr('value') == destinationc[x]){
+                        existeDestino = true;
+                        $("#cmbDestino"+i+" option[contains='" +destinationc[x]+ "']").attr('selected','selected');   
+                    }
+                }
+				
+				if (existeOrigen == false){
+                        $.validationEngine.buildPrompt('#textOrigen'+i,err250);
+                        return false;
+                }
+                
+                if (existeDestino == false){
+                        $.validationEngine.buildPrompt('#textDestino'+i,err251);
+                        return false;
+                }
+                    
+				//Si selecciono destino pero no origen advertimos
+				if (($('#cmbOrigen'+i).attr('selectedIndex')==0) && ($('#cmbDestino'+i).attr('selectedIndex')!=0)){
+					
+					$.validationEngine.buildPrompt('#cmbOrigen'+i,err250);
+					$.validationEngine.buildPrompt('#textOrigen'+i,err250);
+					return false;
+				}
+				
+				//Si selecciono origen pero no destino advertimos
+				if (($('#cmbOrigen'+i).attr('selectedIndex')!=0) && ($('#cmbDestino'+i).attr('selectedIndex')==0)) {
+					
+					$.validationEngine.buildPrompt('#cmbDestino'+i,err251);
+					$.validationEngine.buildPrompt('#textDestino'+i,err251);
+					return false;
+				}
+				
+				//Si selecciono origen y destino pero son iguales advertimos
+				if (($('#cmbOrigen'+i).attr('selectedIndex')!=0) && ($('#cmbDestino'+i).attr('selectedIndex')!=0) && 
+					$('#cmbOrigen'+i).attr('value')==$('#cmbDestino'+i).attr('value')
+				   ){
+				  
+				     $.validationEngine.buildPrompt('#cmbDestino'+i,err259);
+					 $.validationEngine.buildPrompt('#textDestino'+i,err259);
+					return false;
+				}
+				//Si selecciono origen y destino pero no fecha advertimos
+				if (($('#cmbOrigen'+i).attr('selectedIndex')!=0) && ($('#cmbDestino'+i).attr('selectedIndex')!=0)) {
+				   if ($.trim($('#fechaSalida'+i).val())==''){
+						
+						$.validationEngine.buildPrompt('#fechaSalida'+i,err252);
+						return false;
+					}
+					else{
+						if (validarFechas(lang,$('#fechaSalida'+i).val())){
+						    var sal=$('#fechaSalida'+i).val();
+						   // alert(sal);
+						    var salida = new Date(sal.split('/')[2],
+							                  sal.split('/')[0]-1,
+							                  sal.split('/')[1]
+							                  );
+//							alert(salida);
+//							alert(curMaxDate);                  
+						    if (salida>curMaxDate){
+						        
+						        curMaxDate=salida;
+						        odsValidos++;
+						    }
+						    else{
+						        $.validationEngine.buildPrompt('#fechaSalida'+i,'The dates of departure of a segment should be higher than the previous segment');
+						        return false;
+						    }			
+						}
+						else{
+							return false;
+						}
+					}
+				}
+			}
+			if (odsValidos==0){
+				//alertBox(err200);
+				
+				$.validationEngine.buildPrompt('#cmbOrigen1',err250);
+				$.validationEngine.buildPrompt('#textOrigen1',err250);
+				alertValidation();
+				return false;
+			}
+		}
+		else {
+			//validar el caso de OW y RT
+			//
+			    for (var x = 0; x <= destinationc.length - 1; x++){  
+                    if ($('#textOrigen').attr('value') == destinationc[x]){
+                        existeOrigen = true;
+                        $("#cmbOrigen option[contains='" +destinationc[x]+ "']").attr('selected','selected');
+                           
+                    }
+                    if ($('#textDestino').attr('value') == destinationc[x]){
+                        existeDestino = true;
+                        $("#cmbDestino option[contains='" +destinationc[x]+ "']").attr('selected','selected');   
+                    }
+                }
+				
+				if (existeOrigen == false){
+                        $.validationEngine.buildPrompt('#textOrigen',err250);
+                        return false;
+                }
+                
+                if (existeDestino == false){
+                        $.validationEngine.buildPrompt('#textDestino',err251);
+                        return false;
+                }
+			
+			if ($('#cmbOrigen').attr('selectedIndex')==0) {
+			
+				$.validationEngine.buildPrompt('#cmbOrigen',err250);
+				$.validationEngine.buildPrompt('#textOrigen',err250);
+				return false;
+			}
+			if ($('#cmbDestino').attr('selectedIndex')==0) {
+			
+				$.validationEngine.buildPrompt('#cmbDestino',err251);
+				$.validationEngine.buildPrompt('#textDestino',err251);
+				return false;
+			}
+			if (($('#cmbOrigen').attr('selectedIndex')!=0) && ($('#cmbDestino').attr('selectedIndex')!=0) && 
+					$('#cmbOrigen').attr('value')==$('#cmbDestino').attr('value')
+				   ){			  
+				    $.validationEngine.buildPrompt('#cmbDestino',err259);
+					$.validationEngine.buildPrompt('#textDestino',err259);
+					return false;
+				}
+			if ($.trim($('#fechaSalida').val())=='') {
+			
+				$.validationEngine.buildPrompt('#fechaSalida',err252);
+				return false;
+			}
+			else{
+				if (!validarFechas(lang,$('#fechaSalida').val())){
+					return false;
+				}
+			}
+			if ( $('#itiTypeRoundTrip').attr('checked')){
+				if ($.trim($('#fechaRegreso').val())=='') {
+					alertBox(err253);
+					return false;
+				}
+				else{
+					//aqui cambiar los if, cambiar comentarios
+					if (!validarFechas(lang,$('#fechaSalida').val(),$('#fechaRegreso').val())){
+					//if (!validarFechas(lang,$('#fechaSalida').val())){
+					//	$.validationEngine.buildPrompt('#fechaSalida',err252);
+                        $.validationEngine.buildPrompt('#fechaSalida',err254);
+						return false;
+					}
+				}
+			}
+		  
+		}		
+		
+        return true;
+    }
+    
+    //Aqui agregamos segmentos al MultiCity 
+  
+	function addFlight(){
+		var sucess=false;
+		for(var i=1;i<=8;i++){
+			if (document.getElementById('multi'+i).style.display=='none')
+			{
+				$('#multi'+i).show();
+				sucess=true;
+				break;
+			}
+		}
+		if (!sucess) 
+			alertBox(err260);
+	}
+  
+    //Valida fechas de salida y retorno, la fecha de retorno es opcional, si no se especifica se valida que la fecha de salida no se menor que la fecha actual
+    function validarFechas(lang,sal,reg){
+        //tomamos la fecha de hoy truncando la hora
+		var now= new Date();
+		//asumimos español	dia , mes, año 
+		var idxMes=1;
+		var idxDia=0;
+		if (lang!="esp"){
+			//sino 	mes, dia, año 
+			idxMes=0;
+			idxDia=1;
+		}
+		
+		now = new Date(now.getFullYear(),now.getMonth(),now.getDate());
+        
+        var salida = new Date(sal.split('/')[2],
+							  sal.split('/')[idxMes]-1,
+							  sal.split('/')[idxDia]
+							  );
+		var regreso;
+		if (typeof reg != "undefined") {
+			regreso = new Date(reg.split('/')[2],
+							   reg.split('/')[idxMes]-1,
+							   reg.split('/')[idxDia]
+							  );
+            
+//			if (regreso <= salida){
+            if (regreso < salida){
+				//alertBox(err254);
+				return false;
+			}
+			if(Math.abs(diffDias(regreso,now))>= 365 ){
+		        alertBox(err302);
+		        return false;
+		    }
+		}
+		else{
+			if (salida < now){
+				alertBox(err252);
+				return false;
+			}
+		}
+		if(Math.abs(diffDias(salida,now))>= 365 ){
+		    alertBox(err302);
+		    return false;
+		}
+		return true;
+    }    
+ 
+ //------- función modificada para darle dinamismo a la página ------     
+	function changeParameters(){
+		if($('#itiTypeRoundTrip').attr('checked')){
+			detOptions(optionsSocAe, '---', 'S');		
+			Multiany_id="OFF";
+		    wasother="ON";
+		    checktxtpred();
+		    wasmulty="OFF";
+			$('#multicitydiv').hide();
+			$('#monoCityDiv').show();
+			$('#onep').show();
+			$('#onep1').show();
+			if 	(($('#passId').attr("class")) == "row2"){
+			    $('#passId').toggleClass("row2");
+			}
+			if 	(($('#cabId').attr("class")) == ""){
+			    $('#cabId').toggleClass("row2");
+			}
+		}else if ($('#itiTypeOneWay').attr('checked')){
+			detOptions(optionsSocAe, '---', 'S');				
+			Multiany_id="OFF";
+		    wasother="ON";
+		    checktxtpred();
+		    wasmulty="OFF";
+			$('#multicitydiv').hide();
+			$('#onep1').hide();
+			$('#monoCityDiv').show();
+			$('#onep').show();
+			if 	(($('#passId').attr("class")) == ""){
+			    $('#passId').toggleClass("row2");
+			}
+			if 	(($('#cabId').attr("class")) == "row2"){
+			    $('#cabId').toggleClass("row2");
+			}
+		}else if ($('#itiTypeMulti').attr('checked')){
+		  detOptions(optionsSocAe, '---', 'H');				
+		  $("#addflights").attr('style','display:block');  
+		  $("#cmbSocAe option[value='TA']").attr("selected","selected");
+		  $("#cmbSocAe").trigger("change");
+		  Multiany_id="OFF";  
+		  wasmulty="ON";
+		  checktxtpred();
+		  wasother="OFF";
+			$('#monoCityDiv').hide();
+			$('#multicitydiv').show();
+		    if 	(($('#passId').attr("class")) == ""){
+			    $('#passId').toggleClass("row2");
+			}
+			if 	(($('#cabId').attr("class")) == "row2"){
+			    $('#cabId').toggleClass("row2");
+			}
+		}
+	}
+	
+	//autocompletar
+	var outp;
+	var oldins;
+	var posi = -1;
+	var input;
+	var key;
+	var z=0;
+    
+//Nueva
+function setVisible(visi){
+      
+            var x = document.getElementById("shadow");
+          var elemento= document.getElementById("hidinput").value; 
+            var t = document.getElementById(elemento);
+      if(getbrowser()=="IE8"){
+                x.style.position = 'absolute';//'absolute'; 
+      }else{
+                x.style.position = 'absolute';//'absolute';
+      }//'absolute';
+            
+//          x.style.top =  (findPosY(t)+3)+"px";
+//          x.style.left = (findPosX(t)+ 2)+"px";
+        x.style.top =  (findPosY(t)+ 22)+"px";
+        x.style.left = (findPosX(t)+ 2)+"px";
+            x.style.visibility = visi;
+            
+      
+      }
+
+	function initID(inputob){
+	  if (document.getElementById("shadow").style.visibility=="hidden"){
+	  if (Multiany_id=="OFF") {unableboxes();} else{unboxesMulty();}
+	  document.getElementById(inputob).focus();
+      document.getElementById("output").scrollTop = 0;
+       var curleft = 0;
+       var curtop = 0;
+	   controlado=false;
+//	    $('#output').scroll();
+	   //document.getElementById("hidinput").value=""; 
+	   document.getElementById("hidinput").value=inputob;
+	   outp = document.getElementById("output");
+	   window.setInterval("lookAt()", 100);
+	   setVisible("hidden");
+       if (getbrowser() == "FF"){
+	        document.getElementById(inputob).onkeydown = keygetter; 
+	        document.getElementById(inputob).onkeyup = keyHandlerIE;
+	        outp.onkeydown = keygetter; 
+	        outp.onkeyup = keyHandlerIE;
+	   }else{
+	        document.getElementById(inputob).onkeydown = keygetter; 
+	        document.getElementById(inputob).onkeyup = keyHandlerIE;
+	       // document.getElementById(inputob).keypress = keyPress;
+	        outp.onkeydown = keygetter; 
+	        outp.onkeyup = keyHandlerIE;
+	        //outp.keypress = keyPress;
+	   }
+	   
+	   document.getElementById(inputob).select();
+	   
+	   }
+	   else{
+	   if (Multiany_id=="OFF"){
+	  var anterior=document.getElementById("hidinput").value;
+	  switch(anterior){
+	  
+	  case "textOrigen":
+	   document.getElementById("textDestino").disabled=true;
+	   break;
+	   
+	  case "textDestino":
+	    document.getElementById("textOrigen").disabled=true;
+	    break;
+	    
+	  default:  
+	       for(var j=1;j<9;j++){
+	             if(anterior=="textOrigen"+j){document.getElementById("textOrigen"+j).disabled=false;}
+	             else{document.getElementById("textOrigen"+j).disabled=true;}
+                  if(anterior=="textDestino"+j){document.getElementById("textDestino"+j).disabled=false;}
+                 else{document.getElementById("textDestino"+j).disabled=true;}
+                                  
+                } 
+	   break;
+	   }
+	   }
+	   else{
+	    var anterior=document.getElementById("hidinput").value;
+	  if(anterior=="textOrigen1"){
+	  document.getElementById("textDestino1").disabled=true;
+	  document.getElementById("textDestino2").disabled=true;
+	  }
+	    if(anterior=="textDestino1"){
+	  document.getElementById("textOrigen1").disabled=true;
+	  document.getElementById("textDestino2").disabled=true;
+	  }
+	     if(anterior=="textDestino2"){
+	  document.getElementById("textOrigen1").disabled=true;
+	  document.getElementById("textDestino1").disabled=true;
+	  }
+	   }
+	   }
+	}
+//Nueva
+    function findPosX(obj){
+        var elemento = $(obj);
+        var posicion = elemento.position();
+        return posicion.left;
+    }
+
+    function findPosY(obj){
+        var elemento = $(obj);
+        var posicion = elemento.position();
+        //alert( "left: " + posicion.left + ", top: " + posicion.top );
+        return posicion.top;
+    }
+
+	function lookAt(){
+	var elemento=document.getElementById("hidinput").value;	
+	var ins;
+	if(controlado==false){
+
+ ins = document.getElementById(elemento).value;
+
+	if (oldins == ins) return;
+		else if (posi > -1);
+		else if (ins.length > 0){
+			words = getWord(ins);
+			if (words.length > 0){
+				clearOutput();
+				for (var i=0;i < words.length; ++i) addWord (words[i]);
+				setVisible("visible");
+				input = document.getElementById(elemento).value;
+			}
+			else{
+				setVisible("hidden");
+				posi = -1;
+			}
+		}
+		else{
+			setVisible("hidden");
+			posi = -1;
+		}
+		oldins = ins;
+	
+	  }//fin controlado
+}
+	
+	function addWord(word){
+		
+		var sp = document.createElement("div");
+		sp.appendChild(document.createTextNode(word));
+		sp.onmouseover = mouseHandler;
+		sp.onmouseout = mouseHandlerOut;
+		sp.onclick = mouseClick;
+		outp.appendChild(sp);
+		
+	}
+	
+	function clearOutput(){
+		while (outp.hasChildNodes()){
+			noten=outp.firstChild;
+			outp.removeChild(noten);
+		}
+		posi = -1;
+	}
+	
+	function getWord(beginning){
+            var words = new Array();
+            var temp;
+            var pivot1;
+            beginning = beginning.replace('(',' ');
+            beginning = beginning.replace(')',' ');
+            beginning=quitacentov28(beginning);
+            reg = new RegExp('.*('+beginning+'+).*$', 'gi');
+            //NUEVO SOLO ESTACIONES
+            if(beginning.length == 3 && (beginning != txtOrigen && beginning != txtDestino)){ 
+             for (var i=0;i < suggestions.length; ++i){
+                      var j = -1;
+                      var temp2;
+                      var correct = false;
+            temp2='('+beginning+')';
+            temp=quitacentov28(suggestions[i]);
+            correct = temp.toUpperCase().indexOf(temp2.toUpperCase())!=-1
+
+              if (correct) {
+                  words[words.length] = suggestions[i];//+airport[i];
+                  correct=false;
+                }else{
+              }
+            }
+            
+             }//FIN NUEVO
+             
+        if(beginning.length >= 4 && (beginning != txtOrigen && beginning != txtDestino)){ 
+                for (var i=0;i < suggestions.length; ++i){
+                      var j = -1;
+                      var correct = false;
+            temp=quitacentov28(suggestions[i]);
+            pivot1= temp.toLowerCase().indexOf(')');
+            temp=temp.substring(0,(pivot1));
+            correct = temp.toLowerCase().indexOf(beginning.toLowerCase())!=-1
+
+              if (correct) {
+                  words[words.length] = suggestions[i];//+airport[i];
+                  correct=false;
+                }else{
+              }
+            }
+    }//tercer caracter
+            
+      
+            return words;
+}
+
+	
+	function setColor (_posi, _color, _forg){
+		outp.childNodes[_posi].style.background = _color;
+		outp.childNodes[_posi].style.color = _forg;
+	}
+	
+	
+	function keygetter(event){
+        var elemento= document.getElementById("hidinput").value;
+        var textfield;
+        if(elemento!=""){
+            textfield = document.getElementById(elemento);}
+            if (!event && window.event) event = window.event;
+            if (event) key = event.keyCode;
+            else key = event.which;
+            
+        if (key == 9 && posi!=(-1)){ //Key TAB
+            textfield.value = outp.childNodes[posi].firstChild.nodeValue;
+            setVisible("hidden");
+            posi = -1;
+            seleccionado=0;
+          //  if (real  == true){
+		        seleccionitem(elemento);
+            //}
+        }
+        else if(key==16){
+            setVisible("hidden");
+            posi = -1;
+        }
+        //DBMMStar
+        if (getbrowser() == "FF"){
+            document.getElementById(elemento).focus();
+        }
+    }
+
+		
+	function keyHandler(event){
+	var elemento= document.getElementById("hidinput").value;
+	
+    if (document.getElementById("shadow").style.visibility == "visible"){
+		var textfield = document.getElementById(elemento);
+        if (key == 27){ // Esc
+			textfield.value = input;
+			setVisible("hidden");
+			posi = -1;
+			oldins = input;
+		}
+		else if (key == 8){ // Backspace
+			//if(textfield.length) setVisible("hidden");
+			if(textfield.length<=3){textfield.focus();}else{
+			posi = -1;
+			oldins=-1;
+			}
+		}
+		
+		else if (key == 13){ //Key ENTER
+            textfield.value = outp.childNodes[posi].firstChild.nodeValue;
+            setVisible("hidden");
+            posi = -1;
+            seleccionado=0;
+           // if (real  == true){
+		        seleccionitem(elemento);
+           // }
+        }
+	}
+}
+	
+function keyHandlerIE(event){
+      var elemento= document.getElementById("hidinput").value;
+
+    if (document.getElementById("shadow").style.visibility == "visible"){
+            var textfield = document.getElementById(elemento);
+            if (key == 40){ //Key down
+           
+      //    document.getElementById("output").focus();
+                  if (words.length > 0 && posi < words.length-1){
+                        if (posi >=0) setColor(posi, "#fff", "#505050");
+                        else input = textfield.value;
+                        setColor(++posi, "#E6E6E6", "#505050");
+                        textfield.value = outp.childNodes[posi].firstChild.nodeValue;
+                  }
+                  if(posi ==-1){document.getElementById(elemento).focus();}else {document.getElementById("output").scrollTop = posi*15;}
+                  if(posi==(words.length-1)){document.getElementById(elemento).focus();}
+                  if(posi==-1){document.getElementById(elemento).focus();}
+                  //if(contando<=6){contando=contando+1;}else{document.getElementById("output").focus();}
+      
+            
+            }
+            else if (key == 38){ //Key up
+      //    document.getElementById("output").focus();
+                  if (words.length > 0 && posi >= 0){
+                        if (posi >=1){
+                              setColor(posi, "#fff", "#505050");
+                              setColor(--posi, "#E6E6E6", "#505050");
+                              textfield.value = outp.childNodes[posi].firstChild.nodeValue;
+                        }
+                        else{
+                              setColor(posi, "#fff", "#505050");
+                              textfield.value = input;
+                              textfield.focus();
+                              posi--;
+                        }
+                  }
+                        if(posi >=(words.length-1)){document.getElementById(elemento).focus();}else {document.getElementById("output").scrollTop = posi*15;}
+                      if(posi==0){document.getElementById(elemento).focus();}
+                      if(posi==-1){document.getElementById(elemento).focus();}
+                  //if(contando>=6){document.getElementById("output").focus();}else{contando=contando-1;}
+            }
+            else if (key == 27){ // Esc
+                  textfield.value = input;
+                  setVisible("hidden");
+                  posi = -1;
+                  oldins = input;
+            }
+            else if (key == 8){ // Backspace
+                  //if(textfield.length) setVisible("hidden");
+                  if(textfield.length<=3){textfield.focus();}else{
+                  posi = -1;
+                  oldins=-1;
+                  }
+            }
+            
+            else if (key == 13){ //Key ENTER
+            textfield.value = outp.childNodes[posi].firstChild.nodeValue;
+            setVisible("hidden");
+            posi = -1;
+            seleccionado=0;
+           // if (real  == true){
+                    seleccionitem(elemento);
+           // }
+        }
+      }
+}
+	
+//DBMMonKeyPress
+function keyPress(event){
+	var elemento= document.getElementById("hidinput").value;
+	
+    if (document.getElementById("shadow").style.visibility == "visible"){
+		var textfield = document.getElementById(elemento);
+		if (key == 40){ //Key down
+		document.getElementById("output").focus();
+			if (words.length > 0 && posi < words.length-1){
+				if (posi >=0) setColor(posi, "#fff", "#505050");
+				else input = textfield.value;
+				setColor(++posi, "#E6E6E6", "#505050");
+				textfield.value = outp.childNodes[posi].firstChild.nodeValue;
+			}
+		 //if(posi <=1){document.getElementById(elemento).focus();}else {document.getElementById("output").focus();}		
+		 if(posi ==-1){document.getElementById(elemento).focus();}else {document.getElementById("output").scrollTop = posi*15;}
+         if(posi==(words.length-1)){document.getElementById(elemento).focus();}
+         if(posi==-1){document.getElementById(elemento).focus();}
+		}
+		else if (key == 38){ //Key up
+		document.getElementById("output").focus();
+			if (words.length > 0 && posi >= 0){
+				if (posi >=1){
+					setColor(posi, "#fff", "#505050");
+					setColor(--posi, "#E6E6E6", "#505050");
+					textfield.value = outp.childNodes[posi].firstChild.nodeValue;
+				}
+				else{
+					setColor(posi, "#fff", "#505050");
+					textfield.value = input;
+					textfield.focus();
+					posi--;
+				}
+			}
+            if(posi >=(words.length-1)){document.getElementById(elemento).focus();}else {document.getElementById("output").scrollTop = posi*15;}
+            if(posi==0){document.getElementById(elemento).focus();}
+            if(posi==-1){document.getElementById(elemento).focus();}
+		}
+    }
+		
+}
+//DBMMOnKeyPressFin
+    
+	var mouseHandler=function(){
+		for (var i=0; i < words.length; ++i)
+			setColor (i, "white", "#505050");
+	
+		this.style.background = "#E6E6E6";
+		this.style.color= "#505050";
+	}
+	
+	var mouseHandlerOut=function(){
+		this.style.background = "white";
+		this.style.color= "#505050";
+	}
+	
+	var mouseClick=function(){
+	    selecciona=false; //siempre estuvo true :D
+	    var elemento= document.getElementById("hidinput").value;
+		document.getElementById(elemento).value= this.firstChild.nodeValue;
+		setVisible("hidden");
+		posi = -1;
+		oldins = this.firstChild.nodeValue;
+		
+		//if (real  == true){
+		    seleccionitem(elemento);
+		    
+        //}
+        
+        //prueba
+	}
+	
+	function limpiatp(){
+        var cantbox;
+        document.getElementById("shadow").style.visibility="hidden";
+    }
+    
+    
+    function unableboxes(){
+    
+      document.getElementById("textOrigen").disabled=false;
+      document.getElementById("textDestino").disabled=false;
+       for(var j=1;j<9;j++){
+	             
+	        document.getElementById("textOrigen"+j).disabled=false;
+            document.getElementById("textDestino"+j).disabled=false;
+              }   
+    }
+    
+      function unboxesMulty(){    
+       document.getElementById("textOrigen1").disabled=false;  
+       document.getElementById("textDestino1").disabled=false;   
+       document.getElementById("textDestino2").disabled=false; 
+    }
+    
+    function getbrowser() {
+
+        var rv = -1; // Return value assumes failure.
+        var navegador = -1;
+
+        if (navigator.appName == 'Microsoft Internet Explorer') {
+            var ua = navigator.userAgent;
+            var re = new RegExp("MSIE ([0-9]{1,}[\.0-9]{0,})");
+            if (re.exec(ua) != null)
+                rv = parseFloat(RegExp.$1);
+
+        }else if (/Firefox[\/\s](\d+\.\d+)/.test(navigator.userAgent)){
+            rv="firefox"; 
+       
+        }
+
+        if (rv>=8){
+           navegador="IE8";
+        }else if (rv >= 7 && rv < 8){
+           navegador="IE7";
+        }else if (rv=="firefox"){
+           navegador="FF";
+        }
+        return navegador;
+}
+    
+    function compareStringLengths ( a, b ){
+        if ( a.length < b.length )
+            return -1;
+        if ( a.length > b.length )
+            return 1;
+        return 0; // a and b are the same length
+    }
+
+    function onblur2(item){
+        var existe = false;
+        var casilla=document.getElementById(item).value;
+        for (var x = 0; x <= destinationc.length - 1; x++){
+                        
+            if (destinationc[x] == casilla){
+                estacion = airport[x-1];  
+                existe = true;   
+                break;   
+            }
+        }
+        
+            if (casilla == "" || existe==false){
+
+                    selecciona=true;
+                    
+                if ( document.getElementById("shadow").style.visibility=="hidden"){
+                    switch(item){
+                        case "textOrigen":
+                            $("#textOrigen").attr('value',txtOrigen);
+                            $("CmbOrigen options[value= '-1']").attr('selected','selected');
+                            //alert("textOrigen");
+                            //checkMultyStar(item);
+                            break;
+
+                        case "textDestino":
+                            $("#textDestino").attr('value',txtDestino);
+                            $("CmbDestino options[value= '-1']").attr('selected','selected');
+                            //checkMultyStar(item);
+                            break;
+
+                        default:
+                        //var valcombo=1;
+                        //DBMM
+                            j=1;
+                            for(j=1;j<9;j++){
+                                if (item == "textOrigen"+j){
+                                    document.getElementById(item).value=txtOrigen;
+                                    $("CmbOrigen"+j+" options[value= '-1']").attr('selected','selected');
+                                    checkMultyStar(item, estacion);
+                                    break;
+                                }else if (item == "textDestino"+j){
+    						        document.getElementById(item).value=txtDestino;
+    						        $("CmbDestino"+j+" options[value= '-1']").attr('selected','selected');
+    						        checkMultyStar(item,estacion);
+    						        break;
+    					        } 
+    					        
+    				        }
+    			    }
+    			    //document.getElementById(item).focus();
+    			    seleccionitem(item);
+    			}
+                    
+            }
+            
+				//antes era if(!selecciona)
+               if(!selecciona){
+                    switch(item){
+                        case "textOrigen":
+                            $("#textOrigen").attr('value',txtOrigen);
+                            //alert("textOrigen");
+                            //checkMultyStar(item);
+                            break;
+
+                        case "textDestino":
+                            $("#textDestino").attr('value',txtDestino);
+                            //checkMultyStar(item);
+                            break;
+
+                        default:
+                        //var valcombo=1;
+                        //DBMM
+                            j=1;
+                            for(j=1;j<9;j++){
+                                if (item == "textOrigen"+j){
+                                    document.getElementById(item).value=txtOrigen;
+                                    checkMultyStar(item, estacion);
+                                    break;
+                                }else if (item == "textDestino"+j){
+    						        document.getElementById(item).value=txtDestino;
+    						        checkMultyStar(item, estacion);
+    						        break;
+    					        } 
+    					        
+    				        }
+    			    }
+                }
+}
+
+function seleccionitem(item){
+  
+      var casilla=document.getElementById(item).value;
+      var existe = false;
+        for (var x = 0; x <= destinationc.length - 1; x++){
+            
+                if (destinationc[x] == casilla){
+                    estacion = airport[x-1];
+                    existe = true; 
+                    break;       
+                }
+            }
+      
+        if(casilla!=txtOrigen && casilla!=txtDestino && existe==true){
+
+         switch(item){
+            case "textOrigen":
+                //DBMMStar
+                $('#cmbOrigen').empty();
+                $('#cmbOrigen').append(opOrigen + "<option value="+ estacion + " selected='" + "selected" + "' >" + casilla + "</option>");
+                //$("#cmbOrigen option[value='" +estacion+ "']").attr('selected','selected');
+                // $("#textDestino").focus();
+                PartnerDet();
+                //checkMultyStar(item);
+                break;
+
+            case "textDestino":
+                //DBMMStar
+                $('#cmbDestino').empty();
+                $('#cmbDestino').append(opDestino + "<option value="+ estacion + " selected='" + "selected" + "' >" + casilla + "</option>");
+                //$("#cmbDestino option[value='" +estacion+ "']").attr('selected','selected');
+               //  $("#textOrigen").focus();
+                PartnerDet();
+                //checkMultyStar(item);
+                break;
+
+            default:
+               j=1;
+               for(j=1;j<9;j++){
+                    if (item == "textOrigen"+j){
+                        $("#cmbOrigen"+j).empty();
+                        $("#cmbOrigen"+j).append(opOrigen + "<option value="+ estacion + " selected='" + "selected" + "' >" + casilla + "</option>");
+                        //$("#cmbOrigen"+j+" option[value='" +estacion+ "']").attr('selected','selected');
+                        checkMultyStar(item,estacion);
+                        break;
+                    }else if (item == "textDestino"+j){
+                        $("#cmbDestino"+j).empty();
+                        $("#cmbDestino"+j).append(opDestino + "<option value="+ estacion + " selected='" + "selected" + "' >" + casilla + "</option>");
+						//$("#cmbDestino"+j+" option[value='" +estacion+ "']").attr('selected','selected');	
+						checkMultyStar(item,estacion);					
+						break;
+					}  
+				}
+				
+
+        }
+
+        //alert($("#cmbOrigen option:selected").val() );
+        //alert($("#cmbDestino option:selected").val() );
+        if(Multiany_id=="ON"){unboxesMulty();}
+        else{unableboxes();}
+        
+        selecciona=true; //estaba true
+    
+    }else{
+    
+    
+        switch(item){
+            case "textOrigen":
+                //$('#cmbOrigen option:contains('+txtOrigen+')').attr('selected','selected');
+                $("#cmbOrigen option[value='-1']").attr('selected','selected');
+                // $("#textDestino").focus();
+                PartnerDet();
+                //checkMultyStar(item);
+                break;
+
+            case "textDestino":
+                //$('#cmbDestino option:contains('+txtDestino+')').attr('selected','selected');
+                $("#cmbDestino option[value='-1']").attr('selected','selected');
+               //  $("#textOrigen").focus();
+                PartnerDet();
+                //checkMultyStar(item);
+                break;
+
+            default:
+               j=1;
+               for(j=1;j<9;j++){
+                    if (item == "textOrigen"+j){
+                        //$("#cmbOrigen"+j+" option:contains('"+txtOrigen+"')").attr('selected','selected');
+                        $("#cmbOrigen"+j+" option[value='-1']").attr('selected','selected');
+                        checkMultyStar(item, estacion);
+                        break;
+                    }else if (item == "textDestino"+j){
+                        //$("#cmbDestino"+j+" option:contains('"+txtDestino+"')").attr('selected','selected');
+						$("#cmbDestino"+j+" option[value='-1']").attr('selected','selected');
+						checkMultyStar(item,estacion);
+						break;
+					}  
+				}
+        }
+    }
+}
+
+//cambiar a INITCAP
+
+function quitaAcentos(str){
+    for (var i=0;i<str.length;i++){
+        //Sustituye "á é í ó ú"
+        if (str.charAt(i)=="á") str = str.replace(/á/,"a");
+        if (str.charAt(i)=="é") str = str.replace(/é/,"e");
+        if (str.charAt(i)=="í") str = str.replace(/í/,"i");
+        if (str.charAt(i)=="ó") str = str.replace(/ó/,"o");
+        if (str.charAt(i)=="ú") str = str.replace(/ú/,"u");
+    }
+    return str;
+}
+
+ function checkMultyStar(par, codigo){
+  
+  if (Multiany_id=="ON")
+       {
+       
+       switch(par){
+       
+       case 'textOrigen1':
+       if(document.getElementById(par).value==txtOrigen){
+            document.getElementById('textDestino3').value=txtDestino;
+            $("#cmbDestino3 option[value='-1']").attr('selected','selected');
+       }else{
+            document.getElementById('textDestino3').value= document.getElementById(par).value;
+            $("#cmbDestino3").empty();
+            $("#cmbDestino3").append(opDestino + "<option value="+ codigo + " selected='" + "selected" + "' >" + document.getElementById(par).value + "</option>");
+       }
+       break;
+       
+       case 'textDestino1':
+       if(document.getElementById(par).value==txtDestino){
+            document.getElementById('textOrigen2').value=txtOrigen;
+            $("#cmbOrigen2 option[value='-1']").attr('selected','selected');
+       }else{
+            document.getElementById('textOrigen2').value= document.getElementById(par).value;
+            $("#cmbOrigen2").empty();
+            $("#cmbOrigen2").append(opOrigen + "<option value="+ codigo + " selected='" + "selected" + "' >" + document.getElementById(par).value + "</option>");     
+       }
+       break;
+       
+       case 'textDestino2':
+       if(document.getElementById(par).value==txtDestino){
+            document.getElementById('textOrigen3').value=txtOrigen;
+            $("#cmbOrigen3 option[value='-1']").attr('selected','selected');
+       }else{
+            document.getElementById('textOrigen3').value= document.getElementById(par).value;
+            $("#cmbOrigen3").empty();
+            $("#cmbOrigen3").append(opOrigen + "<option value="+ codigo + " selected='" + "selected" + "' >" + document.getElementById(par).value + "</option>");     
+       }
+       break;
+       
+       }
+       }
+ }
+
+
+function checktxtpred(){
+//var vsocio_id=$("#cmbSocAe option:selected").val();
+
+        if (document.getElementById("shadow").style.visibility=="visible"  && wasother=="ON"  && wasmulty=="OFF"){
+
+            document.getElementById("shadow").style.visibility="visible";
+                  }
+        else if(document.getElementById("shadow").style.visibility=="visible" && wasmulty=="ON"){
+
+            
+            document.getElementById("shadow").style.visibility="hidden";
+            //wasmulty=="OFF";
+
+            }
+}
+
+
+function combosmultiANY(){
+
+var cSocios = $("#cmbSocAe option:selected").val();
+wasmulty="ON";
+
+
+if (cSocios != 'TA'){
+
+	for(var i=4;i<=8;i++){
+			
+				$('#multi'+i).hide();
+				//sucess=true;
+				//break;
+			
+		}
+		
+   Multiany_id="ON";
+   $("#addflights").attr('style','display:none');
+   
+                $('#cmbOrigen option').clone().appendTo("#cmbOrigen1");
+                $('#cmbDestino option').clone().appendTo("#cmbDestino1");
+                
+                $('#cmbOrigen option').clone().appendTo("#cmbOrigen2");
+                $('#cmbDestino option').clone().appendTo("#cmbDestino2");
+                
+                $('#cmbOrigen option').clone().appendTo("#cmbOrigen3");
+                $('#cmbDestino option').clone().appendTo("#cmbDestino3");
+
+                for(var i=1;i<4;i++){
+                    document.getElementById("textOrigen"+i).value=txtOrigen;
+                    document.getElementById("textDestino"+i).value=txtDestino;
+                
+                    document.getElementById("textOrigen"+i).disabled=false;
+                    document.getElementById("textDestino"+i).disabled=false;
+                
+                } 
+                 document.getElementById("textOrigen2").disabled=true;
+                 document.getElementById("textOrigen3").disabled=true;
+                 document.getElementById("textDestino3").disabled=true;
+                   
+      }
+      else{
+            document.getElementById("textOrigen2").disabled=false;
+            document.getElementById("textOrigen3").disabled=false;
+            document.getElementById("textDestino3").disabled=false;
+      
+      }
+}
+
+
+function quitacentov28(texto){
+    texto=texto.replace(/(À|Á|Â|Ã|Ä|Å|Æ)/g,'A'); 
+    texto=texto.replace(/(È|É|Ê|Ë)/g,'E'); 
+    texto=texto.replace(/(Ì|Í|Î|Ï)/g,'I');
+    texto=texto.replace(/(Ò|Ó|Ô|Ö)/g,'O');
+    texto=texto.replace(/(Ù|Ú|Û|Ü)/g,'U');
+    texto=texto.replace(/(à|á|â|ã|ä|å|æ)/g,'a');
+    texto=texto.replace(/(è|é|ê|ë)/g,'e'); 
+    texto=texto.replace(/(ì|í|î|ï)/g,'i');
+    texto=texto.replace(/(ò|ó|ô|ö)/g,'o');
+    texto=texto.replace(/(ù|ú|û|ü)/g,'u');                                        
+    texto=texto.replace(/(Ñ)/gi,'N'); 
+    
+    return texto;
+}
+	//autocompletar
+    
+function focusCmbSoc(){
+	controlado = true;
+	document.getElementById("hidinput").value = "";
+}
+
 </script>
 
-<style>
-#width-wide-content #content .down-arrow.up{
-	background-image: url(../../../images/gen/loo/loo-arrow-up.gif);
-	background-repeat: no-repeat;
-}
-</style>
-       <div id="content">
-		
-        <!-- #BeginLibraryItem "/Library/print-tellafriend.lbi" -->
-        <ul id="print-tell">
-          <li><a href="#">Print this page</a></li>
-          <li><a href="#">Tell to a friend</a></li></ul>
-        <!-- #EndLibraryItem -->
-        <h2>Select Flights</h2>
-       <p></p>     
-             <!--inicio ejemplo formulario -->
+
+
+  <h2>Air Tickets</h2>
              
-            
-         
-             
-        <div>
+    <p>
+    <br>
+    </p>
+    
         
-        
-<form name="reqinf_form" id="reqinf_form" method="post" action="dynredrev.aspx">     
-        
-        <div class="width-902">
-        	<div class="simple-form-background clear-border-padding">        	  <!-- #BeginLibraryItem "/Library/search legend.lbi" -->
-        	    
-     <div class="search-leyend" id="progressBar2">
-      	        </div>
-        	    <!-- #EndLibraryItem -->
-<div class="border-noTop-zero-margin-padding">
-         
-                    <br>
-                  <br>
-               
-       <div class="dynamic-space">                  
-           <table id="tblODs" cellpadding="0" class="flights product-main-table">
-	<tbody><tr>
-		<td colspan="7"><div class="dyn-ico-fl"></div>
-<div class="dyn-destination" style="margin-left:0px"><div style="margin-left:10px"><h3>Departure September, 15th, 2014</h3></div>
-<div class="clear"></div><div style="margin-left:10px"><h3>San Francisco (SFO) to Taipei, Taiwan Taoyuan International Airport (TPE)</h3></div></div><div class="clear"></div></td>
-	</tr>
-	<tr class="table-legends-bg">
-		<td width="260" class="fr-table-heading dbr1 tb-grid-title">Airline</td>
-		<td width="65" class="fr-table-heading drbn tb-grid-title">Flights</td>
-		<td width="230" class="fr-table-heading drbn tb-grid-title">Departs</td>
-		<td width="230" class="fr-table-heading drbn tb-grid-title">Arrives</td>
-		<td width="50" class="fr-table-heading drbn tb-grid-title">Duration</td>
-		<td width="60" class="fr-table-heading drbn tb-grid-title">Stops</td>
-		<td width="70" class="fr-table-heading dbr2 tb-grid-title">Cabin</td>
-	</tr>
-	<tr class="table-legends-bg">
-		<td style="height:4px" colspan="7"> </td>
-	</tr>
-	<tr class="tbl-collapse" id="F0_1">
-		<td width="220" class="fr-table-data-bold rowF0_1" id="rowF0_1"><span class="multiple"><input style="margin-left:0px" type="radio" name="OD0" value="0" onclick="updResume('F0_1')"><img style="margin-left: 0px" src="../../../images/gen/loo/loo-lm-multiples-vuelos-logo.png">Multiple Airlines<span class="arrow down-arrow" style="width: 16px; height: 14px; display: inline-block; background-position: 0px 6px; margin-left: 8px;">&nbsp;</span></span></td>
-		<td class="fr-table-data rowF0_1" id="rowF0_1">Multiple</td>
-		<td width="230" class="fr-table-data">San Francisco (SFO) 10:55</td>
-		<td width="230" class="fr-table-data">Taipei, Taiwan Taoyuan International Airport (TPE) 19:00</td>
-		<td width="50" class="fr-table-data">17:05</td>
-		<td width="60" class="fr-table-data rowF0_1"><span>Multiple</span></td>
-		<td width="70" class="fr-table-data">Economy</td>
-		<td>&nbsp;</td>
-	</tr>
-	<tr class="tbl-detail" id="F0_1" style="display: none; ">
-		<td width="220" class=" &quot;rowF0_1 fr-table-data-bold hiddenflights&quot;" id="&quot;rowF0_1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img style="border-width: 0px;" class="plerdownr" src="../../../images/gen/loo/loo-plerdownr.gif">&nbsp;&nbsp;<img src="../../../images/gen/log/sa-logos/log-sa-be-united.png"></td>
-		<td width="65" class="fr-table-data rowF0_1" id="rowF0_1">UA893</td>
-		<td width="230" class="fr-table-data">San Francisco (SFO) 10:55</td>
-		<td width="230" class="fr-table-data">Seoul, Incheon International Airport (ICN) 15:05</td>
-		<td width="50" class="fr-table-data">&nbsp;</td>
-		<td width="60" class="fr-table-data rowF0_1"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0</span></td>
-		<td width="70" class="fr-table-data">Economy</td>
-		<td>&nbsp;</td>
-	</tr>
-	<tr class="tbl-detail" id="F0_1" style="display: none; ">
-		<td width="220" class=" &quot;rowF0_1 fr-table-data-bold hiddenflights&quot;" id="&quot;rowF0_1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img style="border-width: 0px;" class="plerdownr" src="../../../images/gen/loo/loo-plerdownr.gif">&nbsp;&nbsp;<img src="../../../images/gen/log/sa-logos/log-sa-be-thai.png"></td>
-		<td width="65" class="fr-table-data rowF0_1" id="rowF0_1">TG635</td>
-		<td width="230" class="fr-table-data">Seoul, Incheon International Airport (ICN) 17:30</td>
-		<td width="230" class="fr-table-data">Taipei, Taiwan Taoyuan International Airport (TPE) 19:00</td>
-		<td width="50" class="fr-table-data">&nbsp;</td>
-		<td width="60" class="fr-table-data rowF0_1"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0</span></td>
-		<td width="70" class="fr-table-data">Economy</td>
-		<td>&nbsp;</td>
-	</tr>
-	<tr class="tabla-tabulada-gris-mod tbl-collapse" id="F0_2">
-		<td width="220" class="fr-table-data-bold rowF0_2" id="rowF0_2"><span class="multiple"><input style="margin-left:0px" type="radio" name="OD0" value="1" onclick="updResume('F0_2')"><img style="margin-left: 0px" src="../../../images/gen/loo/loo-lm-multiples-vuelos-logo.png">Multiple Airlines<span class="arrow down-arrow" style="width: 16px; height: 14px; display: inline-block; background-position: 0px 6px; margin-left: 8px;">&nbsp;</span></span></td>
-		<td class="fr-table-data rowF0_2" id="rowF0_2">Multiple</td>
-		<td width="230" class="fr-table-data">San Francisco (SFO) 14:20</td>
-		<td width="230" class="fr-table-data">Taipei, Taiwan Taoyuan International Airport (TPE) 22:00</td>
-		<td width="50" class="fr-table-data">16:40</td>
-		<td width="60" class="fr-table-data rowF0_2"><span>Multiple</span></td>
-		<td width="70" class="fr-table-data">Economy</td>
-		<td>&nbsp;</td>
-	</tr>
-	<tr class="tbl-detail" id="F0_2" style="display: none; ">
-		<td width="220" class=" &quot;rowF0_2 fr-table-data-bold hiddenflights&quot;" id="&quot;rowF0_2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img style="border-width: 0px;" class="plerdownr" src="../../../images/gen/loo/loo-plerdownr.gif">&nbsp;&nbsp;<img src="../../../images/gen/log/sa-logos/log-sa-be-united.png"></td>
-		<td width="65" class="fr-table-data rowF0_2" id="rowF0_2">UA1447</td>
-		<td width="230" class="fr-table-data">San Francisco (SFO) 14:20</td>
-		<td width="230" class="fr-table-data">Los Angeles (LAX) 15:52</td>
-		<td width="50" class="fr-table-data">&nbsp;</td>
-		<td width="60" class="fr-table-data rowF0_2"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0</span></td>
-		<td width="70" class="fr-table-data">Economy</td>
-		<td>&nbsp;</td>
-	</tr>
-	<tr class="tbl-detail" id="F0_2" style="display: none; ">
-		<td width="220" class=" &quot;rowF0_2 fr-table-data-bold hiddenflights&quot;" id="&quot;rowF0_2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img style="border-width: 0px;" class="plerdownr" src="../../../images/gen/loo/loo-plerdownr.gif">&nbsp;&nbsp;<img src="../../../images/gen/log/sa-logos/log-sa-be-eva.png"></td>
-		<td width="65" class="fr-table-data rowF0_2" id="rowF0_2">BR11</td>
-		<td width="230" class="fr-table-data">Los Angeles (LAX) 17:45</td>
-		<td width="230" class="fr-table-data">Taipei, Taiwan Taoyuan International Airport (TPE) 22:00</td>
-		<td width="50" class="fr-table-data">&nbsp;</td>
-		<td width="60" class="fr-table-data rowF0_2"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0</span></td>
-		<td width="70" class="fr-table-data">Economy</td>
-		<td>&nbsp;</td>
-	</tr>
-	<tr class="tbl-collapse" id="F0_3">
-		<td width="220" class="fr-table-data-bold rowF0_3" id="rowF0_3"><span class="multiple"><input style="margin-left:0px" type="radio" name="OD0" value="2" onclick="updResume('F0_3')"><img style="margin-left: 0px" src="../../../images/gen/loo/loo-lm-multiples-vuelos-logo.png">Multiple Airlines<span class="arrow down-arrow" style="width: 16px; height: 14px; display: inline-block; background-position: 0px 6px; margin-left: 8px;">&nbsp;</span></span></td>
-		<td class="fr-table-data rowF0_3" id="rowF0_3">Multiple</td>
-		<td width="230" class="fr-table-data">San Francisco (SFO) 22:31</td>
-		<td width="230" class="fr-table-data">Taipei, Taiwan Taoyuan International Airport (TPE) 05:50</td>
-		<td width="50" class="fr-table-data">16:19</td>
-		<td width="60" class="fr-table-data rowF0_3"><span>Multiple</span></td>
-		<td width="70" class="fr-table-data">Economy</td>
-		<td>&nbsp;</td>
-	</tr>
-	<tr class="tbl-detail" id="F0_3" style="display: none; ">
-		<td width="220" class=" &quot;rowF0_3 fr-table-data-bold hiddenflights&quot;" id="&quot;rowF0_3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img style="border-width: 0px;" class="plerdownr" src="../../../images/gen/loo/loo-plerdownr.gif">&nbsp;&nbsp;<img src="../../../images/gen/log/sa-logos/log-sa-be-united.png"></td>
-		<td width="65" class="fr-table-data rowF0_3" id="rowF0_3">UA724</td>
-		<td width="230" class="fr-table-data">San Francisco (SFO) 22:31</td>
-		<td width="230" class="fr-table-data">Los Angeles (LAX) 23:55</td>
-		<td width="50" class="fr-table-data">&nbsp;</td>
-		<td width="60" class="fr-table-data rowF0_3"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0</span></td>
-		<td width="70" class="fr-table-data">Economy</td>
-		<td>&nbsp;</td>
-	</tr>
-	<tr class="tbl-detail" id="F0_3" style="display: none; ">
-		<td width="220" class=" &quot;rowF0_3 fr-table-data-bold hiddenflights&quot;" id="&quot;rowF0_3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img style="border-width: 0px;" class="plerdownr" src="../../../images/gen/loo/loo-plerdownr.gif">&nbsp;&nbsp;<img src="../../../images/gen/log/sa-logos/log-sa-be-eva.png"></td>
-		<td width="65" class="fr-table-data rowF0_3" id="rowF0_3">BR1</td>
-		<td width="230" class="fr-table-data">Los Angeles (LAX) 01:35</td>
-		<td width="230" class="fr-table-data">Taipei, Taiwan Taoyuan International Airport (TPE) 05:50</td>
-		<td width="50" class="fr-table-data">&nbsp;</td>
-		<td width="60" class="fr-table-data rowF0_3"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0</span></td>
-		<td width="70" class="fr-table-data">Economy</td>
-		<td>&nbsp;</td>
-	</tr>
-	<tr class="tabla-tabulada-gris-mod tbl-collapse" id="F0_4">
-		<td width="220" class="fr-table-data-bold rowF0_4" id="rowF0_4"><span class="multiple"><input style="margin-left:0px" type="radio" name="OD0" value="3" onclick="updResume('F0_4')"><img style="margin-left: 0px" src="../../../images/gen/loo/loo-lm-multiples-vuelos-logo.png">Multiple Airlines<span class="arrow down-arrow" style="width: 16px; height: 14px; display: inline-block; background-position: 0px 6px; margin-left: 8px;">&nbsp;</span></span></td>
-		<td class="fr-table-data rowF0_4" id="rowF0_4">Multiple</td>
-		<td width="230" class="fr-table-data">San Francisco (SFO) 22:31</td>
-		<td width="230" class="fr-table-data">Taipei, Taiwan Taoyuan International Airport (TPE) 06:10</td>
-		<td width="50" class="fr-table-data">16:39</td>
-		<td width="60" class="fr-table-data rowF0_4"><span>Multiple</span></td>
-		<td width="70" class="fr-table-data">Economy</td>
-		<td>&nbsp;</td>
-	</tr>
-	<tr class="tbl-detail" id="F0_4" style="display: none; ">
-		<td width="220" class=" &quot;rowF0_4 fr-table-data-bold hiddenflights&quot;" id="&quot;rowF0_4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img style="border-width: 0px;" class="plerdownr" src="../../../images/gen/loo/loo-plerdownr.gif">&nbsp;&nbsp;<img src="../../../images/gen/log/sa-logos/log-sa-be-united.png"></td>
-		<td width="65" class="fr-table-data rowF0_4" id="rowF0_4">UA724</td>
-		<td width="230" class="fr-table-data">San Francisco (SFO) 22:31</td>
-		<td width="230" class="fr-table-data">Los Angeles (LAX) 23:55</td>
-		<td width="50" class="fr-table-data">&nbsp;</td>
-		<td width="60" class="fr-table-data rowF0_4"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0</span></td>
-		<td width="70" class="fr-table-data">Economy</td>
-		<td>&nbsp;</td>
-	</tr>
-	<tr class="tbl-detail" id="F0_4" style="display: none; ">
-		<td width="220" class=" &quot;rowF0_4 fr-table-data-bold hiddenflights&quot;" id="&quot;rowF0_4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img style="border-width: 0px;" class="plerdownr" src="../../../images/gen/loo/loo-plerdownr.gif">&nbsp;&nbsp;<img src="../../../images/gen/log/sa-logos/log-sa-be-eva.png"></td>
-		<td width="65" class="fr-table-data rowF0_4" id="rowF0_4">BR15</td>
-		<td width="230" class="fr-table-data">Los Angeles (LAX) 01:55</td>
-		<td width="230" class="fr-table-data">Taipei, Taiwan Taoyuan International Airport (TPE) 06:10</td>
-		<td width="50" class="fr-table-data">&nbsp;</td>
-		<td width="60" class="fr-table-data rowF0_4"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0</span></td>
-		<td width="70" class="fr-table-data">Economy</td>
-		<td>&nbsp;</td>
-	</tr>
-	<tr class="tabla-tabulada-gris">
-		<td style="height: 4px" colspan="7"> </td>
-	</tr>
-	<tr>
-		<td class="button-bar" colspan="7"><div class="arrow-box"><h3><a href="#" style="display:none"><img border="0" alt="" src="../../../images/gen/btn/btn-dynamic-soen.gif"></a></h3></div><p><a href="#" style="display:none">Mostar más vuelos</a></p> </td>
-	</tr>
-	<tr>
-		<td colspan="7"><div class="dyn-ico-fl-in"></div>
-<div class="dyn-destination" style="margin-left:0px"><div style="margin-left:10px"><h3>Return September, 30th, 2014</h3></div>
-<div class="clear"></div><div style="margin-left:10px"><h3>Taipei, Taiwan Taoyuan International Airport (TPE) to San Francisco (SFO)</h3></div></div><div class="clear"></div></td>
-	</tr>
-	<tr class="table-legends-bg">
-		<td width="260" class="fr-table-heading dbr1 tb-grid-title">Airline</td>
-		<td width="65" class="fr-table-heading drbn tb-grid-title">Flights</td>
-		<td width="230" class="fr-table-heading drbn tb-grid-title">Departs</td>
-		<td width="230" class="fr-table-heading drbn tb-grid-title">Arrives</td>
-		<td width="50" class="fr-table-heading drbn tb-grid-title">Duration</td>
-		<td width="60" class="fr-table-heading drbn tb-grid-title">Stops</td>
-		<td width="70" class="fr-table-heading dbr2 tb-grid-title">Cabin</td>
-	</tr>
-	<tr class="table-legends-bg">
-		<td style="height:4px" colspan="7"> </td>
-	</tr>
-	<tr id="F1_1">
-		<td width="220" class="fr-table-data-bold rowF1_1" id="rowF1_1"><input type="radio" name="OD1" value="0" onclick="updResume('F1_1')"><img style="border-width: 0px;" src="../../../images/gen/log/sa-logos/log-sa-be-eva.png"></td>
-		<td width="65" class="fr-table-data rowF1_1" id="rowF1_1">BR28</td>
-		<td width="180" class="fr-table-data">Taipei, Taiwan Taoyuan International Airport (TPE) 23:30</td>
-		<td width="180" class="fr-table-data">San Francisco (SFO) 20:10</td>
-		<td width="80" class="fr-table-data">11:40</td>
-		<td width="80" class="fr-table-data rowF1_1"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0</span></td>
-		<td width="130" class="fr-table-data">Economy</td>
-		<td>&nbsp;</td>
-	</tr>
-	<tr class="tabla-tabulada-gris-mod tbl-collapse" id="F1_2">
-		<td width="220" class="fr-table-data-bold rowF1_2" id="rowF1_2"><span class="multiple"><input style="margin-left:0px" type="radio" name="OD1" value="1" onclick="updResume('F1_2')"><img style="margin-left: 0px" src="../../../images/gen/loo/loo-lm-multiples-vuelos-logo.png">Multiple Airlines<span class="arrow down-arrow" style="width: 16px; height: 14px; display: inline-block; background-position: 0px 6px; margin-left: 8px;">&nbsp;</span></span></td>
-		<td class="fr-table-data rowF1_2" id="rowF1_2">Multiple</td>
-		<td width="230" class="fr-table-data">Taipei, Taiwan Taoyuan International Airport (TPE) 08:50</td>
-		<td width="230" class="fr-table-data">San Francisco (SFO) 13:15</td>
-		<td width="50" class="fr-table-data">16:45</td>
-		<td width="60" class="fr-table-data rowF1_2"><span>Multiple</span></td>
-		<td width="70" class="fr-table-data">Economy</td>
-		<td>&nbsp;</td>
-	</tr>
-	<tr class="tbl-detail" id="F1_2" style="display: none; ">
-		<td width="220" class=" &quot;rowF1_2 fr-table-data-bold hiddenflights&quot;" id="&quot;rowF1_2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img style="border-width: 0px;" class="plerdownr" src="../../../images/gen/loo/loo-plerdownr.gif">&nbsp;&nbsp;<img src="../../../images/gen/log/sa-logos/log-sa-be-eva.png"></td>
-		<td width="65" class="fr-table-data rowF1_2" id="rowF1_2">BR198</td>
-		<td width="230" class="fr-table-data">Taipei, Taiwan Taoyuan International Airport (TPE) 08:50</td>
-		<td width="230" class="fr-table-data">Tokyo, Narita International Airport (NRT) 13:15</td>
-		<td width="50" class="fr-table-data">&nbsp;</td>
-		<td width="60" class="fr-table-data rowF1_2"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0</span></td>
-		<td width="70" class="fr-table-data">Economy</td>
-		<td>&nbsp;</td>
-	</tr>
-	<tr class="tbl-detail" id="F1_2" style="display: none; ">
-		<td width="220" class=" &quot;rowF1_2 fr-table-data-bold hiddenflights&quot;" id="&quot;rowF1_2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img style="border-width: 0px;" class="plerdownr" src="../../../images/gen/loo/loo-plerdownr.gif">&nbsp;&nbsp;<img src="../../../images/gen/log/sa-logos/log-sa-be-ana.png"></td>
-		<td width="65" class="fr-table-data rowF1_2" id="rowF1_2">NH8</td>
-		<td width="230" class="fr-table-data">Tokyo, Narita International Airport (NRT) 17:15</td>
-		<td width="230" class="fr-table-data">San Francisco (SFO) 10:35</td>
-		<td width="50" class="fr-table-data">&nbsp;</td>
-		<td width="60" class="fr-table-data rowF1_2"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0</span></td>
-		<td width="70" class="fr-table-data">Economy</td>
-		<td>&nbsp;</td>
-	</tr>
-	<tr class="tbl-collapse" id="F1_3">
-		<td width="220" class="fr-table-data-bold rowF1_3" id="rowF1_3"><span class="multiple"><input style="margin-left:0px" type="radio" name="OD1" value="2" onclick="updResume('F1_3')"><img style="margin-left: 0px" src="../../../images/gen/loo/loo-lm-multiples-vuelos-logo.png">Multiple Airlines<span class="arrow down-arrow" style="width: 16px; height: 14px; display: inline-block; background-position: 0px 6px; margin-left: 8px;">&nbsp;</span></span></td>
-		<td class="fr-table-data rowF1_3" id="rowF1_3">Multiple</td>
-		<td width="230" class="fr-table-data">Taipei, Taiwan Taoyuan International Airport (TPE) 19:20</td>
-		<td width="230" class="fr-table-data">San Francisco (SFO) 20:50</td>
-		<td width="50" class="fr-table-data">16:30</td>
-		<td width="60" class="fr-table-data rowF1_3"><span>Multiple</span></td>
-		<td width="70" class="fr-table-data">Economy</td>
-		<td>&nbsp;</td>
-	</tr>
-	<tr class="tbl-detail" id="F1_3" style="display: none; ">
-		<td width="220" class=" &quot;rowF1_3 fr-table-data-bold hiddenflights&quot;" id="&quot;rowF1_3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img style="border-width: 0px;" class="plerdownr" src="../../../images/gen/loo/loo-plerdownr.gif">&nbsp;&nbsp;<img src="../../../images/gen/log/sa-logos/log-sa-be-eva.png"></td>
-		<td width="65" class="fr-table-data rowF1_3" id="rowF1_3">BR2</td>
-		<td width="230" class="fr-table-data">Taipei, Taiwan Taoyuan International Airport (TPE) 19:20</td>
-		<td width="230" class="fr-table-data">Los Angeles (LAX) 16:45</td>
-		<td width="50" class="fr-table-data">&nbsp;</td>
-		<td width="60" class="fr-table-data rowF1_3"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0</span></td>
-		<td width="70" class="fr-table-data">Economy</td>
-		<td>&nbsp;</td>
-	</tr>
-	<tr class="tbl-detail" id="F1_3" style="display: none; ">
-		<td width="220" class=" &quot;rowF1_3 fr-table-data-bold hiddenflights&quot;" id="&quot;rowF1_3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img style="border-width: 0px;" class="plerdownr" src="../../../images/gen/loo/loo-plerdownr.gif">&nbsp;&nbsp;<img src="../../../images/gen/log/sa-logos/log-sa-be-united.png"></td>
-		<td width="65" class="fr-table-data rowF1_3" id="rowF1_3">UA841</td>
-		<td width="230" class="fr-table-data">Los Angeles (LAX) 19:30</td>
-		<td width="230" class="fr-table-data">San Francisco (SFO) 20:50</td>
-		<td width="50" class="fr-table-data">&nbsp;</td>
-		<td width="60" class="fr-table-data rowF1_3"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0</span></td>
-		<td width="70" class="fr-table-data">Economy</td>
-		<td>&nbsp;</td>
-	</tr>
-	<tr class="tabla-tabulada-gris">
-		<td style="height: 4px" colspan="7"> </td>
-	</tr>
-	<tr>
-		<td class="button-bar" colspan="7"><div class="arrow-box"><h3><a href="#" style="display:none"><img border="0" alt="" src="../../../images/gen/btn/btn-dynamic-soen.gif"></a></h3></div><p><a href="#" style="display:none">Mostar más vuelos</a></p> </td>
-	</tr>
-</tbody></table>
-
-       </div>                       
-<div class="bottom-borders-container">
-             <span class="bottom-box-right-corner"></span>
-             <span class="bottom-box-left-corner"></span>                  </div>
-       <!-- fin de bordes y boton -->
-            </div>   
-       	  </div><!--final formulario sin tabs -->
-        </div><!--final div pone ancho -->
-         <div class="box-round-border width-902" style=" margin-top: 5px;">
-          <!--inicio de contenedor con bordes redondos -->
-          <div class="top-borders-container"> 
-          <span class="top-box-left-corner"></span>
-          <span class="top-box-right-corner"></span> 
-          </div>
-          <div>
-          
-          
-          <!-- Aqui empieza el resumen -->
-          
-            <div class="background-light-tiny-gray fr-itineraryb-margins-tables">
-              <!--inicio de contenedor con bordes redondos -->
-              <div class="top-borders-container"> <span class="top-graybox-left-corner"></span> <span class="top-graybox-right-corner"></span> </div>
-              <div class="table-margins">
-                <p class="table-cornergray-title">Selected Flights</p>
-                <table id="tblResumenItinerario" width="873" cellpadding="0" cellspacing="0" class="tiny-fonts">
-	<tbody><tr>
-		<td width="91"><strong>Selected Flights</strong></td>
-		<td width="91"><strong>Required miles  per passenger</strong></td>
-		<td width="276"><strong>Route</strong></td>
-		<td width="82"><strong>Departing</strong></td>
-		<td width="82"><strong>Arriving</strong></td>
-		<td id="tdTituloProducto" width="82"><strong>Cabin Type</strong></td>
-		<td id="tdTituloCondiciones" style="display:none">Condiciones aplicables a tu boleto</td>
-	</tr>
-	<tr>
-		<td colspan="6"><hr class="fr-sep"></td>
-	</tr>
-	<tr>
-		<td width="91" style="padding: 6px 0pt"><a href="javascript:;"><span id="flightOD0"></span></a></td>
-		<td width="91" style="padding: 6px 0pt">1 x 32,500</td>
-		<td width="276" style="padding: 6px 0pt">San Francisco (SFO) - Taipei, Taiwan Taoyuan International Airport (TPE)</td>
-		<td width="82" style="padding: 6px 0pt"><span id="DepartOD0"></span></td>
-		<td width="82" style="padding: 6px 0pt"><span id="arriveOD0"></span></td>
-		<td width="82" style="padding: 6px 0pt"><span id="cabinOD0"></span></td>
-	</tr>
-	<tr>
-		<td width="91" style="padding: 6px 0pt"><a href="javascript:;"><span id="flightOD1"></span></a></td>
-		<td width="91" style="padding: 6px 0pt">1 x 32,500</td>
-		<td width="276" style="padding: 6px 0pt">Taipei, Taiwan Taoyuan International Airport (TPE) - San Francisco (SFO)</td>
-		<td width="82" style="padding: 6px 0pt"><span id="DepartOD1"></span></td>
-		<td width="82" style="padding: 6px 0pt"><span id="arriveOD1"></span></td>
-		<td width="82" style="padding: 6px 0pt"><span id="cabinOD1"></span></td>
-	</tr>
-</tbody></table>
-
-                <script>
-							$(document).ready(function(){
-									$('#alerta').tooltip('<strong>Conditions</strong> <br /> <ul class="product-condtion-reset-list"><li>Change of Date: $150</li><li>Refundable: No</li><li>Accrual: 0 Miles</li><li>Class: Economy</li></ul>', {width:250, style: 'alert', sticky: 0, hook: 1});
-							});
-							
-							
-						</script>
-              </div>
-              
-              <!--finaliza contenido -->
-              
-          <!--  <div class="bottom-borders-container" > </div>
-          </div>-->
-            
-          <!-- Div de bordes redondos --->
-           <div class="bottom-borders-container"> 
-		   <!--<span class="bottom-graybox-right-corner"></span> <span class="bottom-graybox-left-corner"></span> -->
-		   </div>
-
+        <!--inicio formulario --> 
+  <form id="requirementsform" name="requirementsform" method="post" action="dynredcal.aspx">    
+        <div class="box-tabs-short">
+        <!--empiezan tabs -->
+            <div id="tabs-container">
+                <span class="tabs">
+                    <div class="blank-left-tab">
+                    </div>
+                    <div class="left-border-tab">
+                    </div>
+                    <div class="content-tab">
+                        <span class="tab-title">Air tickets</span></div>
+                    <div class="right-border-tab">
+                    </div>
+                    <div id="divPromo" class="tab-selected">
+                        <div class="left-border-tab">
+                        </div>
+                        <div class="content-tab">
+                            <span class="tab-title" onclick="promoClick();"><a class="inline" href="#promo-code-search">Promo Code</a></span></div>
+                        <div class="right-border-tab">
+                        </div>
+                    </div>
+                </span>
             </div>
-            <div class="background-light-tiny-gray fr-itineraryb-margins-tables currency-box" style="position:static"><img src="../../../images/gen/loo/loo-triangle-white.gif" class="dinamyc-pestana-top">
-              <div class="top-borders-container">
-                <!--<span class="top-box-left-corner"></span>
-                         <span class="top-box-right-corner"></span>-->
-              </div>
-              <p class="table-cornergray-title">Flexible payment</p>
-              <!--<br clear="all">-->
-              <!-- Starts Switch currency -->
-              
-              <div class="currency-switch" id="tdMoneda" style="position: static; visibility: hidden; ">
-                  <a id="linkUSD" class="abandonDyn" href="javascript:cambiarMoneda(false);" toggle="usd" style="display:" title="">Convert to USD</a>
-                  <a id="linkLocal" class="abandonDyn" href="javascript:cambiarMoneda(true);" toggle="local" style="display:none" title="">Convert to USD</a>
-              </div>
-               <br clear="all">
-              
-              <!-- Ends Switch currency -->
-              
-              <div>
-                <blockquote>
-                  <p class="zero-margin center-text"><strong>Use the buttons to adjust the amount of Miles/Money you would like to use</strong></p>
-                </blockquote>
+            <!--terminan tabs -->    
+            
+            
+            <div id="box-content-tab">
+            
+            
+                <!--inicia contenido -->
                 
+                <div class="simple-form">
                 
-                 <div class="slider-center">
-						
-						  <div class="slider-total-miles">Total
-							<input name="miles2" type="text" id="miles2" class="text-field text-field-text-align slider-input" value="65,000" readonly="readonly">Miles</div> 
-						  <div class="loo-red-line-dos">&nbsp;</div>
-						  <div class="slider-buttons-box">
-							<div id="more-miles"><a class="abandonDyn" href="javascript:movePayment('+');">More Miles</a></div>   
-							<div id="more-cash"><a class="abandonDyn" href="javascript:movePayment('-');">More Money</a></div>                                 
-							<div class="limpiar"></div>
-						  </div>
-						  <div class="loo-red-line-dos">&nbsp;</div>
-						  <div class="slider-total-miles">
-						  
-						  <table>
-						  <tbody><tr>
-						  <td>
-						  	Total
-						  </td>
-						  <td>
-						  <input name="cash" type="text" id="cash" class="text-field text-field-text-align slider-input" value="0.00" readonly="readonly" toggle="usd" style="display:"> 
-							  <input name="cashLocal" type="text" id="cashLocal" readonly="readonly" class="text-field text-field-text-align slider-input" value="0" style="display:none" toggle="local">
-						  </td>
-						  <td>
-						  <span id="tdUSD" toggle="usd" style="display:">USD</span>
-							      <span id="tdLocal" toggle="local" style="display:none">USD</span>
-						  </td>
-						  </tr>
-						  </tbody></table>
-						  
-						
-							  
-                                  
-							 </div>
-						  <div class="limpiar"></div>
-						</div>
+<!--Flujo por Precio -->
+            
+           <fieldset class="form-rows" style="clear:none;">
+                <p>
+                <label id="lblSocAe" class="form-label">
+                    Prefered carrier:</label>
+                <span class="label-field">
+                  
+                   <select name="cmbSocAe" id="cmbSocAe" style="width: 150px" onfocus="focusCmbSoc()">
+<option value="---">Smart Search (multiple airlines)</option><option value="TA">Avianca/Taca (All Options)</option><option value="SS">Star Alliance Airlines</option><option disabled="">―――――――――――――――――――</option><option value="JP">Adria Airways (Slovenia)</option><option value="A3">Aegean Airlines (Greece)</option><option value="AM">AeroMexico (Mexico)</option><option value="AC">Air Canada (Canada)</option><option value="CA">Air China (China)</option><option value="NZ">Air New Zealand (New Zealand)</option><option value="NH">All Nippon Airways (Japan)</option><option value="OZ">Asiana Airlines (South Korea)</option><option value="OS">Austrian Airlines (Austria)</option><option value="KF">BLUE1 (Finland)</option><option value="SN">Brussels Airlines (Belgium)</option><option value="CM">Copa Airlines (Panama)</option><option value="OU">Croatia Airlines (Croatia (Hrvatska))</option><option value="BR">EVA Air (Taiwan)</option><option value="MS">Egypt Air (Egypt)</option><option value="ET">Ethiopian Airlines (Ethiopia)</option><option value="IB">Iberia (Spain)</option><option value="LO">LOT Polish Airlines (Poland)</option><option value="LH">Lufthansa (Germany)</option><option value="SK">Scandinavian Airlines (Sweden)</option><option value="ZH">Shenzhen Airlines (China)</option><option value="SQ">Singapore Airlines (Singapore)</option><option value="SA">South African Airways (South Africa)</option><option value="LX">Swiss Airlines (Switzerland)</option><option value="TP">TAP Portugal (Portugal)</option><option value="TG">THAI Airways (Thailand)</option><option value="TK">Turkish Airlines (Turkey)</option><option value="UA">United Airlines (United States)</option></select>
+                    
+                    
+                    <label id="lblerrorSocAe" class="label-error"></label> 
+                    
+                    </span>
+            </p>
+        </fieldset>
+                    
+                    
+                    <!--Radio Buttons tipo de Itinirario -->
+                    <p class="radio row1">
+            
+                        <span class="label-space-left">
+                            <input type="radio" id="itiTypeRoundTrip" name="hidItineraryType" onclick="changeParameters(); clearValidate();" value="2">
+                            <label>Round-trip</label>
+                        </span>
+                        
+                        <span id="labelOW" class="label-space">
+                            <input type="radio" id="itiTypeOneWay" name="hidItineraryType" onclick="changeParameters(); clearValidate();" value="1">
+                            <label>One-way</label>
+                        </span>
+                        
+                        <span id="labelMulti" class="label-space" style="">
+                            <input type="radio" id="itiTypeMulti" name="hidItineraryType" onclick="changeParameters(); clearValidate(); combosmultiANY();" value="3">
+                            <label> Multi-city</label>
+                        </span>
+                 
+                    </p>
+                    
+                    
                 
-              </div>
-              <div class="bottom-borders-container"> <span class="bottom-graybox-right-corner"></span> <span class="bottom-graybox-left-corner"></span> </div>
-            </div>
-            
-            
-            <!-- Aqui finaliza resumen -->
-            
-            
-            
-            
-          </div>
-          <!--finaliza contenido -->
-          <!--<div class="bottom-borders-container" >
-                     <span class="bottom-box-right-corner"></span>
-                     <span class="bottom-box-left-corner"></span>
-        	</div>-->
-          <div class="form-bottom-space"> 
-          
-          <span class="bottom-left-border"></span>
-          
-          <div id="divSubmitOn">
-          <div class="slide-simple-button2 slide-simple-button2-round"> 
-          <a href="javascript:submitForm();" onclick="return validarForm();">
-          <span class="slide-button2-right"></span>
-          <span class="slide-button2-left">Continue</span> 
-            </a>  
-          </div>
-          </div>
-          
-          <div id="divSubmitOff" style="display:none">
+               <fieldset class="form-rows" style="clear:none;">
+              
+                    
+                    <!--- Comienzo Div monoCityDiv --->
+                    <div id="monoCityDiv">
+                    
+                        <p>
+                            <label class="form-label">
+                                Departing from:</label>
+                            <span class="label-field">
+                              
+								<input type="text" style="position:static;color: #505050;" maxlength="40" name="text" id="textOrigen" size="17" onfocus="initID('textOrigen');" onblur="onblur2('textOrigen');" autocomplete="off">
+                                <select name="cmbOrigen" id="cmbOrigen" class="validate[dynamic]" onchange="clearValidate(); Origen();" style="display:none">
+	
+<option selected="selected" value="SFO">San Francisco (SFO), United State</option></select>
+                                
+                                
+                                <label id="lblerrorOrigen" class="label-error"></label> 
+                                
+                                </span>
+                        </p>
+                        
+                        
+                        <p id="onep" class="row2">
+                            <label class="form-label">
+                                Arriving to:</label>
+                            <span class="label-field">
+							<input type="text" style="position:static;color: #505050;" maxlength="40" name="text" id="textDestino" size="17" onfocus="initID('textDestino');" onblur="onblur2('textDestino');" autocomplete="off">
+                                <select name="cmbDestino" id="cmbDestino" class=" validate[dynamic]" onchange="clearValidate(); Destino();" style="display:none">
+	
+<option selected="selected" value="TPE">Taipei, Taiwan Taoyuan International Airport (TPE), Taiwan</option></select>
+                                
+                                <span class="label-error" id="lblerrorDestino"></span> 
+                                 
+                               </span> 
+                        </p>
+                        
+                        <!--- Depart calendar --->
+                        <p>
+                            <label class="form-label">
+                                Departure date:</label>
+                            <span class="label-field">
+                                <input name="fechaSalida" type="text" id="fechaSalida" class="text-field-date hasDatepicker" readonly="readonly" onkeyup="chkRemoveDate(event,this)" onchange="addRetdays();clearValidate();"><img class="ui-datepicker-trigger" src="../../../images/gen/btn/btn-calendar.gif" alt="" title="" style="vertical-align:bottom; margin-right: 3px; cursor:pointer; ">
+                                 <label id="lblerrorSalida" class="label-error"></label>
+                                                                 &nbsp;&nbsp;
+                                <select name="horaSalida" id="horaSalida">
+                                	<option value="0000" selected="selected">Departure Time</option>
+									<option value="0600">05:00 A.M.</option>
+									<option value="1200">11:00 A.M.</option>
+									<option value="1500">02:00 P.M.</option>
+									<option value="1900">06:00 P.M.</option>
+                                </select> 
+								</span>
+                        </p>
+                       
+                        <!--- Return calendar--->
+                        
+                        <p id="onep1" class="row2">
+                            <label class="form-label">
+                                Return date:</label>
+                            <span class="label-field">
+                                <input name="fechaRegreso" type="text" id="fechaRegreso" class="text-field-date hasDatepicker" readonly="readonly" onkeyup="chkRemoveDate(event,this)"><img class="ui-datepicker-trigger" src="../../../images/gen/btn/btn-calendar.gif" alt="" title="" style="vertical-align:bottom; margin-right: 3px; cursor:pointer; ">
+                                <label id="lblerrorRegreso" class="label-error"></label>
+								&nbsp;&nbsp;
+                                <select name="horaRegreso" id="horaRegreso">
+                                	<option value="0000" selected="selected">Return Time</option>
+									<option value="0600">05:00 A.M.</option>
+									<option value="1200">11:00 A.M.</option>
+									<option value="1500">02:00 P.M.</option>
+									<option value="1900">06:00 P.M.</option>
+                                </select>
+							  </span>
+                        </p>
+                        
+                        
+                        </div>
+                       <!--- Fin Div monoCityDiv --->
            
-          <div class="slide-simple-button2 slide-simple-button2-round"> 
-          <a href="javascript:;" "="">
-          <span class="slide-button2-right"></span>
-          <span class="slide-button2-left">Continue</span> 
-            </a>  
-          </div>
-          </div>                                             
-          </div>
-        </div>
-        <input name="hidPromoCash" type="hidden" id="hidPromoCash" value="-1">
-        <input name="hidRealMiles" type="hidden" id="hidRealMiles" value="65000">
-        <input name="hidRealCash" type="hidden" id="hidRealCash" value="0">
-        <input name="isUSDPayment" type="hidden" id="isUSDPayment" value="Y">
-        <input name="hidRedir" type="hidden" id="hidRedir" value="N">				
-        
+                <!--- Comienzo Div Multiciudad --->
+                <div id="multicitydiv" style="display: none; ">
+       
+				            <p id="multi1" style="display:block">
+					            <span class="form-full-line-label">
+					            <label>
+								<input type="text" style="position:static;color: #505050;" name="text" id="textOrigen1" size="16" maxlength="40" disabled="disabled" onfocus="initID('textOrigen1');" onblur="onblur2('textOrigen1')" autocomplete="off">                            
+								<select name="cmbOrigen1" id="cmbOrigen1" onchange="Origen();" style="display:none">
+	
+<option selected="selected" value="-1">Origin</option></select></label>
+					            <label>
+								<input type="text" style="position:static;color: #505050;" name="text" id="textDestino1" size="16" maxlength="40" disabled="disabled" onfocus="initID('textDestino1');" onblur="onblur2('textDestino1')" autocomplete="off">                                
+								<select name="cmbDestino1" id="cmbDestino1" onchange="Destino();" style="display:none">
+	
+<option selected="selected" value="-1">Destination</option></select></label>
+					            <input name="fechaSalida1" type="text" id="fechaSalida1" class="width-60 hasDatepicker" onkeyup="chkRemoveDate(event,this)" onchange="clearValidate();"><img class="ui-datepicker-trigger" src="../../../images/gen/btn/btn-calendar.gif" alt="" title="" style="vertical-align:bottom; margin-right: 3px; cursor:pointer; ">
+				                <select name="horaSalida1" id="horaSalida1" style="width:100px;">
+                                	<option value="0000" selected="selected">Departure Time</option>
+									<option value="0600">05:00 A.M.</option>
+									<option value="1200">11:00 A.M.</option>
+									<option value="1500">02:00 P.M.</option>
+									<option value="1900">06:00 P.M.</option>
+                                </select> 
+								</span>
+				            </p>
+            				
+				            <p class="row2" id="multi2" style="display:block">
+					            <span class="form-full-line-label">
+					            <label>
+								 <input type="text" style="position:static;color: #505050;" name="text" id="textOrigen2" size="16" maxlength="40" disabled="disabled" onfocus="initID('textOrigen2');" onblur="onblur2('textOrigen2')" autocomplete="off">                                
+								<select name="cmbOrigen2" id="cmbOrigen2" onchange="Origen();" style="display:none">
+	
+<option selected="selected" value="-1">Origin</option></select></label>
+					           <label>
+								<input type="text" style="position:static;color: #505050;" name="text" id="textDestino2" size="16" maxlength="40" disabled="disabled" onfocus="initID('textDestino2');" onblur="onblur2('textDestino2')" autocomplete="off">                              
+							   <select name="cmbDestino2" id="cmbDestino2" onchange="Destino();" style="display:none">
+	
+<option selected="selected" value="-1">Destination</option></select></label> 
+					            <input name="fechaSalida2" type="text" id="fechaSalida2" class="width-60 hasDatepicker" onkeyup="chkRemoveDate(event,this)" onchange="clearValidate();"><img class="ui-datepicker-trigger" src="../../../images/gen/btn/btn-calendar.gif" alt="" title="" style="vertical-align:bottom; margin-right: 3px; cursor:pointer; ">
+				                <select name="horaSalida2" id="horaSalida2" style="width:100px;">
+                                	<option value="0000" selected="selected">Departure Time</option>
+									<option value="0600">05:00 A.M.</option>
+									<option value="1200">11:00 A.M.</option>
+									<option value="1500">02:00 P.M.</option>
+									<option value="1900">06:00 P.M.</option>
+                                </select>            					  
+				                </span>			              
+				            </p>            				
+				            <p id="multi3" style="display:block">
+					            <span class="form-full-line-label">
+					            <label>
+								 <input type="text" style="position:static;color: #505050;" name="text" id="textOrigen3" size="16" maxlength="40" disabled="disabled" onfocus="initID('textOrigen3');" onblur="onblur2('textOrigen3')" autocomplete="off">
+								<select name="cmbOrigen3" id="cmbOrigen3" onchange="Origen();" style="display:none">
+	
+<option selected="selected" value="-1">Origin</option></select></label>
+					            <label>
+								 <input type="text" style="position:static;color: #505050;" name="text" id="textDestino3" size="16" maxlength="40" disabled="disabled" onfocus="initID('textDestino3');" onblur="onblur2('textDestino3')" autocomplete="off">                               
+								<select name="cmbDestino3" id="cmbDestino3" onchange="Destino();" style="display:none">
+	
+<option selected="selected" value="-1">Destination</option></select></label>
+					            <input name="fechaSalida3" type="text" id="fechaSalida3" class="width-60 hasDatepicker" onkeyup="chkRemoveDate(event,this)" onchange="clearValidate();"><img class="ui-datepicker-trigger" src="../../../images/gen/btn/btn-calendar.gif" alt="" title="" style="vertical-align:bottom; margin-right: 3px; cursor:pointer; ">
+				                <select name="horaSalida3" id="horaSalida3" style="width:100px;">
+                                	<option value="0000" selected="selected">Departure Time</option>
+									<option value="0600">05:00 A.M.</option>
+									<option value="1200">11:00 A.M.</option>
+									<option value="1500">02:00 P.M.</option>
+									<option value="1900">06:00 P.M.</option>
+                                </select>            					  
+				                </span>
+				            </p>
+				            <p class="row2" id="multi4" style="display:none">
+					            <span class="form-full-line-label">
+					            <label>
+								<input type="text" style="position:static;color: #505050;" name="text" id="textOrigen4" size="16" maxlength="40" disabled="disabled" onfocus="initID('textOrigen4');" onblur="onblur2('textOrigen4')" autocomplete="off">                                
+								<select name="cmbOrigen4" id="cmbOrigen4" onchange="Origen();" style="display:none">
+	
+<option selected="selected" value="-1">Origin</option></select></label>
+					           <label>							   
+							   <input type="text" style="position:static;color: #505050;" name="text" id="textDestino4" size="16" maxlength="40" disabled="disabled" onfocus="initID('textDestino4');" onblur="onblur2('textDestino4')" autocomplete="off">                                
+							   <select name="cmbDestino4" id="cmbDestino4" onchange="Destino();" style="display:none">
+	
+<option selected="selected" value="-1">Destination</option></select></label> 
+					            <input name="fechaSalida4" type="text" id="fechaSalida4" class="width-60 hasDatepicker" onkeyup="chkRemoveDate(event,this)" onchange="clearValidate();"><img class="ui-datepicker-trigger" src="../../../images/gen/btn/btn-calendar.gif" alt="" title="" style="vertical-align:bottom; margin-right: 3px; cursor:pointer; ">
+				                <select name="horaSalida4" id="horaSalida4" style="width:100px;">
+                                	<option value="0000" selected="selected">Departure Time</option>
+									<option value="0600">05:00 A.M.</option>
+									<option value="1200">11:00 A.M.</option>
+									<option value="1500">02:00 P.M.</option>
+									<option value="1900">06:00 P.M.</option>
+                                </select>            					  
+				                </span>
+				            </p>				            
+				            <p id="multi5" style="display:none">
+					            <span class="form-full-line-label">
+
+					           <input type="text" style="position:static;color: #505050;" name="text" id="textOrigen5" size="16" maxlength="40" disabled="disabled" onfocus="initID('textOrigen5'); " onblur="onblur2('textOrigen5')" autocomplete="off">
+							   <select name="cmbOrigen5" id="cmbOrigen5" onchange="Origen();" style="display:none">
+	
+<option selected="selected" value="-1">Origin</option></select> 
+					            <label>
+								<input type="text" style="position:static;color: #505050;" name="text" id="textDestino5" size="16" maxlength="40" disabled="disabled" onfocus="initID('textDestino5'); " onblur="onblur2('textDestino5')" autocomplete="off">                                
+								<select name="cmbDestino5" id="cmbDestino5" onchange="Destino();" style="display:none">
+	
+<option selected="selected" value="-1">Destination</option></select></label>
+					            <input name="fechaSalida5" type="text" id="fechaSalida5" class="width-60 hasDatepicker" onkeyup="chkRemoveDate(event,this)" onchange="clearValidate();"><img class="ui-datepicker-trigger" src="../../../images/gen/btn/btn-calendar.gif" alt="" title="" style="vertical-align:bottom; margin-right: 3px; cursor:pointer; ">            					
+				                <select name="horaSalida5" id="horaSalida5" style="width:100px;">
+                                	<option value="0000" selected="selected">Departure Time</option>
+									<option value="0600">05:00 A.M.</option>
+									<option value="1200">11:00 A.M.</option>
+									<option value="1500">02:00 P.M.</option>
+									<option value="1900">06:00 P.M.</option>
+                                </select>            					  
+				                </span>
+				            </p>
+            				
+				            <p class="row2" id="multi6" style="display:none">
+					            <span class="form-full-line-label">
+					           <label>
+							    <input type="text" style="position:static;color: #505050;" name="text" id="textOrigen6" size="16" maxlength="40" disabled="disabled" onfocus="initID('textOrigen6');" onblur="onblur2('textOrigen6')" autocomplete="off">                               
+							   <select name="cmbOrigen6" id="cmbOrigen6" onchange="Origen();" style="display:none">
+	
+<option selected="selected" value="-1">Origin</option></select></label> 
+					            <label>
+								 <input type="text" style="position:static;color: #505050;" name="text" id="textDestino6" size="16" maxlength="40" disabled="disabled" onfocus="initID('textDestino6');" onblur="onblur2('textDestino6')" autocomplete="off">                                
+								<select name="cmbDestino6" id="cmbDestino6" onchange="Destino();" style="display:none">
+	
+<option selected="selected" value="-1">Destination</option></select></label>
+					            <input name="fechaSalida6" type="text" id="fechaSalida6" class="validate[dymanic] width-60 hasDatepicker" onkeyup="chkRemoveDate(event,this)" onchange="clearValidate();"><img class="ui-datepicker-trigger" src="../../../images/gen/btn/btn-calendar.gif" alt="" title="" style="vertical-align:bottom; margin-right: 3px; cursor:pointer; ">
+				                <select name="horaSalida6" id="horaSalida6" style="width:100px;">
+                                	<option value="0000" selected="selected">Departure Time</option>
+									<option value="0600">05:00 A.M.</option>
+									<option value="1200">11:00 A.M.</option>
+									<option value="1500">02:00 P.M.</option>
+									<option value="1900">06:00 P.M.</option>
+                                </select>            					  
+				                </span>
+				            </p>
+            				
+				            <p id="multi7" style="display:none">
+					           <span class="form-full-line-label">
+					           <label>
+							    <input type="text" style="position:static;color: #505050;" name="text" id="textOrigen7" size="16" maxlength="40" disabled="disabled" onfocus="initID('textOrigen7');" onblur="onblur2('textOrigen7')" autocomplete="off">                               
+							   <select name="cmbOrigen7" id="cmbOrigen7" onchange="Origen();" style="display:none">
+	
+<option selected="selected" value="-1">Origin</option></select></label> 
+					            <label>
+								 <input type="text" style="position:static;color: #505050;" name="text" id="textDestino7" size="16" maxlength="40" disabled="disabled" onfocus="initID('textDestino7');" onblur="onblur2('textDestino7')" autocomplete="off">                               
+								<select name="cmbDestino7" id="cmbDestino7" onchange="Destino();" style="display:none">
+	
+<option selected="selected" value="-1">Destination</option></select></label>
+					            <input name="fechaSalida7" type="text" id="fechaSalida7" class="width-60 hasDatepicker" onkeyup="chkRemoveDate(event,this)" onchange="clearValidate();"><img class="ui-datepicker-trigger" src="../../../images/gen/btn/btn-calendar.gif" alt="" title="" style="vertical-align:bottom; margin-right: 3px; cursor:pointer; ">           					  
+				                <select name="horaSalida7" id="horaSalida7" style="width:100px;">
+                                	<option value="0000" selected="selected">Departure Time</option>
+									<option value="0600">05:00 A.M.</option>
+									<option value="1200">11:00 A.M.</option>
+									<option value="1500">02:00 P.M.</option>
+									<option value="1900">06:00 P.M.</option>
+                                </select>            					  
+				                </span>
+				            </p>
+				            <p class="row2" id="multi8" style="display:none">
+					            <span class="form-full-line-label">
+					            <label>
+								 <input type="text" style="position:static;color: #505050;" name="text" id="textOrigen8" size="16" maxlength="40" disabled="disabled" onfocus="initID('textOrigen8');" onblur="onblur2('textOrigen8')" autocomplete="off">                                
+								<select name="cmbOrigen8" id="cmbOrigen8" onchange="Origen();" style="display:none">
+	
+<option selected="selected" value="-1">Origin</option></select></label>
+					           <label>
+							    <input type="text" style="position:static;color: #505050;" name="text" id="textDestino8" size="16" maxlength="40" disabled="disabled" onfocus="initID('textDestino8');" onblur="onblur2('textDestino8')" autocomplete="off">
+                                <select name="cmbDestino8" id="cmbDestino8" onchange="Destino();" style="display:none">
+	
+<option selected="selected" value="-1">Destination</option></select></label> 
+					            <input name="fechaSalida8" type="text" id="fechaSalida8" class="width-60 hasDatepicker" onkeyup="chkRemoveDate(event,this)" onchange="clearValidate();"><img class="ui-datepicker-trigger" src="../../../images/gen/btn/btn-calendar.gif" alt="" title="" style="vertical-align:bottom; margin-right: 3px; cursor:pointer; ">					                          
+				                <select name="horaSalida8" id="horaSalida8" style="width:100px;">
+                                	<option value="0000" selected="selected">Departure Time</option>
+									<option value="0600">05:00 A.M.</option>
+									<option value="1200">11:00 A.M.</option>
+									<option value="1500">02:00 P.M.</option>
+									<option value="1900">06:00 P.M.</option>
+                                </select>
+								</span> 
+				            </p>
+            				
+
+                        <p> <span id="addflights" class="form-full-line-label" style="display:none">
+                              <a class="abandonDyn" onclick="addFlight()">  
+                              <img id="Image22" class="image-within-text" src="../../../images/gen/btn/btn-add-box.gif" style="border-width:0px;">  
+                                </a>              
+                        <a class="abandonDyn" onclick="addFlight()">Add more destinations</a></span> </p>
+
+                            
+                            
+                            </div>
+                                  
+                <!--- Fin Div Multiciudad --->
+                   
+                
+                    <p id="passId">
+                    <label class="form-label">
+                    Passengers:</label>
+                    <span class="label-field">
+                            <select class="pasanger" id="CmbPaxNum" name="CmbPaxNum">
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                            <option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option></select>
+                    </span>
+                    </p>
+                    <p id="cabId" class="row2" style="display:block">
+                    <label class="form-label">
+                      Cabin type:</label>
+                        <span class="label-field">
+                            <select id="cmbCabin" name="cabin">
+                                
+                                
+                                
+                            <option value="Y">Economy Class</option><option value="C">Business Class</option><option value="F">First Class</option></select>
+                        </span>
+                    </p>
+                        
+                  </fieldset> 
+                  <!--Flujo por Precio -->
+                  <br>
+                  <p id="radPrice" class="radio" style="display:none">
+
+                    <span class="padding-radiobutton">Use the least amount of LifeMiles, even though the option doesn't fit my itinerary</span>
+                        <input id="typByPrice" name="hidRedemptionType" checked="checked" type="radio" value="1">
+                    </p>
+                    
+                        <!--Flujo por Itinerario -->
+                    <p id="radDate" class="radio" style="display:none">
+                        <span class="padding-radiobutton">Fly on exact dates, even though the option requires more LifeMiles</span>
+                        <input id="typByDate" name="hidRedemptionType" type="radio" value="2" disabled="">
+                    </p>
+                    <!--Flujo por Promociones -->
+                    <p class="radio ">
+                        <span class="padding-radiobutton">See all <a href="../../tra/pro/prospeoff.aspx">promotions available.</a> </span> 
+                        <input style="display:none" name="hidRedemptionType" type="radio" onclick="promoBox();" class="promo-search-button" value="3" disabled="">
+                        </p>
+
+                    <br>
+                    <br>
+                     <br>
+                    
+                    <div class="form-bottom-space" style="clear:none;">
+                        <span class="bottom-left-border"></span>
+                        <div class="slide-simple-button2 slide-simple-button2-round" id="divSubmitOn">
+                        <a href="javascript:goForm();" onclick="return validaForm();" style="cursor:pointer;">
+                            <span class="slide-button2-right">
+                            </span><span class="slide-button2-left">Continue</span>
+                            </a>
+                        </div>
+                        
+                         <div class="slide-simple-button2 slide-simple-button2-round" id="divSubmitOff" style="display:none">
+                        <a href="javascript:;" style="cursor:pointer;">
+                            <span class="slide-button2-right">
+                            </span><span class="slide-button2-left">Continue</span>
+                            </a>
+                        </div>
+                    </div>
+            </div>
+</div>  
+                    
+                    
+        <!-- This contains the hidden content for inline calls -->
+        <div style="display: none">
+                        <div id="promo-code-search" style="padding: 10px; background: #fff; text-align: center;">
+                            <div style="float: left;">
+                                <p>
+                                    Please enter your promotional code to search:<input onkeypress="return alpha(event,letters+numbers)" onblur="upper(this)" name="promoCode" id="promoCode" size="5" maxlength="6">
+                                </p>
+                                <div style="margin-top: 20px; text-align: center;">
+                                    <div class="slide-simple-button" style="float: left; margin-left: 5px; width: 150px;">
+                                        <span class="slide-button-right"></span><a href="javascript:searchPromoCode();"><span class="slide-button-left">Search</span></a>
+                                    </div>
+                                    <div class="slide-simple-button" style="float: left; margin-left: 5px; width: 150px;">
+                                        <span class="slide-button-right"></span><a href="javascript:$.fn.colorbox.close(); clearByPromotionChk();">
+                                            <span class="slide-button-left">Cancel</span></a>
+                                    </div>
+                                    <div class="limpiar">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+
         <div style="display:none">
             <div id="errDiv" style="background:#fff; margin-top:4px">            	        
                 
@@ -1318,73 +2960,36 @@ $('#btnRedir').click(function(){
                 <tbody><tr>
                 <td>
                 <div style="float:left; width:32px; text-align:center;"><br>
-                <img id="Image2" src="../../../images/gen/dynamic/loo-warning-sign.gif" style="border-width:0px;">
+                <img id="Image1" src="../../../images/gen/dynamic/loo-warning-sign.gif" style="border-width:0px;">
                 </div>
                 </td>
                 <td>
                 <p id="txtError" style="text-align:justify"></p>
                 </td>
                 </tr>
-                <tr></tr>
+                <tr>
+                
+                </tr>
                 </tbody></table>
             
-                <div style="margin-left:90px; margin-top:0px;">
+                <div style="margin-left:120px; margin-top:0px;">
                     <div id="Div1" style="float: left; margin-left: 5px; width: 90px; display:block;" class="slide-simple-button">
                     <span class="slide-button-right2"></span>
                     <a id="A2" href="javascript:$.fn.colorbox.close();" class="link-hand"><span class="slide-button-left">Continue</span></a>
                     </div>
-					         
+         
                 </div>
                 
             </div>
-        </div>
-
-		<div style="display:none">
-            <div id="alertDiv" style="background:#fff; margin-top:20px">            	        
-                
-                <table">
-                
-                
-                <div style="float:left; width:0px; text-align:center;"><br>
-                <img id="Image3" src="../../../images/gen/dynamic/loo-warning-sign.gif" style="border-width:0px;">
-                </div>
-                <div style="float:left; width:10px; text-align:center;"><br></div>
-                
-                
-                <ul>
-                    <li id="li1" style="text-align:justify"></li>
-                    <li id="li2" style="text-align:justify"></li>
-                </ul>
-                    <p id="text" style="text-align:center"></p>
-                
-                
-                
-                
-                
-                
-            
-                <div style="margin-left:100px; margin-top:0px;">
-                    <div id="Div4" style="float: left; margin-left: 5px; width: 90px; display:block;" class="slide-simple-button">
-                    <span class="slide-button-right2"></span>
-                    <a id="A3" href="javascript:$.fn.colorbox.close();" class="link-hand"><span class="slide-button-left">&nbsp;&nbsp;Review&nbsp;&nbsp;</span></a>
-                    </div>
-                    <div id="Div5" style="float: left; margin-left: 5px; width: 90px; display:block;" class="slide-simple-button">
-                    <span class="slide-button-right2"></span>
-                    <a id="A4" href="javascript:submitForm();" class="link-hand"><span class="slide-button-left">Continue</span></a>
-                    </div>
-                </div>
-                
-            </table"></div>
-        </div>
-		
-		<div style="display:none">
+        </div>  
+        <div style="display:none">
             <div id="submitDiv" style="background:#fff; margin-top:20px">            	        
                 
                 <table">
                 
                 
                 <div style="float:left; width:32px; text-align:center;"><br>
-                <img id="Image1" src="../../../images/gen/dynamic/loo-warning-sign.gif" style="border-width:0px;">
+                <img id="Image3" src="../../../images/gen/dynamic/loo-warning-sign.gif" style="border-width:0px;">
                 </div>
                 
                 
@@ -1397,64 +3002,219 @@ $('#btnRedir').click(function(){
                 
             
                 <div style="margin-left:100px; margin-top:0px;">
-                    <div id="Div1" style="float: left; margin-left: 5px; width: 90px; display:block;" class="slide-simple-button">
-                    <span class="slide-button-right2"></span>
-                    <a id="A2" href="javascript:$.fn.colorbox.close();" class="link-hand"><span class="slide-button-left">&nbsp;&nbsp;Cancel&nbsp;&nbsp;</span></a>
-                    </div>
                     <div id="Div2" style="float: left; margin-left: 5px; width: 90px; display:block;" class="slide-simple-button">
                     <span class="slide-button-right2"></span>
-                    <a id="A1" href="javascript:submitForm();" class="link-hand"><span class="slide-button-left">Continue</span></a>
+                    <a id="A1" href="javascript:$.fn.colorbox.close();" class="link-hand"><span class="slide-button-left">&nbsp;&nbsp;Cancel&nbsp;&nbsp;</span></a>
+                    </div>
+                    <div id="Div3" style="float: left; margin-left: 5px; width: 90px; display:block;" class="slide-simple-button">
+                    <span class="slide-button-right2"></span>
+                    <a id="A3" href="javascript:submitForm();" class="link-hand"><span class="slide-button-left">Continue</span></a>
                     </div>
                 </div>
                 
-            </table"></div>
+        </table"></div>
+         </div> 
+		<input name="hidRedir" type="hidden" id="hidRedir" value="Y"> 
+		<input id="hidCSocio" name="hidCSocio" type="hidden" value="---">
+        <input id="Colorbox" type="hidden" class="alerta alertaLogin cboxElement">
+		<input type="hidden" id="hidinput" name="hidinput" value="">
+		<input type="hidden" id="hidlength" name="hidlength" value="">
+        <div class="shadow" id="shadow" style="visibility: hidden; ">
+             <div class="output" id="output"></div>
         </div>
-            <input id="Colorbox" type="hidden" class="alerta">  
+ 
+    <div style="display:none">
+                 <div id="captchaDiv" style="background:#fff; margin-top:20px">
+             <table border="0" cellpadding="1" cellspacing="1" style="width: 500px;">
+                <tbody>
+                    <tr>
+                        <td>
+                        </td>
+                        <td style="text-align: right;">
+                        <div class="derecha styleCloseDivRight"><a href="javascript:cerrarIng();" class="styleCloseGray">Close</a></div>
+                        </td>
+                    </tr>
+                    <tr>
+                    <td colspan="2" style="text-align: center;">
+                        <b><span id="spError"></span></b><br>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td colspan="2" style="text-align: center;">
+                                <b>Please enter the characters shown below. The character validation is case sensitive.</b>
+                    </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">
+                                <img id="imgCap" src="../../../images/gen/loo/loo-dot-background.gif">
+                                    </td>
+					                <td style="text-align: center;">
+					                    <div class="izquierda-5" style="padding:10px;">
+						                    <span style="text-align: right;">
+                                                <a href="javascript:void(0);" onclick="RefreshImage('par');">Generate new image</a>
+                                             </span>
+                                        </div></td>
+				                        
+				                </tr>
+				                <tr>
+					                <td style="text-align: center;">
+                                        <input type="text" style="position:static;color: #505050;" name="txtCap" id="txtCap" size="5" maxlength="5">
+                                    </td>
+					                <td style="text-align: right;">
+                                        <div class="izquierda-5" style="padding:10px;">
+                                            <div class="slide-simple-button">
+                                                <a id="linkLogin" href="javascript:aceptarCap('par','eng');">
+                                                    <span class="slide-button-right"></span>
+                                                    <span class="slide-button-left">Continue</span> 
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </td>
+                    </tr>
+                </tbody>
+                </table>                    
+                </div>        
+		</div>
 
-<!--inicio colorbox valida abandono de flujo DYN-->
-        <div style="display:none">
-        <div id="ColorBoxDyn" class="" style="padding:7px; background:#fff; ">
-                <div style="float:left; width:32px; text-align:center;"><br>
-                <img id="ImageWarning" src="../../../images/gen/dynamic/loo-warning-sign.gif" style="border-width:0px;">
-                </div>
-                <div style="float:left;">
-                        <div style="text-align:justify; width: 483px;"><p id="lblmsgerr"></p>
-                            <div style="margin-left:140px; margin-top:30px">
-                                <div id="BtnAcp" style="float: left; margin-left: 5px; width: 90px; display:;" class="slide-simple-button">
-                                    <span class="slide-button-right2"></span>
-                                    <a id="btnRedir" href="javascript:;" onclick="javascript:$.fn.colorbox.close();" class="link-hand">
-                                    <span class="slide-button-left">Continue</span>
-                                    </a>
-                                </div>
-                                <div style="float: left; margin-left: 5px; width: 80px;" class="slide-simple-button">
-                                <span class="slide-button-right2"></span>
-                                <a id="cancelPage" href="javascript:$.fn.colorbox.close();" class="link-hand">
-                                <span id="BtnCan" class="slide-button-left">Cancel</span>
-                                </a></div>
-                                <div class="limpiar"></div>
-                            </div>
-                            <div class="limpiar"></div>
+                 
+  
+        <!-- fin del formulario-->
+    	<div style="display:none">
+		<div id="sa1" style="padding:10px; background:#fff;">
+          <div class="colorbox-wrapper">
+            <div class="left-border">
+              <p id="AeName"><strong>ADRIA...</strong></p>
+              <p id="AeText">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>         
+          <div id="Div4" style="float: left; margin-left: 5px; width: 90px; display:block;" class="slide-simple-button">
+                    <span class="slide-button-right2"></span>
+                    <a id="A4" href="javascript:$.fn.colorbox.close();" class="link-hand"><span class="slide-button-left">&nbsp;&nbsp;Cancelar&nbsp;&nbsp;</span></a>
+                    </div>         
+		</div>
+	</div>
 
-                        </div>
+    <div style="display:none">
+		<div id="sa2" style="padding:10px; background:#fff;">
+          <div class="colorbox-wrapper">
+            <div class="left-border">
+              <p><strong>AEGEAN...</strong></p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>       
+          <div id="Div5" style="float: left; margin-left: 5px; width: 90px; display:block;" class="slide-simple-button">
+                    <span class="slide-button-right2"></span>
+                    <a id="A5" href="javascript:$.fn.colorbox.close();" class="link-hand"><span class="slide-button-left">&nbsp;&nbsp;Cancelar&nbsp;&nbsp;</span></a>
+                    </div>  
+		</div>
+	</div>
+    </div></form>
 
-                </div>
         </div>
-</div>
-<input id="ColorboxAdabdon" type="hidden" class="cboxElement">
-<span id="ajaxResponse"></span>
-<!--fin colorbox valida abandono flujo DYN-->
-
-        </form>
-        
-        </div>
-        
-        
-        <!--final contenedor --></div>
-
-
-
     </div>
     <!--final contenedor -->
+    <!--inicio columna derecha -->
+    <div id="right-col">
+        
+
+<div style="margin: 0; padding: 0; width: 178px; margin-top: 40px;">
+    <script type="text/javascript" src="../../../scripts/gen/scripts-styles/slide/jquery.cycle.all.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        
+        $('#text-tip').cycle({ 
+            fx:     'scrollUp', 
+            timeout: 6000, 
+            delay:  -2000,
+            next:   '#next-tip-der', 
+   	        prev:   ''
+
+        });
+        $('#text-tip').cycle({ 
+            fx:     'scrollDown', 
+            timeout: 6000, 
+            delay:  -2000,
+            next:   '', 
+   	        prev:   '#prev-tip-der'
+
+        });
+        $('#text-tip').cycle('pause');
+    
+    });
+    </script>
+        
+<!--[if IE]>
+
+<style type="text/css">
+
+.top-tipbox-right-corner{
+	/*margin-left:-3px!important;*/
+    /*margin-top:1px;*/
+}
+.top-tipbox-left-corner {
+/*	margin-left:-3px!important;*/   
+/* margin-top:1px;*/
+}
+.top-borders-container-tip{
+position:absolute;
+left:0;
+top:0;
+width:100%;
+}
+.content-tip{
+padding-top:12px!important;
+}
+</style>
+
+<![endif]-->
+
+    <script type="text/javascript">
+$(document).ready(function(){
+
+
+	$("#text-tip div").hide();
+	//$(".top-borders-container-tip").css("margin","0");
+	   var myRandom = Math.floor(Math.random() * $("#text-tip div").length);
+
+   $("#text-tip div:eq(" + myRandom + ")").show();	  
+});
+</script>
+    
+    <!--<img id="ctl00_rightMenu1_Image1" src="../../../images/sbn-profile-healt.gif" style="border-width:0px;" />-->
+     <div class="boxtip">
+         <div class="top-borders-container-tip">
+            <span class="top-tipbox-right-corner"></span>
+            <span class="top-tipbox-left-corner"></span>
+         </div>
+         <div class="content-tip">
+            <h3>Earn Tip:</h3>
+            
+           <div id="ctl00_rightMenu1_tipsgrid"><div id="text-tip" style="position: relative; overflow-x: hidden; overflow-y: hidden; "><div style="position: absolute; top: 0px; left: 0px; opacity: 1; z-index: 21; display: none; "><p>Earn LifeMiles flying to more than 1,300 destinations around the world with Avianca, AeroGal, ,<a href="https://www.lifemiles.com/eng/use/par/parairparall.aspx">Star Alliance</a> member &nbsp;airlines and partner airlines. </p></div><div style="top: 0px; left: 0px; z-index: 19; position: absolute; display: none; "><p>Stay at some of the world’s largest and most prestigious <a href="https://www.lifemiles.com/eng/ear/par/parearmile.aspx">hotel chains</a> and earn LifeMiles.</p></div><div style="top: 0px; left: 0px; z-index: 18; position: absolute; display: none; "><p>With LifeMiles co-branded credit and cebit cards, all your purchases automatically turn into LifeMiles.  <a href="https://www.lifemiles.com/eng/use/cob/cobcobrand.aspx">Discover them!</a></p></div><div style="top: 0px; left: 0px; z-index: 17; position: absolute; display: none; "><p>Shop through <a href="http://shop.lifemiles.com/">our e-Store</a> and earn up to 33 LifeMiles per every dollar spent shopping with our partners. Find your favorite retails in one place!</p></div><div style="top: 0px; left: 0px; z-index: 16; position: absolute; display: none; "><p>Discover all the partners we have for earning LifeMiles by entering the <a href="https://www.lifemiles.com/eng/ear/par/parearmile.aspx">Earn Center</a> and choosing your country of residence.</p></div><div style="top: 0px; left: 0px; z-index: 15; position: absolute; display: none; "><p>Did you know you can convert the points you’ve earned with our <a href="https://www.lifemiles.com/eng/ear/par/parconvmil.aspx">financial</a> and commercial partners into LifeMiles?</p></div><div style="top: 0px; left: 0px; z-index: 14; position: absolute; display: none; "><p>Remember that aside from flying, there are many ways to Earn LifeMiles. Discover our wide <a href="https://www.lifemiles.com/eng/ear/par/parearmile.aspx">partner network</a> and the different ways you have for earning miles.</p></div><div style="top: 0px; left: 0px; z-index: 13; position: absolute; display: none; "><p>Shopping on-line? Want to earn LifeMiles while you shop? Visit the <a href="http://shop.lifemiles.com/">LifeMiles e-Store</a> and earn LifeMiles while shopping at hundreds of leading retailers, including the Apple Store, Best-buy, Macy's, and many others.</p></div><div style="top: 0px; left: 0px; z-index: 12; position: absolute; display: none; "><p>Remember to always provide your LifeMiles number when flying with Avianca, AeroGal, Star Alliance member airlines, partner airlines and commercial partners so you can earn LifeMiles.</p></div><div style="top: 0px; left: 0px; z-index: 11; position: absolute; display: none; "><p>Enjoy your miles to travel with Avianca, AeroGal, Star Alliance member airlines and other partner airlines.</p></div><div style="top: 0px; left: 0px; z-index: 10; position: absolute; display: none; "><p>Start to live your miles, you have more than 1,300 destinations around the world and a growing partner network..</p></div><div style="top: 0px; left: 0px; z-index: 9; position: absolute; display: none; "><p>Need to buy a birthday gift or feel like treating yourself to something new? Why not visit our <a href="https://www.lifemiles.com/eng/use/cat/catredpro.aspx?catsho=SHO">LifeMiles Catalog</a> and use your miles for perfumes, electronics, household appliances, and more.</p></div><div style="top: 0px; left: 0px; z-index: 8; position: absolute; display: block; "><p>You can enjoy your miles at more than 100.000 hotels from the most prestigious chains in the world with <a href="https://www.lifemiles.com/esp/use/par/parchkdathot.aspx?soc=hglo">"Hotels Around the World"</a> and <a href="https://www.lifemiles.com/eng/ear/par/parhhonors.aspx#millas">"LifeMiles Hillton HHonors™ Hotel Rewards"</a>.</p></div><div style="top: 0px; left: 0px; z-index: 7; position: absolute; display: none; "><p>Learn more about how you can maximize your miles, and your enjoyment of them! Click here to walk through our unique <a href="https://www.lifemiles.com/eng/lan/all/alltootip.aspx">LifeMiles Optimizer!</a></p></div><div style="top: 0px; left: 0px; z-index: 6; position: absolute; display: none; "><p>To use <a href="https://www.lifemiles.com/eng/use/red/dynredpar.aspx">fewer miles</a> when you use to travel with Avianca or Star Alliance member airlines, book your trip as far in advance as possible.</p></div><div style="top: 0px; left: 0px; z-index: 5; position: absolute; display: none; "><p>In 2013 LifeMiles received an award! Thanks to your vote we can win again at the Freddie Awards. Vote at <a href="http://www.freddieawards.com">www.freddieawards.com</a></p></div><div style="top: 0px; left: 0px; z-index: 4; position: absolute; display: none; "><p>If you don't have enough miles for the reward you want, you can either <a href="https://www.lifemiles.com/eng/ear/tra/traneepur.aspx">purchase miles</a> or pay for a portion of the reward with money. Find out more!</p></div><div style="top: 0px; left: 0px; z-index: 3; position: absolute; display: none; "><p>As an Elite member, you receive information about promotions before we tell anyone else about them. We can only contact you if your email information is correct though. Click <a href="https://www.lifemiles.com/eng/mya/myp/mypaccinf.aspx">here</a> to check or update your email address.</p></div><div style="top: 0px; left: 0px; z-index: 2; position: absolute; display: none; "><p>If you don't have your LifeMiles membership card, you can print a copy online so you never miss the opportunity to earn miles when visiting one of our partners. Click <a href="https://www.lifemiles.com/eng/cus/hlp/hlpcenter.aspx">here</a> for more info.</p></div><div style="top: 0px; left: 0px; z-index: 1; position: absolute; display: none; "><p>Loyalty programs can be hard to understand, and even harder to compare to each other. To quickly see how LifeMiles compares to various other programs, see our <a href="https://www.lifemiles.com/eng/abo/wnb/wnbprocom.aspx">Program Comparison Tool</a>.</p></div></div></div>
+            
+         </div>
+         <div class="shadow-box-tips">
+                          <div class="arrow-box-tip-down">
+                            <a href="javascript:;" id="next-tip-der">
+                          <img src="../../../images/gen/btn/btn-dynamic-down.gif" border="0"></a></div>
+                          <div class="arrow-box-tip-up"><a href="javascript:;" id="prev-tip-der"><img src="../../../images/gen/btn/btn-dynamic-up.gif" border="0"></a></div>
+                          <div class="arrow-tip-text"><a href="../../../eng/too/tip/tipeartip.aspx">View all tips</a></div>
+                          <div class="limpiar"></div>
+         </div>
+         <div class="limpiar"></div>
+         <div class="bottom-borders-container-tip">
+            <span class="bottom-tipbox-right-corner"></span>
+            <span class="bottom-tipbox-left-corner"></span>
+         </div>
+     </div>
+</div>
+<!--
+<div style="margin: 0; padding: 0; width: 178px; height: 112px; margin-top: 10px;">
+    <a href="http://www.lifemilesvisa.com/88461" onclick="recordOutboundLink(this, 'Outbound Links', '/bannerads/usbank/secondary');return false;" target="_blank"><img id="ctl00_rightMenu1_Image2" src="../../../images/gen/slt/slot-e-s-1205-usbank-eng.gif" style="border-width:0px;" /></a>
+</div>
+-->
+<div id="ctl00_rightMenu1_gridImagLateral" style="margin: 0; padding: 0; width: 178px; height: 112px; margin-top: 10px;"><a href="http://www.lifemilesvisa.com/88461" onclick="recordOutboundLink(this, 'Outbound Links', '/bannerads/usbank/secondary');return false;" target="_blank"><img id="ImageLateral" src="https://www.lifemiles.com/images/gen/slt/slot-e-s-1310-us-bank-eng.gif"></a></div>
+    </div>
+    <!--fin columna derecha -->
 </div>
 
         </div>         
@@ -1499,4 +3259,4 @@ $('#btnRedir').click(function(){
  
 
     
-<div class="sexy-tooltip" style="position: absolute; top: 0px; left: 0px; z-index: 70000; display: none; opacity: 0; width: 250px; "><div class="alert"><div class="tooltip-tl" style="width: 250px; "><div class="tooltip-tr"><div class="tooltip-t"></div></div></div><div class="tooltip-l" style="width: 250px; "><div class="tooltip-r"><div class="tooltip-m"></div></div></div><div class="tooltip-bl" style="width: 250px; "><div class="tooltip-br"><div class="tooltip-b"><div class="tooltip-c-arrow"></div></div></div></div></div></div><div class="sexy-tooltip" style="position: absolute; top: 0px; left: 0px; z-index: 70000; display: none; opacity: 0; width: 250px; "><div class="alert"><div class="tooltip-tl" style="width: 250px; "><div class="tooltip-tr"><div class="tooltip-t"></div></div></div><div class="tooltip-l" style="width: 250px; "><div class="tooltip-r"><div class="tooltip-m"></div></div></div><div class="tooltip-bl" style="width: 250px; "><div class="tooltip-br"><div class="tooltip-b"><div class="tooltip-c-arrow"></div></div></div></div></div></div></body></html>
+<div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all ui-helper-hidden-accessible"></div></body></html>

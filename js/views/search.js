@@ -43,6 +43,23 @@ define(function(require) {
 
       });
       this.$el.find('#contents').html(template);
+
+      $('div.btn-group[data-toggle-name]').each(function () {
+        var group = $(this);
+        var form = group.parents('form').eq(0);
+        var name = group.attr('data-toggle-name');
+        var hidden = $('input[name="' + name + '"]', form);
+        $('button', group).each(function () {
+          var button = $(this);
+          button.live('click', function () {
+            hidden.val($(this).val());
+            alert(hidden.val());
+          });
+          if (button.val() == hidden.val()) {
+            button.addClass('active');
+          }
+        });
+      });
       
       var availableAirports;
       
@@ -61,8 +78,11 @@ define(function(require) {
       $(".date").datepicker();
 
       var $loading = this.$el.find('#loading');
-      this.spinner.spin($loading[0]);
-      $loading.fadeIn(800);
+//      this.spinner.spin($loading[0]);
+//      $loading.fadeIn(800);
+//      setTimeout(function(){
+//        this.spinner.stop();
+//      }, 3000);
       
       //this.scrape();
       
@@ -104,7 +124,8 @@ define(function(require) {
 
           this.scrapeHTML = response;
           setTimeout(function(){
-            this.scrape("foo");
+            console.log('triggered scrape')
+            this.scrape();
           }, 3000);
 
         }, this)
