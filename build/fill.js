@@ -113,7 +113,7 @@ exports.search = function(req, res) {
       this.capture('fail.png');
       this.emit('page.loaded',this.getHTML('html', true));
       // do something
-    }, 150000);
+    }, 30000);
 
     spooky.then(function() {
       this.emit('clog', 'finished');

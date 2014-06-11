@@ -43,6 +43,8 @@ define(function(require) {
 
       });
       this.$el.find('#contents').html(template);
+      
+      
 
       $('div.btn-group[data-toggle-name]').each(function () {
         var group = $(this);
@@ -76,19 +78,16 @@ define(function(require) {
       });
 
       $(".date").datepicker();
-
-//      var $loading = this.$el.find('#loading');
-//      this.spinner.spin($loading[0]);
-//      $loading.fadeIn(800);
-//      setTimeout(_.bind(function(){
-//        this.spinner.stop();
-//      }, this), 1000);
       
       //this.scrape();
       
     },
     
     submit: function() {
+
+      var $loading = this.$el.find('#loading');
+      this.spinner.spin($loading[0]);
+      $loading.fadeIn(800);
       
       var departure = $('#departure').val();
       var arrival = $('#arrival').val()
@@ -103,6 +102,7 @@ define(function(require) {
       }
       
       this.autoLogin(inputData);
+      //this.scrape();
     },
     
     getAirportCode: function(airportFullName) {
@@ -149,6 +149,9 @@ define(function(require) {
             flightData: this.flightData
            });
           this.$el.find('#contents').html(template);
+
+          this.spinner.stop();
+          
           return response;
         }, this)
       });
