@@ -1,5 +1,6 @@
 var fs = require("fs");
 var express = require("express");
+var logfmt = require("logfmt");
 var site = express();
 var scrape = require('./scrape.js');
 var fill = require('./fill.js');
@@ -9,6 +10,7 @@ site.use(express.bodyParser());
 
 //site.use(express.favicon("./favicon.ico"));
 
+site.use(logfmt.requestLogger());
 site.get("/", function(req, res) {
   fs.createReadStream("./index.html").pipe(res);
 });

@@ -1,19 +1,20 @@
 {
-  "author": "Thomas Davies <thomasalwyndavis@gmail.com> (http://backbonetutorials.com/)",
-  "name": "backboneboilerplate",
-  "description": "A modular backbone environment",
+  "author": "Eric Chang <eric61213@gmail.com>",
+  "name": "projectAV",
+  "description": "projectAV",
   "version": "0.0.0",
-  "homepage": "http://backboneboilerplate.com/",
+  "homepage": "",
   "repository": {
     "type": "git",
-    "url": "git://github.com/thomasdavis/backboneboilerplate.git"
+    "url": "git://github.com/changey/backboneboilerplate.git"
   },
   "main": "build/server",
   "engines": {
     "node": "~0.6.11"
   },
   "dependencies": {
-    "express": "~3.0.0"
+    "express": "^3.0.6",
+    "logfmt": "^1.1.2"
   },
   "devDependencies": {
     "casperjs": "^1.1.0-beta3",
