@@ -7,19 +7,30 @@ define(function(require) {
     , Backbone = require('backbone')
     , ProjectAV = require('projectAV')
     , SearchTemplate = require('text!../../templates/search.tmpl')
-    , InputTemplate = require('text!../../templates/input.tmpl');
-  //debugger
-  //var Spooky = require('spooky');
+    , InputTemplate = require('text!../../templates/input.tmpl')
+    , Spinner = require('spinjs');
+
+  function setupSpinner() {
+    return new Spinner({
+      length: 80,
+      width: 12,
+      className: 'spinner',
+      color: "#000",
+      radius: 60,
+      corners: 1
+    });
+  }
 
   ProjectAV.Views.Search = Backbone.View.extend({
     events: {
       'click #searchSubmit': 'submit'
     },
     
-    initialize: function() {
+    initialize: function(options) {
       var base_url = location.protocol + '//' + location.hostname + (location.port ? ':' + location.port : '');
       this.autoLoginURL = base_url + "/fill";
       this.scrapeURL = base_url + "/scrape";
+      this.spinner = options.spinner || setupSpinner();
       //this.data = 'file:///Users/echang/Documents/aaproject_ms/backbone_ms/success_search.html';
       this.data='file://localhost/Users/changey/Documents/aaproject_ms/backbone_ms/success_search.html';
     },
@@ -38,7 +49,7 @@ define(function(require) {
       $.getJSON( "../../airports.json", function( data ) {
         availableAirports = data;
 
-        $( ".depArrInput" ).autocomplete({
+        $(".depArrInput").autocomplete({
           source: availableAirports
         });
       });
@@ -48,13 +59,17 @@ define(function(require) {
       });
 
       $(".date").datepicker();
+
+      var $loading = this.$el.find('#loading');
+      this.spinner.spin($loading[0]);
+      $loading.fadeIn(800);
       
-      this.scrape();
+      //this.scrape();
       
     },
     
     submit: function() {
-
+      
       var departure = $('#departure').val();
       var arrival = $('#arrival').val()
       

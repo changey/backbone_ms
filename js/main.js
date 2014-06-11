@@ -8,6 +8,7 @@ require.config({
     underscore: 'libs/underscore/underscore-min', // https://github.com/amdjs
     lodash: 'libs/lodash/lodash', // alternative to underscore
     backbone: 'libs/backbone/backbone-min', // https://github.com/amdjs
+    spinjs: 'libs/spin',
     sinon: 'libs/sinon/sinon.js',
     'node-phantom': 'libs/node-phantom/node-phantom.js',
 
