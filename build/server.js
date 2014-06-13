@@ -42,6 +42,6 @@ site.get('/foo', function(req, res, next) {
   res.send(req.link);
 });
 
-site.listen(9201);
+site.listen(process.env.PORT || 9201);
 
 console.log("Server listening on http://localhost:9201");
